@@ -1,0 +1,652 @@
+.hp07v0 {
+    background: #eee;
+    width: 100%;
+    clear: both;
+    position: relative;
+    overflow: hidden
+}
+
+.u02 + .hp07v0 {
+    margin-top: 0 !important
+}
+
+.hp07 {
+    display: table;
+    height: 387px;
+    position: absolute;
+    top: 100%;
+    width: 100%
+}
+
+.hp07 .cta-list {
+    clear: both;
+    margin-bottom: 0
+}
+
+.hp07 .cta-list li:before {
+    background-position: 66% 60.4%
+}
+
+.hp07 .cta-list li {
+    margin-bottom: .3em
+}
+
+.no-js .hp07 .cta-list li {
+    line-height: 1.2em
+}
+
+.hp07 h3 {
+    padding: .6em 0 0;
+    font-weight: 400;
+    clear: both;
+    font-size: 18px;
+    font-size: 1.8rem
+}
+
+.hp07w1 {
+    position: relative;
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 387px;
+    right: -24px
+}
+
+.hp07z1 {
+    display: none
+}
+
+.hp07w2 {
+    height: 387px
+}
+
+.hp07w3 {
+    display: none;
+    vertical-align: middle
+}
+
+.cfeature .hp07w3 {
+    display: table-cell
+}
+
+.hp07w4 {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 387px;
+    top: 0
+}
+
+.hp07imgslide {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    height: 387px;
+    overflow: hidden;
+    top: 100%;
+    left: -100%
+}
+
+.hp07imgslide div {
+    width: 100%;
+    height: 387px;
+    position: absolute;
+    display: none
+}
+
+.hp07imgslide img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.cslide div {
+    display: block
+}
+
+.hp07, .hp07 a {
+    color: #fff
+}
+
+.hp07ttl {
+    font-size: 34px;
+    font-size: 3.4rem;
+    line-height: 1.18em;
+    margin-bottom: .36em;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.hp07ttl-sm {
+    font-size: 27px;
+    font-size: 2.7rem;
+    margin-bottom: .5em
+}
+
+.hp07subttl {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.2em;
+    margin-bottom: 1.2em
+}
+
+.hp07subttl-sm {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin-bottom: 1.1em
+}
+
+.hp07 .cmps-bttns {
+    margin-bottom: .35em
+}
+
+.hp07w2 {
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    padding: 0;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.68) 0, rgba(0, 0, 0, 0.68) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.68)), color-stop(100%, rgba(0, 0, 0, 0.68)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.68) 0, rgba(0, 0, 0, 0.68) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.68) 0, rgba(0, 0, 0, 0.68) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.68) 0, rgba(0, 0, 0, 0.68) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.68) 0, rgba(0, 0, 0, 0.6868) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7000000', endColorstr='#c7000000', GradientType=0)
+}
+
+.hp07z2 {
+    display: block;
+    content: " ";
+    height: 6px;
+    font-size: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5
+}
+
+.hp07nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1em;
+    right: 0;
+    font-size: 31px;
+    font-size: 3.1rem;
+    margin-right: 20px
+}
+
+.hp07nav a {
+    color: #fff;
+    display: block;
+    width: .9em;
+    height: .88em;
+    margin: .15em;
+    background: url(/pasgo_files/compass-hp-sprite.png) 0 87.4% no-repeat;
+    background-size: 100% auto
+}
+
+.hp07nav a.hp07selected {
+    background-position: 0 93.65%
+}
+
+.hp07nav a:hover {
+    -webkit-transition: opacity 250ms;
+    -moz-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+    opacity: .7
+}
+
+.hp07nav a.hp07selected:hover {
+    opacity: 1
+}
+
+.hp07nav ul {
+    position: absolute;
+    top: 50%
+}
+
+.hp07dnav i, .hp07dnav {
+    z-index: 4;
+    position: absolute;
+    font-size: 40px;
+    font-size: 4rem;
+    top: 0;
+    left: 46.3%;
+    margin: .575em 0 0 7.5em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin-top: 0
+}
+
+.hp07dnav i {
+    background: url(/pasgo_files/compass-hp-sprite.png) 0 6.25% no-repeat;
+    background-size: 100% auto
+}
+
+.hp07dnav.hp07next {
+    top: auto;
+    bottom: 0
+}
+
+.hp07dnav i {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.hp07dnav.hp07next i {
+    background-position: 0 0
+}
+
+.hp07dnav:hover i {
+    -webkit-transition: opacity 250ms;
+    -moz-transition: opacity 250ms;
+    -o-transition: opacity 250ms;
+    transition: opacity 250ms;
+    opacity: .7
+}
+
+.no-js .hp07w2 {
+    width: 100%
+}
+
+.no-js .hp07v0 {
+    background: #fff;
+    margin-top: 1em
+}
+
+.no-js .hp07w3 {
+    display: table-cell
+}
+
+.no-js .hp07 {
+    top: 0;
+    width: 45%;
+    padding: 0 2.5%;
+    top: 0;
+    width: 45%
+}
+
+.no-js .hp07:nth-child(2) {
+    left: 50% !important;
+    border-left: 1px solid #fff
+}
+
+.no-js .hp07:nth-child(3), .no-js .hp07:nth-child(4) {
+    display: none
+}
+
+@media (min-width: 0) and (max-width: 1018px) {
+    .hp07w2 {
+        margin: 0 1.25%
+    }
+}
+
+@media (min-width: 771px) and (max-width: 990px) {
+    .hp07imgslide img {
+        left: 0;
+        margin-left: -452px
+    }
+}
+
+@media (min-width: 0) and (max-width: 870px) {
+    .hp07ttl {
+        font-size: 30px
+    }
+
+    .hp07ttl-sm {
+        font-size: 24px
+    }
+}
+
+@media (min-width: 0) and (max-width: 770px) {
+    .hp07ttl {
+        font-size: 25px
+    }
+
+    .hp07ttl-sm {
+        font-size: 21px
+    }
+
+    .hp07w2 {
+        width: 48.14%
+    }
+
+    .hp07imgslide, .hp07, .hp07w2, .hp07w1, .hp07w4 {
+        height: 387px
+    }
+
+    .hp07imgslide img {
+        left: 0;
+        margin-left: -377px;
+        height: 387px
+    }
+}
+
+@media (min-width: 601px) {
+    .hp07 {
+        padding: 0 3em 0 1.5em;
+        left: 0 !important
+    }
+
+    .hp07single .hp07 {
+        padding: 0 3em 0 2em
+    }
+
+    .hp07imgslide, .hp07imgslide div {
+        left: 0 !important
+    }
+}
+
+@media (min-width: 0) and (max-width: 600px) {
+    .hp07ttl {
+        font-size: 18px
+    }
+
+    .hp07ttl-sm {
+        font-size: 16px
+    }
+
+    .hp07 {
+        top: 0 !important;
+        left: -100%;
+        padding: 1.25% 2.5% 0
+    }
+
+    .hp07imgslide {
+        top: -20px !important;
+        padding-bottom: 20px
+    }
+
+    .hp07imgslide div {
+        top: 0 !important;
+        background: #000 !important
+    }
+
+    .hp07imgslide, .hp07w1, .hp07w4 {
+        height: 392px
+    }
+
+    .hp07imgslide img {
+        margin-left: -400px;
+        height: 240px;
+        left: 50%
+    }
+
+    .hp07 {
+        height: 222px
+    }
+
+    .hp07w2 {
+        height: 252px
+    }
+
+    .hp07nav {
+        font-size: 34px;
+        font-size: 3.4rem
+    }
+
+    .hp07w2 {
+        position: absolute;
+        left: 0;
+        top: 140px;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    .hp07z1 {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 180px;
+        height: 50px;
+        width: 100%;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0)
+    }
+
+    .hp07dnav {
+        z-index: 4;
+        font-size: 52px;
+        font-size: 5.2rem;
+        top: -99px !important;
+        left: -5px;
+        margin: 0;
+        padding: 6px 0;
+        background: #000;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.60) 0, rgba(0, 0, 0, 0.60) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.60)), color-stop(100%, rgba(0, 0, 0, 0.60)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.60) 0, rgba(0, 0, 0, 0.60) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0.60) 0, rgba(0, 0, 0, 0.60) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.60) 0, rgba(0, 0, 0, 0.60) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.60) 0, rgba(0, 0, 0, 0.60) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7000000', endColorstr='#c7000000', GradientType=0)
+    }
+
+    .hp07dnav i {
+        background-position: 0 18.75%;
+        top: 6px;
+        font-size: 52px;
+        font-size: 5.2rem
+    }
+
+    .hp07dnav.hp07next i {
+        background-position: 0 12.5%
+    }
+
+    .hp07dnav.hp07next {
+        left: auto;
+        right: -5px
+    }
+
+    .hp07dnav:hover i, .hp07next:hover i {
+        opacity: .7
+    }
+
+    .hp07nav {
+        left: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        height: 1.2em;
+        padding-top: .2em
+    }
+
+    .hp07nav ul {
+        left: 50%;
+        top: 0;
+        margin-top: 0 !important
+    }
+
+    .hp07nav li {
+        float: left
+    }
+
+    .no-js .hp07w1 {
+        height: 250px !important
+    }
+
+    .no-js .hp07w2 {
+        top: 0
+    }
+
+    .no-js .hp07 {
+        width: 100%;
+        border: 0;
+        left: 0 !important;
+        position: relative
+    }
+
+    .no-js .hp07:nth-child(2), .no-js .hp07:nth-child(3), .no-js .hp07:nth-child(4) {
+        display: none
+    }
+}
+
+@media (min-width: 0) and (max-width: 400px) {
+    .hp07imgslide img {
+        left: 0;
+        margin-left: -209px
+    }
+}
+
+@media \0screen\,screen\9 {
+    .hp07nav ul {
+        margin-left: 0 !important
+    }
+
+    .hp07 {
+        padding: 0 3.55em 0 1.65em
+    }
+
+    .hp07nav a {
+        background: url(//www.oracleimg.com/us/assets/compass-hp-ie8-sprite.png) 50% -193px no-repeat;
+        background-size: auto auto
+    }
+
+    .hp07nav a.hp07selected {
+        background-position: 50% -217px
+    }
+
+    .hp07dnav i {
+        background: url(//www.oracleimg.com/us/assets/compass-hp-ie8-sprite.png) 50% 0 no-repeat;
+        background-size: auto auto
+    }
+
+    .hp07dnav.hp07next i {
+        background-position: 50% -40px
+    }
+
+    .hp07dnav:hover, .hp07nav a:hover {
+        filter: alpha(opacity=60)
+    }
+
+    .hp07nav a.hp07selected:hover {
+        filter: alpha(opacity=100)
+    }
+}
+
+.w01fullpg div.w01w7 {
+    border: 0;
+    padding-top: 48px
+}
+
+@media only screen and (min-width: 880px) {
+    .w01v2 {
+        transition: margin-top 100ms, margin-left 100ms
+    }
+}
+
+#w01w12.responsiveVid {
+    overflow: hidden
+}
+
+.w01narrow .w01responsive {
+    width: 90%
+}
+
+.w01narrow .w01responsive .w01w1 {
+    width: 100% !important
+}
+
+a.u01nav h3 {
+    height: 44px
+}
+
+.u01w7 {
+    height: 54px
+}
+
+.f11v1 {
+    width: 100%;
+    overflow-x: hidden
+}
+
+.cw21 {
+    margin-top: 0 !important;
+    -webkit-transition: top 300ms ease;
+    -moz-transition: top 300ms ease;
+    -o-transition: top 300ms ease;
+    transition: top 300ms ease;
+    top: 50%
+}
+
+@media (min-width: 0) and (max-width: 1420px) {
+    .cw21 {
+        top: 440px
+    }
+}
+
+@media (min-width: 0) and (max-width: 974px) {
+    .cw21 {
+        top: 390px
+    }
+}
+
+@media (min-width: 0) and (max-width: 770px) {
+    .cw21 {
+        top: 350px
+    }
+}
+
+@media (max-width: 600px),(max-height: 600px) {
+    .cw21 {
+        top: auto;
+        position: fixed
+    }
+}
+
+.screen-reader {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+[class^="icnf"]:before, [class*=" icnf"]:before {
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+}
+
+.screen-reader {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+ul.icnf-list li {
+    margin: 0 0 24px;
+    clear: both;
+    min-height: 48px;
+    min-height: 4.8rem;
+    position: relative;
+    padding-left: 60px
+}
+
+ul.icnf-list li:before {
+    font-size: 4em;
+    color: #fff
+}

@@ -1,0 +1,11 @@
+{
+    "settings": {
+        "endpoints": {
+                      "apps": "http://localhost:8000"
+                      },
+        "frontend": {
+                      "staticDomain": "localhost:2016",
+                      "endpoint": "http://localhost:2016"
+                    }
+    }
+}

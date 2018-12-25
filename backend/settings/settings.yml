@@ -1,0 +1,11 @@
+microservices:
+    course:
+        domain: course.izischool
+        proxy_port: 3500
+
+db:
+    name: dealshop
+    user: postgres
+    password: "2014"
+    host: localhost
+    port: 5432

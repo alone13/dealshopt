@@ -1,0 +1,3377 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.10.8
+3 info using node@v7.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData fsevents
+20 silly mapToRegistry name fsevents
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'fsevents',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'fsevents',
+23 silly mapToRegistry   name: 'fsevents',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+25 verbose request uri https://registry.npmjs.org/fsevents
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 11:37:57 AM
+28 verbose request id 6a1438c42905f882
+29 verbose etag "A234G4D80YWPFVQ48CZDVPH48"
+30 http request GET https://registry.npmjs.org/fsevents
+31 http 304 https://registry.npmjs.org/fsevents
+32 verbose headers { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   etag: '"A234G4D80YWPFVQ48CZDVPH48"',
+32 verbose headers   age: '41',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+32 verbose headers   'x-cache': 'HIT',
+32 verbose headers   'x-cache-hits': '2',
+32 verbose headers   'x-timer': 'S1478839079.705255,VS0,VE0',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     etag: '"A234G4D80YWPFVQ48CZDVPH48"',
+33 silly get     age: '41',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-hkg6824-HKG',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '2',
+33 silly get     'x-timer': 'S1478839079.705255,VS0,VE0',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 verbose etag https://registry.npmjs.org/fsevents from cache
+35 verbose get saving fsevents to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/fsevents/.cache.json
+36 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+37 silly resolveWithNewModule fsevents@1.0.15 checking installable status
+38 silly fetchNamedPackageData grunt-node-inspector
+39 silly mapToRegistry name grunt-node-inspector
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'grunt-node-inspector',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   escapedName: 'grunt-node-inspector',
+42 silly mapToRegistry   name: 'grunt-node-inspector',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/grunt-node-inspector
+44 verbose request uri https://registry.npmjs.org/grunt-node-inspector
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 11:37:59 AM
+47 verbose etag "AULBG344IKTKMNA6HEY1Z0L73"
+48 http request GET https://registry.npmjs.org/grunt-node-inspector
+49 http 304 https://registry.npmjs.org/grunt-node-inspector
+50 verbose headers { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   'cache-control': 'max-age=300',
+50 verbose headers   etag: '"AULBG344IKTKMNA6HEY1Z0L73"',
+50 verbose headers   age: '162',
+50 verbose headers   connection: 'keep-alive',
+50 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+50 verbose headers   'x-cache': 'HIT',
+50 verbose headers   'x-cache-hits': '2',
+50 verbose headers   'x-timer': 'S1478839079.806497,VS0,VE0',
+50 verbose headers   vary: 'Accept-Encoding' }
+51 silly get cb [ 304,
+51 silly get   { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+51 silly get     via: '1.1 varnish',
+51 silly get     'cache-control': 'max-age=300',
+51 silly get     etag: '"AULBG344IKTKMNA6HEY1Z0L73"',
+51 silly get     age: '162',
+51 silly get     connection: 'keep-alive',
+51 silly get     'x-served-by': 'cache-hkg6824-HKG',
+51 silly get     'x-cache': 'HIT',
+51 silly get     'x-cache-hits': '2',
+51 silly get     'x-timer': 'S1478839079.806497,VS0,VE0',
+51 silly get     vary: 'Accept-Encoding' } ]
+52 verbose etag https://registry.npmjs.org/grunt-node-inspector from cache
+53 verbose get saving grunt-node-inspector to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/grunt-node-inspector/.cache.json
+54 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+55 silly resolveWithNewModule grunt-node-inspector@0.4.2 checking installable status
+56 silly cache add args [ 'grunt-node-inspector@^0.4.1', null ]
+57 verbose cache add spec grunt-node-inspector@^0.4.1
+58 silly cache add parsed spec Result {
+58 silly cache add   raw: 'grunt-node-inspector@^0.4.1',
+58 silly cache add   scope: null,
+58 silly cache add   escapedName: 'grunt-node-inspector',
+58 silly cache add   name: 'grunt-node-inspector',
+58 silly cache add   rawSpec: '^0.4.1',
+58 silly cache add   spec: '>=0.4.1 <0.5.0',
+58 silly cache add   type: 'range' }
+59 silly addNamed grunt-node-inspector@>=0.4.1 <0.5.0
+60 verbose addNamed ">=0.4.1 <0.5.0" is a valid semver range for grunt-node-inspector
+61 silly addNameRange { name: 'grunt-node-inspector',
+61 silly addNameRange   range: '>=0.4.1 <0.5.0',
+61 silly addNameRange   hasData: false }
+62 silly mapToRegistry name grunt-node-inspector
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'grunt-node-inspector',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   escapedName: 'grunt-node-inspector',
+65 silly mapToRegistry   name: 'grunt-node-inspector',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri https://registry.npmjs.org/grunt-node-inspector
+67 verbose addNameRange registry:https://registry.npmjs.org/grunt-node-inspector not in flight; fetching
+68 verbose get https://registry.npmjs.org/grunt-node-inspector not expired, no request
+69 silly addNameRange number 2 { name: 'grunt-node-inspector',
+69 silly addNameRange   range: '>=0.4.1 <0.5.0',
+69 silly addNameRange   hasData: true }
+70 silly addNameRange versions [ 'grunt-node-inspector',
+70 silly addNameRange   [ '0.0.1',
+70 silly addNameRange     '0.1.0',
+70 silly addNameRange     '0.1.1',
+70 silly addNameRange     '0.1.2',
+70 silly addNameRange     '0.1.3',
+70 silly addNameRange     '0.1.5',
+70 silly addNameRange     '0.1.6',
+70 silly addNameRange     '0.2.0',
+70 silly addNameRange     '0.3.0',
+70 silly addNameRange     '0.4.0',
+70 silly addNameRange     '0.4.1',
+70 silly addNameRange     '0.4.2' ] ]
+71 silly addNamed grunt-node-inspector@0.4.2
+72 verbose addNamed "0.4.2" is a plain semver version for grunt-node-inspector
+73 silly cache afterAdd grunt-node-inspector@0.4.2
+74 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/grunt-node-inspector/0.4.2/package/package.json not in flight; writing
+75 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+76 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/grunt-node-inspector/0.4.2/package/package.json written
+77 silly fetchNamedPackageData node-inspector
+78 silly mapToRegistry name node-inspector
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'node-inspector',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   escapedName: 'node-inspector',
+81 silly mapToRegistry   name: 'node-inspector',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npmjs.org/node-inspector
+83 verbose request uri https://registry.npmjs.org/node-inspector
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 11:37:59 AM
+86 verbose etag "BNGT0I0UB4ZBMYHKTJ3K06OTU"
+87 http request GET https://registry.npmjs.org/node-inspector
+88 http 304 https://registry.npmjs.org/node-inspector
+89 verbose headers { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+89 verbose headers   via: '1.1 varnish',
+89 verbose headers   'cache-control': 'max-age=300',
+89 verbose headers   etag: '"BNGT0I0UB4ZBMYHKTJ3K06OTU"',
+89 verbose headers   age: '246',
+89 verbose headers   connection: 'keep-alive',
+89 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+89 verbose headers   'x-cache': 'HIT',
+89 verbose headers   'x-cache-hits': '4',
+89 verbose headers   'x-timer': 'S1478839079.933775,VS0,VE0',
+89 verbose headers   vary: 'Accept-Encoding' }
+90 silly get cb [ 304,
+90 silly get   { date: 'Fri, 11 Nov 2016 04:37:59 GMT',
+90 silly get     via: '1.1 varnish',
+90 silly get     'cache-control': 'max-age=300',
+90 silly get     etag: '"BNGT0I0UB4ZBMYHKTJ3K06OTU"',
+90 silly get     age: '246',
+90 silly get     connection: 'keep-alive',
+90 silly get     'x-served-by': 'cache-hkg6824-HKG',
+90 silly get     'x-cache': 'HIT',
+90 silly get     'x-cache-hits': '4',
+90 silly get     'x-timer': 'S1478839079.933775,VS0,VE0',
+90 silly get     vary: 'Accept-Encoding' } ]
+91 verbose etag https://registry.npmjs.org/node-inspector from cache
+92 verbose get saving node-inspector to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/node-inspector/.cache.json
+93 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+94 silly resolveWithNewModule node-inspector@0.12.8 checking installable status
+95 silly cache add args [ 'node-inspector@^0.12.8', null ]
+96 verbose cache add spec node-inspector@^0.12.8
+97 silly cache add parsed spec Result {
+97 silly cache add   raw: 'node-inspector@^0.12.8',
+97 silly cache add   scope: null,
+97 silly cache add   escapedName: 'node-inspector',
+97 silly cache add   name: 'node-inspector',
+97 silly cache add   rawSpec: '^0.12.8',
+97 silly cache add   spec: '>=0.12.8 <0.13.0',
+97 silly cache add   type: 'range' }
+98 silly addNamed node-inspector@>=0.12.8 <0.13.0
+99 verbose addNamed ">=0.12.8 <0.13.0" is a valid semver range for node-inspector
+100 silly addNameRange { name: 'node-inspector',
+100 silly addNameRange   range: '>=0.12.8 <0.13.0',
+100 silly addNameRange   hasData: false }
+101 silly mapToRegistry name node-inspector
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry data Result {
+104 silly mapToRegistry   raw: 'node-inspector',
+104 silly mapToRegistry   scope: null,
+104 silly mapToRegistry   escapedName: 'node-inspector',
+104 silly mapToRegistry   name: 'node-inspector',
+104 silly mapToRegistry   rawSpec: '',
+104 silly mapToRegistry   spec: 'latest',
+104 silly mapToRegistry   type: 'tag' }
+105 silly mapToRegistry uri https://registry.npmjs.org/node-inspector
+106 verbose addNameRange registry:https://registry.npmjs.org/node-inspector not in flight; fetching
+107 verbose get https://registry.npmjs.org/node-inspector not expired, no request
+108 silly addNameRange number 2 { name: 'node-inspector',
+108 silly addNameRange   range: '>=0.12.8 <0.13.0',
+108 silly addNameRange   hasData: true }
+109 silly addNameRange versions [ 'node-inspector',
+109 silly addNameRange   [ '0.0.1',
+109 silly addNameRange     '0.0.2',
+109 silly addNameRange     '0.0.3',
+109 silly addNameRange     '0.0.4',
+109 silly addNameRange     '0.1.0',
+109 silly addNameRange     '0.1.1',
+109 silly addNameRange     '0.1.2',
+109 silly addNameRange     '0.1.3',
+109 silly addNameRange     '0.1.4',
+109 silly addNameRange     '0.1.5',
+109 silly addNameRange     '0.1.6',
+109 silly addNameRange     '0.1.7',
+109 silly addNameRange     '0.1.8',
+109 silly addNameRange     '0.1.9',
+109 silly addNameRange     '0.1.10',
+109 silly addNameRange     '0.3.0',
+109 silly addNameRange     '0.3.1',
+109 silly addNameRange     '0.3.2',
+109 silly addNameRange     '0.3.3',
+109 silly addNameRange     '0.3.4',
+109 silly addNameRange     '0.4.0',
+109 silly addNameRange     '0.5.0',
+109 silly addNameRange     '0.6.0',
+109 silly addNameRange     '0.6.1',
+109 silly addNameRange     '0.6.2',
+109 silly addNameRange     '0.7.0-1',
+109 silly addNameRange     '0.2.0-beta1',
+109 silly addNameRange     '0.2.0-beta2',
+109 silly addNameRange     '0.2.0-beta3',
+109 silly addNameRange     '0.2.0-beta4',
+109 silly addNameRange     '0.3.0-preview1',
+109 silly addNameRange     '0.7.0-2',
+109 silly addNameRange     '0.7.0',
+109 silly addNameRange     '0.7.1',
+109 silly addNameRange     '0.7.2',
+109 silly addNameRange     '0.7.3',
+109 silly addNameRange     '0.7.4',
+109 silly addNameRange     '0.8.0',
+109 silly addNameRange     '0.8.1',
+109 silly addNameRange     '0.8.3',
+109 silly addNameRange     '0.9.0',
+109 silly addNameRange     '0.9.1',
+109 silly addNameRange     '0.9.2',
+109 silly addNameRange     '0.10.0',
+109 silly addNameRange     '0.10.1',
+109 silly addNameRange     '0.10.2',
+109 silly addNameRange     '0.11.0',
+109 silly addNameRange     '0.11.1',
+109 silly addNameRange     '0.11.2',
+109 silly addNameRange     '0.12.0',
+109 silly addNameRange     '0.12.1',
+109 silly addNameRange     '0.12.2',
+109 silly addNameRange     '0.12.3',
+109 silly addNameRange     '0.12.4',
+109 silly addNameRange     '0.12.5',
+109 silly addNameRange     '0.12.6',
+109 silly addNameRange     '0.12.7',
+109 silly addNameRange     '0.12.8' ] ]
+110 silly addNamed node-inspector@0.12.8
+111 verbose addNamed "0.12.8" is a plain semver version for node-inspector
+112 silly cache afterAdd node-inspector@0.12.8
+113 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/node-inspector/0.12.8/package/package.json not in flight; writing
+114 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+115 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/node-inspector/0.12.8/package/package.json written
+116 silly fetchNamedPackageData async
+117 silly mapToRegistry name async
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry https://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: 'async',
+120 silly mapToRegistry   scope: null,
+120 silly mapToRegistry   escapedName: 'async',
+120 silly mapToRegistry   name: 'async',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri https://registry.npmjs.org/async
+122 silly fetchNamedPackageData glob
+123 silly mapToRegistry name glob
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry data Result {
+126 silly mapToRegistry   raw: 'glob',
+126 silly mapToRegistry   scope: null,
+126 silly mapToRegistry   escapedName: 'glob',
+126 silly mapToRegistry   name: 'glob',
+126 silly mapToRegistry   rawSpec: '',
+126 silly mapToRegistry   spec: 'latest',
+126 silly mapToRegistry   type: 'tag' }
+127 silly mapToRegistry uri https://registry.npmjs.org/glob
+128 silly fetchNamedPackageData semver
+129 silly mapToRegistry name semver
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry data Result {
+132 silly mapToRegistry   raw: 'semver',
+132 silly mapToRegistry   scope: null,
+132 silly mapToRegistry   escapedName: 'semver',
+132 silly mapToRegistry   name: 'semver',
+132 silly mapToRegistry   rawSpec: '',
+132 silly mapToRegistry   spec: 'latest',
+132 silly mapToRegistry   type: 'tag' }
+133 silly mapToRegistry uri https://registry.npmjs.org/semver
+134 silly fetchNamedPackageData v8-debug
+135 silly mapToRegistry name v8-debug
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'v8-debug',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   escapedName: 'v8-debug',
+138 silly mapToRegistry   name: 'v8-debug',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri https://registry.npmjs.org/v8-debug
+140 silly fetchNamedPackageData which
+141 silly mapToRegistry name which
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'which',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   escapedName: 'which',
+144 silly mapToRegistry   name: 'which',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/which
+146 verbose request uri https://registry.npmjs.org/async
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 11:38:00 AM
+149 verbose etag "41I0OS4TZ4XN7G0KKH5YXGCKH"
+150 http request GET https://registry.npmjs.org/async
+151 verbose request uri https://registry.npmjs.org/semver
+152 verbose request no auth needed
+153 info attempt registry request try #1 at 11:38:00 AM
+154 verbose etag "9EJY4LGTKOPUAAVLV2EPIIFIH"
+155 http request GET https://registry.npmjs.org/semver
+156 verbose request uri https://registry.npmjs.org/v8-debug
+157 verbose request no auth needed
+158 info attempt registry request try #1 at 11:38:00 AM
+159 verbose etag "CMYURLW8NTUD8UQWKRY04UCFV"
+160 http request GET https://registry.npmjs.org/v8-debug
+161 verbose request uri https://registry.npmjs.org/glob
+162 verbose request no auth needed
+163 info attempt registry request try #1 at 11:38:00 AM
+164 verbose etag "DOORNHLO7ZOXA1DFB3NMQUQWE"
+165 http request GET https://registry.npmjs.org/glob
+166 verbose request uri https://registry.npmjs.org/which
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 11:38:00 AM
+169 verbose etag "2KFIPWGAL54RH75Q4VKLWD6E0"
+170 http request GET https://registry.npmjs.org/which
+171 http 304 https://registry.npmjs.org/async
+172 verbose headers { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+172 verbose headers   via: '1.1 varnish',
+172 verbose headers   'cache-control': 'max-age=300',
+172 verbose headers   etag: '"41I0OS4TZ4XN7G0KKH5YXGCKH"',
+172 verbose headers   age: '3',
+172 verbose headers   connection: 'keep-alive',
+172 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+172 verbose headers   'x-cache': 'HIT',
+172 verbose headers   'x-cache-hits': '666',
+172 verbose headers   'x-timer': 'S1478839080.243062,VS0,VE0',
+172 verbose headers   vary: 'Accept-Encoding' }
+173 silly get cb [ 304,
+173 silly get   { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+173 silly get     via: '1.1 varnish',
+173 silly get     'cache-control': 'max-age=300',
+173 silly get     etag: '"41I0OS4TZ4XN7G0KKH5YXGCKH"',
+173 silly get     age: '3',
+173 silly get     connection: 'keep-alive',
+173 silly get     'x-served-by': 'cache-hkg6824-HKG',
+173 silly get     'x-cache': 'HIT',
+173 silly get     'x-cache-hits': '666',
+173 silly get     'x-timer': 'S1478839080.243062,VS0,VE0',
+173 silly get     vary: 'Accept-Encoding' } ]
+174 verbose etag https://registry.npmjs.org/async from cache
+175 verbose get saving async to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/async/.cache.json
+176 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+177 silly resolveWithNewModule async@0.9.2 checking installable status
+178 silly cache add args [ 'async@~0.9', null ]
+179 verbose cache add spec async@~0.9
+180 silly cache add parsed spec Result {
+180 silly cache add   raw: 'async@~0.9',
+180 silly cache add   scope: null,
+180 silly cache add   escapedName: 'async',
+180 silly cache add   name: 'async',
+180 silly cache add   rawSpec: '~0.9',
+180 silly cache add   spec: '>=0.9.0 <0.10.0',
+180 silly cache add   type: 'range' }
+181 silly addNamed async@>=0.9.0 <0.10.0
+182 verbose addNamed ">=0.9.0 <0.10.0" is a valid semver range for async
+183 silly addNameRange { name: 'async', range: '>=0.9.0 <0.10.0', hasData: false }
+184 silly mapToRegistry name async
+185 silly mapToRegistry using default registry
+186 silly mapToRegistry registry https://registry.npmjs.org/
+187 silly mapToRegistry data Result {
+187 silly mapToRegistry   raw: 'async',
+187 silly mapToRegistry   scope: null,
+187 silly mapToRegistry   escapedName: 'async',
+187 silly mapToRegistry   name: 'async',
+187 silly mapToRegistry   rawSpec: '',
+187 silly mapToRegistry   spec: 'latest',
+187 silly mapToRegistry   type: 'tag' }
+188 silly mapToRegistry uri https://registry.npmjs.org/async
+189 verbose addNameRange registry:https://registry.npmjs.org/async not in flight; fetching
+190 verbose get https://registry.npmjs.org/async not expired, no request
+191 silly addNameRange number 2 { name: 'async', range: '>=0.9.0 <0.10.0', hasData: true }
+192 silly addNameRange versions [ 'async',
+192 silly addNameRange   [ '0.1.0',
+192 silly addNameRange     '0.1.1',
+192 silly addNameRange     '0.1.2',
+192 silly addNameRange     '0.1.3',
+192 silly addNameRange     '0.1.4',
+192 silly addNameRange     '0.1.5',
+192 silly addNameRange     '0.1.6',
+192 silly addNameRange     '0.1.7',
+192 silly addNameRange     '0.1.8',
+192 silly addNameRange     '0.1.9',
+192 silly addNameRange     '0.1.10',
+192 silly addNameRange     '0.1.11',
+192 silly addNameRange     '0.1.12',
+192 silly addNameRange     '0.1.13',
+192 silly addNameRange     '0.1.14',
+192 silly addNameRange     '0.1.15',
+192 silly addNameRange     '0.1.16',
+192 silly addNameRange     '0.1.17',
+192 silly addNameRange     '0.1.18',
+192 silly addNameRange     '0.1.19',
+192 silly addNameRange     '0.1.20',
+192 silly addNameRange     '0.1.21',
+192 silly addNameRange     '0.1.22',
+192 silly addNameRange     '0.2.0',
+192 silly addNameRange     '0.2.1',
+192 silly addNameRange     '0.2.2',
+192 silly addNameRange     '0.2.3',
+192 silly addNameRange     '0.2.4',
+192 silly addNameRange     '0.2.5',
+192 silly addNameRange     '0.2.6',
+192 silly addNameRange     '0.2.7',
+192 silly addNameRange     '0.2.8',
+192 silly addNameRange     '0.2.9',
+192 silly addNameRange     '0.2.10',
+192 silly addNameRange     '0.3.0',
+192 silly addNameRange     '0.4.0',
+192 silly addNameRange     '0.4.1',
+192 silly addNameRange     '0.5.0',
+192 silly addNameRange     '0.6.0',
+192 silly addNameRange     '0.6.1',
+192 silly addNameRange     '0.6.2',
+192 silly addNameRange     '0.7.0',
+192 silly addNameRange     '0.8.0',
+192 silly addNameRange     '0.9.0',
+192 silly addNameRange     '0.9.2',
+192 silly addNameRange     '1.0.0',
+192 silly addNameRange     '1.1.0',
+192 silly addNameRange     '1.2.0',
+192 silly addNameRange     '1.1.1',
+192 silly addNameRange     '1.2.1',
+192 silly addNameRange     '1.3.0',
+192 silly addNameRange     '1.4.0',
+192 silly addNameRange     '1.4.1',
+192 silly addNameRange     '1.4.2',
+192 silly addNameRange     '1.5.0',
+192 silly addNameRange     '1.5.1',
+192 silly addNameRange     '1.5.2',
+192 silly addNameRange     '2.0.0-alpha.0',
+192 silly addNameRange     '2.0.0-rc.1',
+192 silly addNameRange     '2.0.0-rc.2',
+192 silly addNameRange     '2.0.0-rc.3',
+192 silly addNameRange     '2.0.0-rc.4',
+192 silly addNameRange     '2.0.0-rc.5',
+192 silly addNameRange     '2.0.0-rc.6',
+192 silly addNameRange     '2.0.0',
+192 silly addNameRange     '2.0.1',
+192 silly addNameRange     '2.1.0',
+192 silly addNameRange     '2.1.1',
+192 silly addNameRange     '2.1.2' ] ]
+193 silly addNamed async@0.9.2
+194 verbose addNamed "0.9.2" is a plain semver version for async
+195 silly cache afterAdd async@0.9.2
+196 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/async/0.9.2/package/package.json not in flight; writing
+197 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+198 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/async/0.9.2/package/package.json written
+199 http 304 https://registry.npmjs.org/v8-debug
+200 verbose headers { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+200 verbose headers   via: '1.1 varnish',
+200 verbose headers   'cache-control': 'max-age=300',
+200 verbose headers   etag: '"CMYURLW8NTUD8UQWKRY04UCFV"',
+200 verbose headers   age: '156',
+200 verbose headers   connection: 'keep-alive',
+200 verbose headers   'x-served-by': 'cache-hkg6822-HKG',
+200 verbose headers   'x-cache': 'HIT',
+200 verbose headers   'x-cache-hits': '3',
+200 verbose headers   'x-timer': 'S1478839080.303228,VS0,VE0',
+200 verbose headers   vary: 'Accept-Encoding' }
+201 silly get cb [ 304,
+201 silly get   { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+201 silly get     via: '1.1 varnish',
+201 silly get     'cache-control': 'max-age=300',
+201 silly get     etag: '"CMYURLW8NTUD8UQWKRY04UCFV"',
+201 silly get     age: '156',
+201 silly get     connection: 'keep-alive',
+201 silly get     'x-served-by': 'cache-hkg6822-HKG',
+201 silly get     'x-cache': 'HIT',
+201 silly get     'x-cache-hits': '3',
+201 silly get     'x-timer': 'S1478839080.303228,VS0,VE0',
+201 silly get     vary: 'Accept-Encoding' } ]
+202 verbose etag https://registry.npmjs.org/v8-debug from cache
+203 verbose get saving v8-debug to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/v8-debug/.cache.json
+204 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+205 silly resolveWithNewModule v8-debug@0.7.7 checking installable status
+206 silly cache add args [ 'v8-debug@~0.7.1', null ]
+207 verbose cache add spec v8-debug@~0.7.1
+208 silly cache add parsed spec Result {
+208 silly cache add   raw: 'v8-debug@~0.7.1',
+208 silly cache add   scope: null,
+208 silly cache add   escapedName: 'v8-debug',
+208 silly cache add   name: 'v8-debug',
+208 silly cache add   rawSpec: '~0.7.1',
+208 silly cache add   spec: '>=0.7.1 <0.8.0',
+208 silly cache add   type: 'range' }
+209 silly addNamed v8-debug@>=0.7.1 <0.8.0
+210 verbose addNamed ">=0.7.1 <0.8.0" is a valid semver range for v8-debug
+211 silly addNameRange { name: 'v8-debug', range: '>=0.7.1 <0.8.0', hasData: false }
+212 silly mapToRegistry name v8-debug
+213 silly mapToRegistry using default registry
+214 silly mapToRegistry registry https://registry.npmjs.org/
+215 silly mapToRegistry data Result {
+215 silly mapToRegistry   raw: 'v8-debug',
+215 silly mapToRegistry   scope: null,
+215 silly mapToRegistry   escapedName: 'v8-debug',
+215 silly mapToRegistry   name: 'v8-debug',
+215 silly mapToRegistry   rawSpec: '',
+215 silly mapToRegistry   spec: 'latest',
+215 silly mapToRegistry   type: 'tag' }
+216 silly mapToRegistry uri https://registry.npmjs.org/v8-debug
+217 verbose addNameRange registry:https://registry.npmjs.org/v8-debug not in flight; fetching
+218 verbose get https://registry.npmjs.org/v8-debug not expired, no request
+219 silly addNameRange number 2 { name: 'v8-debug', range: '>=0.7.1 <0.8.0', hasData: true }
+220 silly addNameRange versions [ 'v8-debug',
+220 silly addNameRange   [ '0.1.0',
+220 silly addNameRange     '0.1.1',
+220 silly addNameRange     '0.1.2',
+220 silly addNameRange     '0.1.3',
+220 silly addNameRange     '0.1.4',
+220 silly addNameRange     '0.1.5',
+220 silly addNameRange     '0.2.0',
+220 silly addNameRange     '0.3.0',
+220 silly addNameRange     '0.3.1',
+220 silly addNameRange     '0.3.2',
+220 silly addNameRange     '0.3.3',
+220 silly addNameRange     '0.3.4',
+220 silly addNameRange     '0.3.5',
+220 silly addNameRange     '0.4.0',
+220 silly addNameRange     '0.4.1',
+220 silly addNameRange     '0.4.2',
+220 silly addNameRange     '0.4.3',
+220 silly addNameRange     '0.4.4',
+220 silly addNameRange     '0.4.5',
+220 silly addNameRange     '0.4.6',
+220 silly addNameRange     '0.5.0',
+220 silly addNameRange     '0.5.1',
+220 silly addNameRange     '0.5.2',
+220 silly addNameRange     '0.5.3',
+220 silly addNameRange     '0.5.4',
+220 silly addNameRange     '0.6.0',
+220 silly addNameRange     '0.6.1',
+220 silly addNameRange     '0.6.2',
+220 silly addNameRange     '0.7.0',
+220 silly addNameRange     '0.7.1',
+220 silly addNameRange     '0.7.3',
+220 silly addNameRange     '0.7.5',
+220 silly addNameRange     '0.7.6',
+220 silly addNameRange     '0.7.7' ] ]
+221 silly addNamed v8-debug@0.7.7
+222 verbose addNamed "0.7.7" is a plain semver version for v8-debug
+223 http 304 https://registry.npmjs.org/glob
+224 verbose headers { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+224 verbose headers   via: '1.1 varnish',
+224 verbose headers   'cache-control': 'max-age=300',
+224 verbose headers   etag: '"DOORNHLO7ZOXA1DFB3NMQUQWE"',
+224 verbose headers   age: '158',
+224 verbose headers   connection: 'keep-alive',
+224 verbose headers   'x-served-by': 'cache-hkg6820-HKG',
+224 verbose headers   'x-cache': 'HIT',
+224 verbose headers   'x-cache-hits': '13',
+224 verbose headers   'x-timer': 'S1478839080.302301,VS0,VE0',
+224 verbose headers   vary: 'Accept-Encoding' }
+225 silly get cb [ 304,
+225 silly get   { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+225 silly get     via: '1.1 varnish',
+225 silly get     'cache-control': 'max-age=300',
+225 silly get     etag: '"DOORNHLO7ZOXA1DFB3NMQUQWE"',
+225 silly get     age: '158',
+225 silly get     connection: 'keep-alive',
+225 silly get     'x-served-by': 'cache-hkg6820-HKG',
+225 silly get     'x-cache': 'HIT',
+225 silly get     'x-cache-hits': '13',
+225 silly get     'x-timer': 'S1478839080.302301,VS0,VE0',
+225 silly get     vary: 'Accept-Encoding' } ]
+226 verbose etag https://registry.npmjs.org/glob from cache
+227 verbose get saving glob to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/glob/.cache.json
+228 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+229 http 304 https://registry.npmjs.org/semver
+230 verbose headers { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+230 verbose headers   via: '1.1 varnish',
+230 verbose headers   'cache-control': 'max-age=300',
+230 verbose headers   etag: '"9EJY4LGTKOPUAAVLV2EPIIFIH"',
+230 verbose headers   age: '193',
+230 verbose headers   connection: 'keep-alive',
+230 verbose headers   'x-served-by': 'cache-hkg6821-HKG',
+230 verbose headers   'x-cache': 'HIT',
+230 verbose headers   'x-cache-hits': '17',
+230 verbose headers   'x-timer': 'S1478839080.305025,VS0,VE0',
+230 verbose headers   vary: 'Accept-Encoding' }
+231 silly get cb [ 304,
+231 silly get   { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+231 silly get     via: '1.1 varnish',
+231 silly get     'cache-control': 'max-age=300',
+231 silly get     etag: '"9EJY4LGTKOPUAAVLV2EPIIFIH"',
+231 silly get     age: '193',
+231 silly get     connection: 'keep-alive',
+231 silly get     'x-served-by': 'cache-hkg6821-HKG',
+231 silly get     'x-cache': 'HIT',
+231 silly get     'x-cache-hits': '17',
+231 silly get     'x-timer': 'S1478839080.305025,VS0,VE0',
+231 silly get     vary: 'Accept-Encoding' } ]
+232 verbose etag https://registry.npmjs.org/semver from cache
+233 verbose get saving semver to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/semver/.cache.json
+234 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+235 silly cache afterAdd v8-debug@0.7.7
+236 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/v8-debug/0.7.7/package/package.json not in flight; writing
+237 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+238 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/v8-debug/0.7.7/package/package.json written
+239 silly resolveWithNewModule glob@5.0.15 checking installable status
+240 silly cache add args [ 'glob@^5.0.5', null ]
+241 verbose cache add spec glob@^5.0.5
+242 silly cache add parsed spec Result {
+242 silly cache add   raw: 'glob@^5.0.5',
+242 silly cache add   scope: null,
+242 silly cache add   escapedName: 'glob',
+242 silly cache add   name: 'glob',
+242 silly cache add   rawSpec: '^5.0.5',
+242 silly cache add   spec: '>=5.0.5 <6.0.0',
+242 silly cache add   type: 'range' }
+243 silly addNamed glob@>=5.0.5 <6.0.0
+244 verbose addNamed ">=5.0.5 <6.0.0" is a valid semver range for glob
+245 silly addNameRange { name: 'glob', range: '>=5.0.5 <6.0.0', hasData: false }
+246 silly mapToRegistry name glob
+247 silly mapToRegistry using default registry
+248 silly mapToRegistry registry https://registry.npmjs.org/
+249 silly mapToRegistry data Result {
+249 silly mapToRegistry   raw: 'glob',
+249 silly mapToRegistry   scope: null,
+249 silly mapToRegistry   escapedName: 'glob',
+249 silly mapToRegistry   name: 'glob',
+249 silly mapToRegistry   rawSpec: '',
+249 silly mapToRegistry   spec: 'latest',
+249 silly mapToRegistry   type: 'tag' }
+250 silly mapToRegistry uri https://registry.npmjs.org/glob
+251 verbose addNameRange registry:https://registry.npmjs.org/glob not in flight; fetching
+252 silly resolveWithNewModule semver@4.3.6 checking installable status
+253 silly cache add args [ 'semver@^4.3.4', null ]
+254 verbose cache add spec semver@^4.3.4
+255 silly cache add parsed spec Result {
+255 silly cache add   raw: 'semver@^4.3.4',
+255 silly cache add   scope: null,
+255 silly cache add   escapedName: 'semver',
+255 silly cache add   name: 'semver',
+255 silly cache add   rawSpec: '^4.3.4',
+255 silly cache add   spec: '>=4.3.4 <5.0.0',
+255 silly cache add   type: 'range' }
+256 silly addNamed semver@>=4.3.4 <5.0.0
+257 verbose addNamed ">=4.3.4 <5.0.0" is a valid semver range for semver
+258 silly addNameRange { name: 'semver', range: '>=4.3.4 <5.0.0', hasData: false }
+259 silly mapToRegistry name semver
+260 silly mapToRegistry using default registry
+261 silly mapToRegistry registry https://registry.npmjs.org/
+262 silly mapToRegistry data Result {
+262 silly mapToRegistry   raw: 'semver',
+262 silly mapToRegistry   scope: null,
+262 silly mapToRegistry   escapedName: 'semver',
+262 silly mapToRegistry   name: 'semver',
+262 silly mapToRegistry   rawSpec: '',
+262 silly mapToRegistry   spec: 'latest',
+262 silly mapToRegistry   type: 'tag' }
+263 silly mapToRegistry uri https://registry.npmjs.org/semver
+264 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+265 http 304 https://registry.npmjs.org/which
+266 verbose headers { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+266 verbose headers   via: '1.1 varnish',
+266 verbose headers   'cache-control': 'max-age=300',
+266 verbose headers   etag: '"2KFIPWGAL54RH75Q4VKLWD6E0"',
+266 verbose headers   age: '104',
+266 verbose headers   connection: 'keep-alive',
+266 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+266 verbose headers   'x-cache': 'HIT',
+266 verbose headers   'x-cache-hits': '5',
+266 verbose headers   'x-timer': 'S1478839080.315848,VS0,VE0',
+266 verbose headers   vary: 'Accept-Encoding' }
+267 silly get cb [ 304,
+267 silly get   { date: 'Fri, 11 Nov 2016 04:38:00 GMT',
+267 silly get     via: '1.1 varnish',
+267 silly get     'cache-control': 'max-age=300',
+267 silly get     etag: '"2KFIPWGAL54RH75Q4VKLWD6E0"',
+267 silly get     age: '104',
+267 silly get     connection: 'keep-alive',
+267 silly get     'x-served-by': 'cache-hkg6824-HKG',
+267 silly get     'x-cache': 'HIT',
+267 silly get     'x-cache-hits': '5',
+267 silly get     'x-timer': 'S1478839080.315848,VS0,VE0',
+267 silly get     vary: 'Accept-Encoding' } ]
+268 verbose etag https://registry.npmjs.org/which from cache
+269 verbose get saving which to /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/registry.npmjs.org/which/.cache.json
+270 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+271 verbose get https://registry.npmjs.org/glob not expired, no request
+272 silly addNameRange number 2 { name: 'glob', range: '>=5.0.5 <6.0.0', hasData: true }
+273 silly addNameRange versions [ 'glob',
+273 silly addNameRange   [ '1.1.0',
+273 silly addNameRange     '2.0.9',
+273 silly addNameRange     '2.0.8',
+273 silly addNameRange     '2.0.7',
+273 silly addNameRange     '2.1.0',
+273 silly addNameRange     '3.0.0',
+273 silly addNameRange     '3.0.1',
+273 silly addNameRange     '3.1.0',
+273 silly addNameRange     '3.1.1',
+273 silly addNameRange     '3.1.2',
+273 silly addNameRange     '3.1.3',
+273 silly addNameRange     '3.1.4',
+273 silly addNameRange     '3.1.5',
+273 silly addNameRange     '3.1.6',
+273 silly addNameRange     '3.1.7',
+273 silly addNameRange     '3.1.9',
+273 silly addNameRange     '3.1.10',
+273 silly addNameRange     '3.1.11',
+273 silly addNameRange     '3.1.12',
+273 silly addNameRange     '3.1.13',
+273 silly addNameRange     '3.1.14',
+273 silly addNameRange     '3.1.15',
+273 silly addNameRange     '3.1.16',
+273 silly addNameRange     '3.1.17',
+273 silly addNameRange     '3.1.18',
+273 silly addNameRange     '3.1.19',
+273 silly addNameRange     '3.1.20',
+273 silly addNameRange     '3.1.21',
+273 silly addNameRange     '3.2.0',
+273 silly addNameRange     '3.2.1',
+273 silly addNameRange     '3.2.3',
+273 silly addNameRange     '3.2.4',
+273 silly addNameRange     '3.2.5',
+273 silly addNameRange     '3.2.6',
+273 silly addNameRange     '3.2.7',
+273 silly addNameRange     '3.2.8',
+273 silly addNameRange     '3.2.9',
+273 silly addNameRange     '3.2.10',
+273 silly addNameRange     '3.2.11',
+273 silly addNameRange     '4.0.0',
+273 silly addNameRange     '4.0.1',
+273 silly addNameRange     '4.0.2',
+273 silly addNameRange     '4.0.3',
+273 silly addNameRange     '4.0.4',
+273 silly addNameRange     '4.0.5',
+273 silly addNameRange     '4.0.6',
+273 silly addNameRange     '4.1.2-beta',
+273 silly addNameRange     '4.1.2',
+273 silly addNameRange     '4.1.3',
+273 silly addNameRange     '4.1.4',
+273 silly addNameRange     '4.1.5',
+273 silly addNameRange     '4.1.6',
+273 silly addNameRange     '4.2.0',
+273 silly addNameRange     '4.2.1',
+273 silly addNameRange     '4.2.2',
+273 silly addNameRange     '4.3.0',
+273 silly addNameRange     '4.3.1',
+273 silly addNameRange     '4.3.2',
+273 silly addNameRange     '4.3.3',
+273 silly addNameRange     '4.3.4',
+273 silly addNameRange     '4.3.5',
+273 silly addNameRange     '4.4.0',
+273 silly addNameRange     '4.4.2',
+273 silly addNameRange     '4.5.0',
+273 silly addNameRange     '5.0.0',
+273 silly addNameRange     '4.5.1',
+273 silly addNameRange     '5.0.1',
+273 silly addNameRange     '4.5.2',
+273 silly addNameRange     '5.0.2',
+273 silly addNameRange     '4.5.3',
+273 silly addNameRange     '5.0.3',
+273 silly addNameRange     '5.0.4',
+273 silly addNameRange     '5.0.5',
+273 silly addNameRange     '5.0.6',
+273 silly addNameRange     '5.0.7',
+273 silly addNameRange     '5.0.9',
+273 silly addNameRange     '5.0.10',
+273 silly addNameRange     '5.0.11',
+273 silly addNameRange     '5.0.12',
+273 silly addNameRange     '5.0.13',
+273 silly addNameRange     '5.0.14',
+273 silly addNameRange     '5.0.15',
+273 silly addNameRange     '6.0.1',
+273 silly addNameRange     '6.0.2',
+273 silly addNameRange     '6.0.3',
+273 silly addNameRange     '6.0.4',
+273 silly addNameRange     '7.0.0',
+273 silly addNameRange     '7.0.1',
+273 silly addNameRange     '7.0.3',
+273 silly addNameRange     '7.0.4',
+273 silly addNameRange     '7.0.5',
+273 silly addNameRange     '7.0.6',
+273 silly addNameRange     '7.1.0',
+273 silly addNameRange     '7.1.1' ] ]
+274 silly addNamed glob@5.0.15
+275 verbose addNamed "5.0.15" is a plain semver version for glob
+276 verbose get https://registry.npmjs.org/semver not expired, no request
+277 silly addNameRange number 2 { name: 'semver', range: '>=4.3.4 <5.0.0', hasData: true }
+278 silly addNameRange versions [ 'semver',
+278 silly addNameRange   [ '1.0.0',
+278 silly addNameRange     '1.0.1',
+278 silly addNameRange     '1.0.2',
+278 silly addNameRange     '1.0.3',
+278 silly addNameRange     '1.0.4',
+278 silly addNameRange     '1.0.5',
+278 silly addNameRange     '1.0.6',
+278 silly addNameRange     '1.0.7',
+278 silly addNameRange     '1.0.8',
+278 silly addNameRange     '1.0.9',
+278 silly addNameRange     '1.0.10',
+278 silly addNameRange     '1.0.11',
+278 silly addNameRange     '1.0.12',
+278 silly addNameRange     '1.0.13',
+278 silly addNameRange     '1.0.14',
+278 silly addNameRange     '1.1.0',
+278 silly addNameRange     '1.1.1',
+278 silly addNameRange     '1.1.2',
+278 silly addNameRange     '1.1.3',
+278 silly addNameRange     '1.1.4',
+278 silly addNameRange     '2.0.0-alpha',
+278 silly addNameRange     '2.0.0-beta',
+278 silly addNameRange     '2.0.1',
+278 silly addNameRange     '2.0.2',
+278 silly addNameRange     '2.0.3',
+278 silly addNameRange     '2.0.4',
+278 silly addNameRange     '2.0.5',
+278 silly addNameRange     '2.0.6',
+278 silly addNameRange     '2.0.7',
+278 silly addNameRange     '2.0.8',
+278 silly addNameRange     '2.0.9',
+278 silly addNameRange     '2.0.10',
+278 silly addNameRange     '2.0.11',
+278 silly addNameRange     '2.1.0',
+278 silly addNameRange     '2.2.0',
+278 silly addNameRange     '2.2.1',
+278 silly addNameRange     '2.3.0',
+278 silly addNameRange     '2.3.1',
+278 silly addNameRange     '2.3.2',
+278 silly addNameRange     '3.0.0',
+278 silly addNameRange     '3.0.1',
+278 silly addNameRange     '4.0.0',
+278 silly addNameRange     '4.0.2',
+278 silly addNameRange     '4.0.3',
+278 silly addNameRange     '4.1.0',
+278 silly addNameRange     '4.1.1',
+278 silly addNameRange     '4.2.0',
+278 silly addNameRange     '4.2.1',
+278 silly addNameRange     '4.2.2',
+278 silly addNameRange     '4.3.0',
+278 silly addNameRange     '4.3.1',
+278 silly addNameRange     '4.3.2',
+278 silly addNameRange     '4.3.3',
+278 silly addNameRange     '4.3.4',
+278 silly addNameRange     '4.3.5',
+278 silly addNameRange     '4.3.6',
+278 silly addNameRange     '5.0.0',
+278 silly addNameRange     '5.0.1',
+278 silly addNameRange     '5.0.2',
+278 silly addNameRange     '5.0.3',
+278 silly addNameRange     '5.1.0',
+278 silly addNameRange     '5.1.1',
+278 silly addNameRange     '5.2.0',
+278 silly addNameRange     '5.3.0' ] ]
+279 silly addNamed semver@4.3.6
+280 verbose addNamed "4.3.6" is a plain semver version for semver
+281 silly cache afterAdd glob@5.0.15
+282 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/glob/5.0.15/package/package.json not in flight; writing
+283 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+284 silly cache afterAdd semver@4.3.6
+285 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/semver/4.3.6/package/package.json not in flight; writing
+286 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+287 silly resolveWithNewModule which@1.2.11 checking installable status
+288 silly cache add args [ 'which@^1.1.1', null ]
+289 verbose cache add spec which@^1.1.1
+290 silly cache add parsed spec Result {
+290 silly cache add   raw: 'which@^1.1.1',
+290 silly cache add   scope: null,
+290 silly cache add   escapedName: 'which',
+290 silly cache add   name: 'which',
+290 silly cache add   rawSpec: '^1.1.1',
+290 silly cache add   spec: '>=1.1.1 <2.0.0',
+290 silly cache add   type: 'range' }
+291 silly addNamed which@>=1.1.1 <2.0.0
+292 verbose addNamed ">=1.1.1 <2.0.0" is a valid semver range for which
+293 silly addNameRange { name: 'which', range: '>=1.1.1 <2.0.0', hasData: false }
+294 silly mapToRegistry name which
+295 silly mapToRegistry using default registry
+296 silly mapToRegistry registry https://registry.npmjs.org/
+297 silly mapToRegistry data Result {
+297 silly mapToRegistry   raw: 'which',
+297 silly mapToRegistry   scope: null,
+297 silly mapToRegistry   escapedName: 'which',
+297 silly mapToRegistry   name: 'which',
+297 silly mapToRegistry   rawSpec: '',
+297 silly mapToRegistry   spec: 'latest',
+297 silly mapToRegistry   type: 'tag' }
+298 silly mapToRegistry uri https://registry.npmjs.org/which
+299 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+300 verbose get https://registry.npmjs.org/which not expired, no request
+301 silly addNameRange number 2 { name: 'which', range: '>=1.1.1 <2.0.0', hasData: true }
+302 silly addNameRange versions [ 'which',
+302 silly addNameRange   [ '1.0.0',
+302 silly addNameRange     '1.0.1',
+302 silly addNameRange     '1.0.2',
+302 silly addNameRange     '1.0.3',
+302 silly addNameRange     '1.0.5',
+302 silly addNameRange     '1.0.6',
+302 silly addNameRange     '1.0.7',
+302 silly addNameRange     '1.0.8',
+302 silly addNameRange     '1.0.9',
+302 silly addNameRange     '1.1.0',
+302 silly addNameRange     '1.1.1',
+302 silly addNameRange     '1.1.2',
+302 silly addNameRange     '1.2.0',
+302 silly addNameRange     '1.2.1',
+302 silly addNameRange     '1.2.4',
+302 silly addNameRange     '1.2.5',
+302 silly addNameRange     '1.2.6',
+302 silly addNameRange     '1.2.7',
+302 silly addNameRange     '1.2.8',
+302 silly addNameRange     '1.2.9',
+302 silly addNameRange     '1.2.10',
+302 silly addNameRange     '1.2.11' ] ]
+303 silly addNamed which@1.2.11
+304 verbose addNamed "1.2.11" is a plain semver version for which
+305 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/glob/5.0.15/package/package.json written
+306 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/semver/4.3.6/package/package.json written
+307 silly cache afterAdd which@1.2.11
+308 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/which/1.2.11/package/package.json not in flight; writing
+309 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm correctMkdir not in flight; initializing
+310 verbose afterAdd /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/which/1.2.11/package/package.json written
+311 silly loadAllDepsIntoIdealTree Finishing
+312 silly loadIdealTree Finishing
+313 silly currentTree frontend@1.0.0
+313 silly currentTree ├── abbrev@1.0.9
+313 silly currentTree ├── accepts@1.3.3
+313 silly currentTree ├── after@0.8.2
+313 silly currentTree ├── align-text@0.1.4
+313 silly currentTree ├── amdefine@1.0.1
+313 silly currentTree ├── amqp@0.2.6
+313 silly currentTree ├── ansi-regex@2.0.0
+313 silly currentTree ├── ansi-styles@2.2.1
+313 silly currentTree ├── anymatch@1.3.0
+313 silly currentTree ├── append-field@0.1.0
+313 silly currentTree ├── aproba@1.0.4
+313 silly currentTree ├── are-we-there-yet@1.1.2
+313 silly currentTree ├─┬ argparse@0.1.16
+313 silly currentTree │ └── underscore.string@2.4.0
+313 silly currentTree ├── arr-diff@2.0.0
+313 silly currentTree ├── arr-flatten@1.0.1
+313 silly currentTree ├── array-find-index@1.0.2
+313 silly currentTree ├── array-flatten@1.1.1
+313 silly currentTree ├── array-uniq@1.0.3
+313 silly currentTree ├── array-unique@0.2.1
+313 silly currentTree ├── arrify@1.0.1
+313 silly currentTree ├── asap@2.0.5
+313 silly currentTree ├── asn1@0.2.3
+313 silly currentTree ├── assert-plus@0.2.0
+313 silly currentTree ├── assertion-error@1.0.2
+313 silly currentTree ├── async-each@1.0.1
+313 silly currentTree ├── async@2.1.2
+313 silly currentTree ├── asynckit@0.4.0
+313 silly currentTree ├── aws-sdk@2.7.0
+313 silly currentTree ├── aws-sign2@0.6.0
+313 silly currentTree ├── aws4@1.5.0
+313 silly currentTree ├── balanced-match@0.4.2
+313 silly currentTree ├── base64-js@1.2.0
+313 silly currentTree ├── base64-url@1.2.2
+313 silly currentTree ├── basic-auth@1.0.4
+313 silly currentTree ├── bcrypt-pbkdf@1.0.0
+313 silly currentTree ├─┬ biased-opener@0.2.8
+313 silly currentTree │ └── minimist@1.2.0
+313 silly currentTree ├── big-integer@1.6.17
+313 silly currentTree ├─┬ bin-version-check@2.1.0
+313 silly currentTree │ ├── minimist@1.2.0
+313 silly currentTree │ └── semver@4.3.6
+313 silly currentTree ├── bin-version@1.0.4
+313 silly currentTree ├── binary-extensions@1.7.0
+313 silly currentTree ├─┬ bl@1.1.2
+313 silly currentTree │ └── readable-stream@2.0.6
+313 silly currentTree ├── block-stream@0.0.9
+313 silly currentTree ├── bluebird@3.4.6
+313 silly currentTree ├─┬ body-parser@1.15.2
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├── boom@2.10.1
+313 silly currentTree ├── bplist-parser@0.1.1
+313 silly currentTree ├── brace-expansion@1.1.6
+313 silly currentTree ├── braces@1.8.5
+313 silly currentTree ├─┬ browser-launcher2@0.4.6
+313 silly currentTree │ ├── lodash@2.4.2
+313 silly currentTree │ └── rimraf@2.2.8
+313 silly currentTree ├── buffer-shims@1.0.0
+313 silly currentTree ├── buffer@4.9.1
+313 silly currentTree ├── builtin-modules@1.1.1
+313 silly currentTree ├── bunyan@1.8.4
+313 silly currentTree ├── busboy@0.2.13
+313 silly currentTree ├── bytes@2.4.0
+313 silly currentTree ├─┬ camelcase-keys@2.1.0
+313 silly currentTree │ └── camelcase@2.1.1
+313 silly currentTree ├── camelcase@1.2.1
+313 silly currentTree ├── caseless@0.11.0
+313 silly currentTree ├── center-align@0.1.3
+313 silly currentTree ├── chai-as-promised@5.3.0
+313 silly currentTree ├── chai@3.5.0
+313 silly currentTree ├── chalk@1.1.3
+313 silly currentTree ├── chokidar@1.6.1
+313 silly currentTree ├── cliui@2.1.0
+313 silly currentTree ├── cls-bluebird@1.1.3
+313 silly currentTree ├── code-point-at@1.1.0
+313 silly currentTree ├── coffee-script@1.3.3
+313 silly currentTree ├── color-convert@0.5.3
+313 silly currentTree ├── color-name@1.1.1
+313 silly currentTree ├── color-string@0.3.0
+313 silly currentTree ├── color@0.10.1
+313 silly currentTree ├── colors@1.0.3
+313 silly currentTree ├── combined-stream@1.0.5
+313 silly currentTree ├── commander@2.9.0
+313 silly currentTree ├── component-emitter@1.2.1
+313 silly currentTree ├── concat-map@0.0.1
+313 silly currentTree ├─┬ concat-stream@1.5.2
+313 silly currentTree │ └── readable-stream@2.0.6
+313 silly currentTree ├─┬ configstore@1.4.0
+313 silly currentTree │ └── object-assign@4.1.0
+313 silly currentTree ├── connect-redis@3.1.0
+313 silly currentTree ├── console-control-strings@1.1.0
+313 silly currentTree ├── content-disposition@0.5.1
+313 silly currentTree ├── content-type@1.0.2
+313 silly currentTree ├─┬ convict@1.5.0
+313 silly currentTree │ ├── depd@1.1.0
+313 silly currentTree │ ├── json5@0.5.0
+313 silly currentTree │ ├── lodash@4.16.2
+313 silly currentTree │ ├── minimist@1.2.0
+313 silly currentTree │ ├── moment@2.12.0
+313 silly currentTree │ ├── validator@4.6.1
+313 silly currentTree │ └─┬ varify@0.1.1
+313 silly currentTree │   ├─┬ redeyed@0.4.4
+313 silly currentTree │   │ └── esprima@1.0.4
+313 silly currentTree │   └── through@2.3.8
+313 silly currentTree ├── cookie-parser@1.4.3
+313 silly currentTree ├── cookie-signature@1.0.6
+313 silly currentTree ├── cookie@0.3.1
+313 silly currentTree ├── cookiejar@2.0.6
+313 silly currentTree ├── core-util-is@1.0.2
+313 silly currentTree ├── crc@3.4.1
+313 silly currentTree ├── cryptiles@2.0.5
+313 silly currentTree ├── crypto-browserify@1.0.9
+313 silly currentTree ├── csrf@3.0.3
+313 silly currentTree ├── csurf@1.9.0
+313 silly currentTree ├── csv-generate@0.0.6
+313 silly currentTree ├── csv-parse@1.1.7
+313 silly currentTree ├── csv-stringify@0.0.8
+313 silly currentTree ├── csv@0.4.6
+313 silly currentTree ├── currently-unhandled@0.4.1
+313 silly currentTree ├── cycle@1.0.3
+313 silly currentTree ├── dargs@2.1.0
+313 silly currentTree ├─┬ dashdash@1.14.0
+313 silly currentTree │ └── assert-plus@1.0.0
+313 silly currentTree ├── dateformat@1.0.2-1.2.3
+313 silly currentTree ├── debug@2.3.2
+313 silly currentTree ├── decamelize@1.2.0
+313 silly currentTree ├─┬ deep-eql@0.1.3
+313 silly currentTree │ └── type-detect@0.1.1
+313 silly currentTree ├── deep-extend@0.4.1
+313 silly currentTree ├── deep-freeze@0.0.1
+313 silly currentTree ├── default-browser-id@1.0.4
+313 silly currentTree ├── define-properties@1.1.2
+313 silly currentTree ├── definition-header@0.1.0
+313 silly currentTree ├── delayed-stream@1.0.0
+313 silly currentTree ├── delegates@1.0.0
+313 silly currentTree ├── depd@1.1.0
+313 silly currentTree ├── destroy@1.0.4
+313 silly currentTree ├─┬ detect-indent@0.2.0
+313 silly currentTree │ ├── get-stdin@0.1.0
+313 silly currentTree │ └── minimist@0.1.0
+313 silly currentTree ├── dicer@0.2.5
+313 silly currentTree ├── diff@1.4.0
+313 silly currentTree ├── double-ended-queue@2.1.0-0
+313 silly currentTree ├── dtrace-provider@0.7.1
+313 silly currentTree ├── duplexer@0.1.1
+313 silly currentTree ├─┬ duplexify@3.5.0
+313 silly currentTree │ └── readable-stream@2.2.1
+313 silly currentTree ├── ecc-jsbn@0.1.1
+313 silly currentTree ├── ee-first@1.1.1
+313 silly currentTree ├── encodeurl@1.0.1
+313 silly currentTree ├─┬ end-of-stream@1.0.0
+313 silly currentTree │ └── once@1.3.3
+313 silly currentTree ├── error-ex@1.3.0
+313 silly currentTree ├── es-abstract@1.6.1
+313 silly currentTree ├── es-to-primitive@1.1.1
+313 silly currentTree ├── es6-promise@3.3.1
+313 silly currentTree ├── escape-html@1.0.3
+313 silly currentTree ├── escape-string-regexp@1.0.5
+313 silly currentTree ├── esprima@1.0.4
+313 silly currentTree ├── etag@1.7.0
+313 silly currentTree ├── event-stream@3.3.4
+313 silly currentTree ├── eventemitter2@0.4.14
+313 silly currentTree ├── exit@0.1.2
+313 silly currentTree ├── expand-brackets@0.1.5
+313 silly currentTree ├── expand-range@1.8.2
+313 silly currentTree ├─┬ express-session@1.14.2
+313 silly currentTree │ ├── base64-url@1.3.3
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ ├── ms@0.7.1
+313 silly currentTree │ └── uid-safe@2.1.3
+313 silly currentTree ├─┬ express@4.14.0
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├── extend@3.0.0
+313 silly currentTree ├── extglob@0.3.2
+313 silly currentTree ├── extsprintf@1.0.2
+313 silly currentTree ├── eyes@0.1.8
+313 silly currentTree ├── faye-websocket@0.4.4
+313 silly currentTree ├── file-sync-cmp@0.1.1
+313 silly currentTree ├── filename-regex@2.0.0
+313 silly currentTree ├── fill-range@2.2.3
+313 silly currentTree ├─┬ finalhandler@0.5.0
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├── find-up@1.1.2
+313 silly currentTree ├── find-versions@1.2.1
+313 silly currentTree ├─┬ findup-sync@0.1.3
+313 silly currentTree │ ├── glob@3.2.11
+313 silly currentTree │ ├── lodash@2.4.2
+313 silly currentTree │ └── minimatch@0.3.0
+313 silly currentTree ├── flatten@0.0.1
+313 silly currentTree ├── for-in@0.1.6
+313 silly currentTree ├── for-own@0.1.4
+313 silly currentTree ├── foreach@2.0.5
+313 silly currentTree ├── forever-agent@0.6.1
+313 silly currentTree ├── form-data@1.0.1
+313 silly currentTree ├── formatio@1.1.1
+313 silly currentTree ├── formidable@1.0.17
+313 silly currentTree ├─┬ forms@1.2.0
+313 silly currentTree │ └── qs@6.3.0
+313 silly currentTree ├── forwarded@0.1.0
+313 silly currentTree ├── fresh@0.3.0
+313 silly currentTree ├── from@0.1.3
+313 silly currentTree ├── fs-extra@0.22.1
+313 silly currentTree ├── fs.realpath@1.0.0
+313 silly currentTree ├── fstream-ignore@1.0.5
+313 silly currentTree ├── fstream@1.0.10
+313 silly currentTree ├── function-bind@1.1.0
+313 silly currentTree ├─┬ gauge@2.6.0
+313 silly currentTree │ └── object-assign@4.1.0
+313 silly currentTree ├── gaze@0.5.2
+313 silly currentTree ├── generate-function@2.0.0
+313 silly currentTree ├── generate-object-property@1.2.0
+313 silly currentTree ├── get-stdin@4.0.1
+313 silly currentTree ├── getobject@0.1.0
+313 silly currentTree ├─┬ getpass@0.1.6
+313 silly currentTree │ └── assert-plus@1.0.0
+313 silly currentTree ├── glob-base@0.3.0
+313 silly currentTree ├── glob-parent@2.0.0
+313 silly currentTree ├── glob@6.0.4
+313 silly currentTree ├─┬ globule@0.1.0
+313 silly currentTree │ ├── glob@3.1.21
+313 silly currentTree │ ├── graceful-fs@1.2.3
+313 silly currentTree │ ├── inherits@1.0.2
+313 silly currentTree │ ├── lodash@1.0.2
+313 silly currentTree │ └── minimatch@0.2.14
+313 silly currentTree ├── got@3.3.1
+313 silly currentTree ├── graceful-fs@4.1.10
+313 silly currentTree ├── graceful-readlink@1.0.1
+313 silly currentTree ├── growl@1.9.2
+313 silly currentTree ├─┬ grunt-concurrent@2.3.1
+313 silly currentTree │ └── async@1.5.2
+313 silly currentTree ├─┬ grunt-contrib-compass@1.1.1
+313 silly currentTree │ └── async@1.5.2
+313 silly currentTree ├── grunt-contrib-copy@0.8.2
+313 silly currentTree ├── grunt-contrib-requirejs@0.4.4
+313 silly currentTree ├─┬ grunt-contrib-watch@0.6.1
+313 silly currentTree │ ├── async@0.2.10
+313 silly currentTree │ └── lodash@2.4.2
+313 silly currentTree ├─┬ grunt-legacy-log-utils@0.1.1
+313 silly currentTree │ ├── colors@0.6.2
+313 silly currentTree │ ├── lodash@2.4.2
+313 silly currentTree │ └── underscore.string@2.3.3
+313 silly currentTree ├─┬ grunt-legacy-log@0.1.3
+313 silly currentTree │ ├── colors@0.6.2
+313 silly currentTree │ ├── lodash@2.4.2
+313 silly currentTree │ └── underscore.string@2.3.3
+313 silly currentTree ├─┬ grunt-legacy-util@0.2.0
+313 silly currentTree │ ├── async@0.1.22
+313 silly currentTree │ └── lodash@0.9.2
+313 silly currentTree ├── grunt-nodemon@0.4.2
+313 silly currentTree ├─┬ grunt@0.4.5
+313 silly currentTree │ ├── async@0.1.22
+313 silly currentTree │ ├── colors@0.6.2
+313 silly currentTree │ ├── glob@3.1.21
+313 silly currentTree │ ├── graceful-fs@1.2.3
+313 silly currentTree │ ├── iconv-lite@0.2.11
+313 silly currentTree │ ├── inherits@1.0.2
+313 silly currentTree │ ├── lodash@0.9.2
+313 silly currentTree │ ├── minimatch@0.2.14
+313 silly currentTree │ └── rimraf@2.2.8
+313 silly currentTree ├── handlebars@3.0.3
+313 silly currentTree ├── har-validator@2.0.6
+313 silly currentTree ├── has-ansi@2.0.0
+313 silly currentTree ├── has-color@0.1.7
+313 silly currentTree ├── has-unicode@2.0.1
+313 silly currentTree ├── hawk@3.1.3
+313 silly currentTree ├── headless@0.1.7
+313 silly currentTree ├── highlight.js@8.9.1
+313 silly currentTree ├── hoek@2.16.3
+313 silly currentTree ├── hooker@0.2.3
+313 silly currentTree ├── hosted-git-info@2.1.5
+313 silly currentTree ├── http-errors@1.5.0
+313 silly currentTree ├── http-signature@1.1.1
+313 silly currentTree ├── iconv-lite@0.4.13
+313 silly currentTree ├── ieee754@1.1.8
+313 silly currentTree ├── ignore-by-default@1.0.1
+313 silly currentTree ├── imurmurhash@0.1.4
+313 silly currentTree ├── indent-string@2.1.0
+313 silly currentTree ├── infinity-agent@2.0.3
+313 silly currentTree ├── inflight@1.0.6
+313 silly currentTree ├── inherits@2.0.1
+313 silly currentTree ├── ini@1.3.4
+313 silly currentTree ├── intravenous@0.1.4-beta
+313 silly currentTree ├── invert-kv@1.0.0
+313 silly currentTree ├── ipaddr.js@1.1.1
+313 silly currentTree ├── is-arrayish@0.2.1
+313 silly currentTree ├── is-binary-path@1.0.1
+313 silly currentTree ├── is-bluebird@1.0.2
+313 silly currentTree ├── is-buffer@1.1.4
+313 silly currentTree ├── is-builtin-module@1.0.0
+313 silly currentTree ├── is-callable@1.1.3
+313 silly currentTree ├── is-date-object@1.0.1
+313 silly currentTree ├── is-dotfile@1.0.2
+313 silly currentTree ├── is-equal-shallow@0.1.3
+313 silly currentTree ├── is-extendable@0.1.1
+313 silly currentTree ├── is-extglob@1.0.0
+313 silly currentTree ├── is-finite@1.0.2
+313 silly currentTree ├── is-fullwidth-code-point@1.0.0
+313 silly currentTree ├── is-glob@2.0.1
+313 silly currentTree ├── is-my-json-valid@2.15.0
+313 silly currentTree ├── is-npm@1.0.0
+313 silly currentTree ├── is-number@2.1.0
+313 silly currentTree ├── is-posix-bracket@0.1.1
+313 silly currentTree ├── is-primitive@2.0.0
+313 silly currentTree ├── is-property@1.0.2
+313 silly currentTree ├── is-redirect@1.0.0
+313 silly currentTree ├── is-regex@1.0.3
+313 silly currentTree ├── is-stream@1.1.0
+313 silly currentTree ├── is-symbol@1.0.1
+313 silly currentTree ├── is-typedarray@1.0.0
+313 silly currentTree ├── is-utf8@0.2.1
+313 silly currentTree ├── is@3.2.0
+313 silly currentTree ├── isarray@1.0.0
+313 silly currentTree ├── isemail@1.2.0
+313 silly currentTree ├── isexe@1.1.2
+313 silly currentTree ├── isobject@2.1.0
+313 silly currentTree ├── isstream@0.1.2
+313 silly currentTree ├─┬ jade@0.26.3
+313 silly currentTree │ ├── commander@0.6.1
+313 silly currentTree │ └── mkdirp@0.3.0
+313 silly currentTree ├── jmespath@0.15.0
+313 silly currentTree ├── jodid25519@1.0.2
+313 silly currentTree ├── joi-assert@0.0.3
+313 silly currentTree ├── joi@4.9.0
+313 silly currentTree ├── js-yaml@2.0.5
+313 silly currentTree ├── jsbn@0.1.0
+313 silly currentTree ├── jsesc@0.5.0
+313 silly currentTree ├── json-pointer@0.2.2
+313 silly currentTree ├── json-schema@0.2.3
+313 silly currentTree ├── json-stringify-safe@5.0.1
+313 silly currentTree ├── jsonfile@2.4.0
+313 silly currentTree ├── jsonpointer@4.0.0
+313 silly currentTree ├── jsprim@1.3.1
+313 silly currentTree ├── kind-of@3.0.4
+313 silly currentTree ├── latest-version@1.0.1
+313 silly currentTree ├── lazy-cache@1.0.4
+313 silly currentTree ├── lazy.js@0.3.2
+313 silly currentTree ├── lcid@1.0.0
+313 silly currentTree ├── load-json-file@1.1.0
+313 silly currentTree ├── lodash._baseassign@3.2.0
+313 silly currentTree ├── lodash._basecopy@3.0.1
+313 silly currentTree ├── lodash._bindcallback@3.0.1
+313 silly currentTree ├── lodash._createassigner@3.1.1
+313 silly currentTree ├── lodash._getnative@3.9.1
+313 silly currentTree ├── lodash._isiterateecall@3.0.9
+313 silly currentTree ├── lodash.assign@3.2.0
+313 silly currentTree ├── lodash.defaults@3.1.2
+313 silly currentTree ├── lodash.isarguments@3.1.0
+313 silly currentTree ├── lodash.isarray@3.0.4
+313 silly currentTree ├── lodash.keys@3.1.2
+313 silly currentTree ├── lodash.restparam@3.6.1
+313 silly currentTree ├── lodash@4.16.6
+313 silly currentTree ├── lolex@1.3.2
+313 silly currentTree ├── longest@1.0.1
+313 silly currentTree ├── loud-rejection@1.6.0
+313 silly currentTree ├── lowercase-keys@1.0.0
+313 silly currentTree ├── lru-cache@2.7.3
+313 silly currentTree ├── map-obj@1.0.1
+313 silly currentTree ├── map-stream@0.1.0
+313 silly currentTree ├── marked@0.3.6
+313 silly currentTree ├── media-typer@0.3.0
+313 silly currentTree ├─┬ meow@3.7.0
+313 silly currentTree │ ├── minimist@1.2.0
+313 silly currentTree │ └── object-assign@4.1.0
+313 silly currentTree ├── merge-descriptors@1.0.1
+313 silly currentTree ├── methods@1.1.2
+313 silly currentTree ├── micromatch@2.3.11
+313 silly currentTree ├── mime-db@1.24.0
+313 silly currentTree ├── mime-types@2.1.12
+313 silly currentTree ├── mime@1.3.4
+313 silly currentTree ├── minichain@0.0.1
+313 silly currentTree ├── minimatch@3.0.3
+313 silly currentTree ├── minimist@0.0.8
+313 silly currentTree ├── ministyle@0.1.4
+313 silly currentTree ├── minitable@0.0.4
+313 silly currentTree ├─┬ miniwrite@0.1.4
+313 silly currentTree │ └── mkdirp@0.3.5
+313 silly currentTree ├── mkdirp@0.5.1
+313 silly currentTree ├── mmmagic@0.4.5
+313 silly currentTree ├─┬ mocha@2.5.3
+313 silly currentTree │ ├── commander@2.3.0
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ ├── escape-string-regexp@1.0.2
+313 silly currentTree │ ├── glob@3.2.11
+313 silly currentTree │ ├── minimatch@0.3.0
+313 silly currentTree │ ├── ms@0.7.1
+313 silly currentTree │ └── supports-color@1.2.0
+313 silly currentTree ├── moment-timezone@0.5.9
+313 silly currentTree ├── moment@2.16.0
+313 silly currentTree ├─┬ morgan@1.7.0
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├── ms@0.7.2
+313 silly currentTree ├── multer@1.2.0
+313 silly currentTree ├── mv@2.1.1
+313 silly currentTree ├── nan@2.4.0
+313 silly currentTree ├── natives@1.1.0
+313 silly currentTree ├─┬ nconf@0.7.2
+313 silly currentTree │ └── async@0.9.2
+313 silly currentTree ├── ncp@2.0.0
+313 silly currentTree ├── negotiator@0.6.1
+313 silly currentTree ├── nested-error-stacks@1.0.2
+313 silly currentTree ├── node-celery@0.2.8
+313 silly currentTree ├─┬ node-pre-gyp@0.6.31
+313 silly currentTree │ ├── form-data@2.1.2
+313 silly currentTree │ ├── glob@7.1.1
+313 silly currentTree │ ├── nopt@3.0.6
+313 silly currentTree │ ├── qs@6.3.0
+313 silly currentTree │ ├── request@2.78.0
+313 silly currentTree │ └── rimraf@2.5.4
+313 silly currentTree ├── node-uuid@1.4.7
+313 silly currentTree ├─┬ node-zendesk@1.1.12
+313 silly currentTree │ └── async@0.9.2
+313 silly currentTree ├── nodemon@1.11.0
+313 silly currentTree ├── nopt@1.0.10
+313 silly currentTree ├─┬ noptify@0.0.3
+313 silly currentTree │ └── nopt@2.0.0
+313 silly currentTree ├── normalize-package-data@2.3.5
+313 silly currentTree ├── normalize-path@2.0.1
+313 silly currentTree ├── npmlog@4.0.0
+313 silly currentTree ├── number-is-nan@1.0.1
+313 silly currentTree ├─┬ nunjucks@2.5.2
+313 silly currentTree │ ├── camelcase@2.1.1
+313 silly currentTree │ ├── cliui@3.2.0
+313 silly currentTree │ └── yargs@3.32.0
+313 silly currentTree ├── oauth-sign@0.8.2
+313 silly currentTree ├── oauth2orize@1.5.1
+313 silly currentTree ├── object-assign@3.0.0
+313 silly currentTree ├── object-keys@1.0.11
+313 silly currentTree ├── object.assign@4.0.4
+313 silly currentTree ├── object.omit@2.0.1
+313 silly currentTree ├── on-finished@2.3.0
+313 silly currentTree ├── on-headers@1.0.1
+313 silly currentTree ├── once@1.4.0
+313 silly currentTree ├── onetime@1.1.0
+313 silly currentTree ├── open@0.0.5
+313 silly currentTree ├── optimist@0.6.1
+313 silly currentTree ├── options@0.0.6
+313 silly currentTree ├── os-homedir@1.0.2
+313 silly currentTree ├── os-locale@1.4.0
+313 silly currentTree ├── os-tmpdir@1.0.2
+313 silly currentTree ├── osenv@0.1.3
+313 silly currentTree ├── package-json@1.2.0
+313 silly currentTree ├── pad-stream@1.2.0
+313 silly currentTree ├── parse-glob@3.0.4
+313 silly currentTree ├── parse-json@2.2.0
+313 silly currentTree ├── parseurl@1.3.1
+313 silly currentTree ├── parsimmon@0.5.1
+313 silly currentTree ├── passport-http-bearer@1.0.1
+313 silly currentTree ├── passport-local@1.0.0
+313 silly currentTree ├── passport-oauth2-client-password@0.1.2
+313 silly currentTree ├── passport-strategy@1.0.0
+313 silly currentTree ├── passport@0.3.2
+313 silly currentTree ├── path-exists@2.1.0
+313 silly currentTree ├── path-is-absolute@1.0.1
+313 silly currentTree ├── path-to-regexp@0.1.7
+313 silly currentTree ├── path-type@1.1.0
+313 silly currentTree ├── pause-stream@0.0.11
+313 silly currentTree ├── pause@0.0.1
+313 silly currentTree ├── pify@2.3.0
+313 silly currentTree ├── pinkie-promise@2.0.1
+313 silly currentTree ├── pinkie@2.0.4
+313 silly currentTree ├── pjs@5.1.1
+313 silly currentTree ├─┬ plist@1.2.0
+313 silly currentTree │ ├── base64-js@0.0.8
+313 silly currentTree │ ├── lodash@3.10.1
+313 silly currentTree │ └── xmlbuilder@4.0.0
+313 silly currentTree ├── prepend-http@1.0.4
+313 silly currentTree ├── preserve@0.2.0
+313 silly currentTree ├── process-nextick-args@1.0.7
+313 silly currentTree ├── progress@1.1.8
+313 silly currentTree ├── proxy-addr@1.1.2
+313 silly currentTree ├── ps-tree@1.1.0
+313 silly currentTree ├─┬ pump@1.0.1
+313 silly currentTree │ └─┬ end-of-stream@1.1.0
+313 silly currentTree │   └── once@1.3.3
+313 silly currentTree ├── pumpify@1.3.5
+313 silly currentTree ├── punycode@1.3.2
+313 silly currentTree ├── qs@6.2.0
+313 silly currentTree ├── querystring@0.2.0
+313 silly currentTree ├── random-bytes@1.0.0
+313 silly currentTree ├── randomatic@1.1.5
+313 silly currentTree ├── range-parser@1.2.0
+313 silly currentTree ├── raw-body@2.1.7
+313 silly currentTree ├─┬ rc@1.1.6
+313 silly currentTree │ └── minimist@1.2.0
+313 silly currentTree ├─┬ read-all-stream@3.1.0
+313 silly currentTree │ └── readable-stream@2.2.1
+313 silly currentTree ├── read-pkg-up@1.0.1
+313 silly currentTree ├── read-pkg@1.1.0
+313 silly currentTree ├─┬ readable-stream@1.1.14
+313 silly currentTree │ └── isarray@0.0.1
+313 silly currentTree ├─┬ readdirp@2.1.0
+313 silly currentTree │ └── readable-stream@2.2.1
+313 silly currentTree ├── redent@1.0.0
+313 silly currentTree ├── redis-commands@1.3.0
+313 silly currentTree ├── redis-parser@2.1.1
+313 silly currentTree ├── redis@2.6.3
+313 silly currentTree ├── reduce-component@1.0.1
+313 silly currentTree ├── regex-cache@0.4.3
+313 silly currentTree ├── registry-url@3.1.0
+313 silly currentTree ├── repeat-element@1.1.2
+313 silly currentTree ├── repeat-string@1.6.1
+313 silly currentTree ├── repeating@2.0.1
+313 silly currentTree ├─┬ request-promise@1.0.2
+313 silly currentTree │ ├── bluebird@2.11.0
+313 silly currentTree │ └── lodash@3.10.1
+313 silly currentTree ├── request@2.74.0
+313 silly currentTree ├── requirejs@2.1.22
+313 silly currentTree ├── right-align@0.1.3
+313 silly currentTree ├── rimraf@2.4.5
+313 silly currentTree ├── rndm@1.2.0
+313 silly currentTree ├── safe-json-stringify@1.0.3
+313 silly currentTree ├── samsam@1.1.2
+313 silly currentTree ├── sax@1.1.5
+313 silly currentTree ├── semver-diff@2.1.0
+313 silly currentTree ├── semver-regex@1.0.0
+313 silly currentTree ├── semver-truncate@1.1.2
+313 silly currentTree ├── semver@5.3.0
+313 silly currentTree ├─┬ send@0.14.1
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├─┬ serve-favicon@2.3.0
+313 silly currentTree │ └── ms@0.7.1
+313 silly currentTree ├── serve-static@1.11.1
+313 silly currentTree ├── set-blocking@2.0.0
+313 silly currentTree ├── set-immediate-shim@1.0.1
+313 silly currentTree ├── setprototypeof@1.0.1
+313 silly currentTree ├── sharp@0.11.4
+313 silly currentTree ├── shelljs@0.5.3
+313 silly currentTree ├── shimmer@1.1.0
+313 silly currentTree ├── sigmund@1.0.1
+313 silly currentTree ├── signal-exit@3.0.1
+313 silly currentTree ├── sinon@1.17.6
+313 silly currentTree ├── slide@1.1.6
+313 silly currentTree ├── sntp@1.0.9
+313 silly currentTree ├── source-map@0.1.43
+313 silly currentTree ├── spdx-correct@1.0.2
+313 silly currentTree ├── spdx-expression-parse@1.0.4
+313 silly currentTree ├── spdx-license-ids@1.2.2
+313 silly currentTree ├── split@0.3.3
+313 silly currentTree ├── split2@1.1.1
+313 silly currentTree ├── sprintf-js@1.0.3
+313 silly currentTree ├─┬ sshpk@1.10.1
+313 silly currentTree │ └── assert-plus@1.0.0
+313 silly currentTree ├── stack-trace@0.0.9
+313 silly currentTree ├── statuses@1.3.0
+313 silly currentTree ├── stream-combiner@0.0.4
+313 silly currentTree ├── stream-shift@1.0.0
+313 silly currentTree ├── stream-transform@0.1.1
+313 silly currentTree ├── streamsearch@0.1.2
+313 silly currentTree ├── string_decoder@0.10.31
+313 silly currentTree ├── string-length@1.0.1
+313 silly currentTree ├── string-width@1.0.2
+313 silly currentTree ├── string.prototype.trim@1.1.2
+313 silly currentTree ├── stringstream@0.0.5
+313 silly currentTree ├── strip-ansi@3.0.1
+313 silly currentTree ├── strip-bom@2.0.0
+313 silly currentTree ├── strip-indent@1.0.1
+313 silly currentTree ├── strip-json-comments@1.0.4
+313 silly currentTree ├── strong-data-uri@1.0.4
+313 silly currentTree ├─┬ superagent@1.8.4
+313 silly currentTree │ ├── async@1.5.2
+313 silly currentTree │ ├── form-data@1.0.0-rc3
+313 silly currentTree │ ├── isarray@0.0.1
+313 silly currentTree │ ├── qs@2.3.3
+313 silly currentTree │ └── readable-stream@1.0.27-1
+313 silly currentTree ├── supertest@1.2.0
+313 silly currentTree ├── supports-color@2.0.0
+313 silly currentTree ├─┬ tar-pack@3.3.0
+313 silly currentTree │ ├── debug@2.2.0
+313 silly currentTree │ ├── glob@7.1.1
+313 silly currentTree │ ├── ms@0.7.1
+313 silly currentTree │ ├── once@1.3.3
+313 silly currentTree │ ├── readable-stream@2.1.5
+313 silly currentTree │ └── rimraf@2.5.4
+313 silly currentTree ├── tar@2.2.1
+313 silly currentTree ├── through@2.3.8
+313 silly currentTree ├─┬ through2@2.0.1
+313 silly currentTree │ └── readable-stream@2.0.6
+313 silly currentTree ├── timed-out@2.0.0
+313 silly currentTree ├─┬ tiny-lr-fork@0.0.5
+313 silly currentTree │ ├── debug@0.7.4
+313 silly currentTree │ └── qs@0.5.6
+313 silly currentTree ├── tmp@0.0.28
+313 silly currentTree ├── to-iso-string@0.0.2
+313 silly currentTree ├── topo@1.1.0
+313 silly currentTree ├── touch@1.0.0
+313 silly currentTree ├─┬ tough-cookie@2.3.2
+313 silly currentTree │ └── punycode@1.4.1
+313 silly currentTree ├── trim-newlines@1.0.0
+313 silly currentTree ├── truncate@1.0.5
+313 silly currentTree ├─┬ tsd@0.6.5
+313 silly currentTree │ ├── ansi-regex@0.2.1
+313 silly currentTree │ ├── ansi-styles@1.1.0
+313 silly currentTree │ ├── argparse@1.0.9
+313 silly currentTree │ ├── assertion-error@1.0.0
+313 silly currentTree │ ├── bl@0.9.5
+313 silly currentTree │ ├── bluebird@1.2.4
+313 silly currentTree │ ├── colors@1.1.2
+313 silly currentTree │ ├── configstore@0.3.2
+313 silly currentTree │ ├── esprima@2.7.3
+313 silly currentTree │ ├── event-stream@3.1.7
+313 silly currentTree │ ├── extsprintf@1.0.3
+313 silly currentTree │ ├─┬ glob@4.5.3
+313 silly currentTree │ │ └── minimatch@2.0.10
+313 silly currentTree │ ├── graceful-fs@3.0.11
+313 silly currentTree │ ├── has-ansi@0.1.0
+313 silly currentTree │ ├── isarray@0.0.1
+313 silly currentTree │ ├── js-yaml@3.6.1
+313 silly currentTree │ ├── lru-cache@2.5.2
+313 silly currentTree │ ├── minimatch@1.0.0
+313 silly currentTree │ ├── minimist@1.2.0
+313 silly currentTree │ ├── object-assign@2.1.1
+313 silly currentTree │ ├── readable-stream@1.0.34
+313 silly currentTree │ ├── rimraf@2.2.8
+313 silly currentTree │ ├── semver@4.3.6
+313 silly currentTree │ ├── split@0.2.10
+313 silly currentTree │ ├── strip-ansi@0.3.0
+313 silly currentTree │ ├── supports-color@0.2.0
+313 silly currentTree │ ├── type-detect@0.1.2
+313 silly currentTree │ ├─┬ update-notifier@0.2.2
+313 silly currentTree │ │ └── chalk@0.5.1
+313 silly currentTree │ ├── verror@1.4.0
+313 silly currentTree │ └── xdg-basedir@1.0.1
+313 silly currentTree ├─┬ tslint@2.5.1
+313 silly currentTree │ ├── findup-sync@0.2.1
+313 silly currentTree │ ├── glob@4.3.5
+313 silly currentTree │ ├── minimatch@2.0.10
+313 silly currentTree │ └── underscore.string@3.1.1
+313 silly currentTree ├── tsscmp@1.0.5
+313 silly currentTree ├── tunnel-agent@0.4.3
+313 silly currentTree ├── tweetnacl@0.14.3
+313 silly currentTree ├── type-detect@1.0.0
+313 silly currentTree ├── type-is@1.6.13
+313 silly currentTree ├── typedarray@0.0.6
+313 silly currentTree ├── typedoc-default-themes@0.3.4
+313 silly currentTree ├─┬ typedoc@0.3.12
+313 silly currentTree │ └── minimatch@2.0.10
+313 silly currentTree ├── typescript@1.6.2
+313 silly currentTree ├─┬ uglify-js@2.3.6
+313 silly currentTree │ ├── async@0.2.10
+313 silly currentTree │ └── optimist@0.3.7
+313 silly currentTree ├── uid-number@0.0.6
+313 silly currentTree ├── uid-safe@2.1.1
+313 silly currentTree ├── uid@0.0.2
+313 silly currentTree ├── uid2@0.0.3
+313 silly currentTree ├── ultron@1.0.2
+313 silly currentTree ├── undefsafe@0.0.3
+313 silly currentTree ├── underscore.string@2.2.1
+313 silly currentTree ├── underscore@1.7.0
+313 silly currentTree ├─┬ universal-analytics@0.3.11
+313 silly currentTree │ └── async@0.2.10
+313 silly currentTree ├── unpipe@1.0.0
+313 silly currentTree ├── untildify@2.1.0
+313 silly currentTree ├─┬ update-notifier@0.5.0
+313 silly currentTree │ └── repeating@1.1.3
+313 silly currentTree ├── uri-templates@0.1.9
+313 silly currentTree ├── url@0.10.3
+313 silly currentTree ├── user-home@1.1.1
+313 silly currentTree ├── util-deprecate@1.0.2
+313 silly currentTree ├── util@0.10.3
+313 silly currentTree ├── utils-merge@1.0.0
+313 silly currentTree ├── uuid@2.0.3
+313 silly currentTree ├── v8-profiler@5.6.5
+313 silly currentTree ├── validate-npm-package-license@3.0.1
+313 silly currentTree ├── validator@5.7.0
+313 silly currentTree ├── vary@1.1.0
+313 silly currentTree ├── verror@1.3.6
+313 silly currentTree ├── which@1.0.9
+313 silly currentTree ├── wide-align@1.1.0
+313 silly currentTree ├─┬ win-detect-browsers@1.0.2
+313 silly currentTree │ └── yargs@1.3.3
+313 silly currentTree ├── window-size@0.1.4
+313 silly currentTree ├─┬ winston@2.3.0
+313 silly currentTree │ └── async@1.0.0
+313 silly currentTree ├── wordwrap@0.0.2
+313 silly currentTree ├── wrap-ansi@2.0.0
+313 silly currentTree ├── wrappy@1.0.2
+313 silly currentTree ├── wrench@1.5.9
+313 silly currentTree ├── write-file-atomic@1.2.0
+313 silly currentTree ├── ws@1.1.1
+313 silly currentTree ├── x-default-browser@0.3.1
+313 silly currentTree ├── xdg-basedir@2.0.0
+313 silly currentTree ├── xml2js@0.4.15
+313 silly currentTree ├─┬ xmlbuilder@2.6.2
+313 silly currentTree │ └── lodash@3.5.0
+313 silly currentTree ├── xmldom@0.1.22
+313 silly currentTree ├── xregexp@2.0.0
+313 silly currentTree ├── xtend@4.0.1
+313 silly currentTree ├── y18n@3.2.1
+313 silly currentTree └── yargs@3.15.0
+314 silly idealTree frontend@1.0.0
+314 silly idealTree ├── abbrev@1.0.9
+314 silly idealTree ├── accepts@1.3.3
+314 silly idealTree ├── after@0.8.2
+314 silly idealTree ├── align-text@0.1.4
+314 silly idealTree ├── amdefine@1.0.1
+314 silly idealTree ├── amqp@0.2.6
+314 silly idealTree ├── ansi-regex@2.0.0
+314 silly idealTree ├── ansi-styles@2.2.1
+314 silly idealTree ├── anymatch@1.3.0
+314 silly idealTree ├── append-field@0.1.0
+314 silly idealTree ├── aproba@1.0.4
+314 silly idealTree ├── are-we-there-yet@1.1.2
+314 silly idealTree ├─┬ argparse@0.1.16
+314 silly idealTree │ └── underscore.string@2.4.0
+314 silly idealTree ├── arr-diff@2.0.0
+314 silly idealTree ├── arr-flatten@1.0.1
+314 silly idealTree ├── array-find-index@1.0.2
+314 silly idealTree ├── array-flatten@1.1.1
+314 silly idealTree ├── array-uniq@1.0.3
+314 silly idealTree ├── array-unique@0.2.1
+314 silly idealTree ├── arrify@1.0.1
+314 silly idealTree ├── asap@2.0.5
+314 silly idealTree ├── asn1@0.2.3
+314 silly idealTree ├── assert-plus@0.2.0
+314 silly idealTree ├── assertion-error@1.0.2
+314 silly idealTree ├── async-each@1.0.1
+314 silly idealTree ├── async@2.1.2
+314 silly idealTree ├── asynckit@0.4.0
+314 silly idealTree ├── aws-sdk@2.7.0
+314 silly idealTree ├── aws-sign2@0.6.0
+314 silly idealTree ├── aws4@1.5.0
+314 silly idealTree ├── balanced-match@0.4.2
+314 silly idealTree ├── base64-js@1.2.0
+314 silly idealTree ├── base64-url@1.2.2
+314 silly idealTree ├── basic-auth@1.0.4
+314 silly idealTree ├── bcrypt-pbkdf@1.0.0
+314 silly idealTree ├─┬ biased-opener@0.2.8
+314 silly idealTree │ └── minimist@1.2.0
+314 silly idealTree ├── big-integer@1.6.17
+314 silly idealTree ├─┬ bin-version-check@2.1.0
+314 silly idealTree │ ├── minimist@1.2.0
+314 silly idealTree │ └── semver@4.3.6
+314 silly idealTree ├── bin-version@1.0.4
+314 silly idealTree ├── binary-extensions@1.7.0
+314 silly idealTree ├─┬ bl@1.1.2
+314 silly idealTree │ └── readable-stream@2.0.6
+314 silly idealTree ├── block-stream@0.0.9
+314 silly idealTree ├── bluebird@3.4.6
+314 silly idealTree ├─┬ body-parser@1.15.2
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├── boom@2.10.1
+314 silly idealTree ├── bplist-parser@0.1.1
+314 silly idealTree ├── brace-expansion@1.1.6
+314 silly idealTree ├── braces@1.8.5
+314 silly idealTree ├─┬ browser-launcher2@0.4.6
+314 silly idealTree │ ├── lodash@2.4.2
+314 silly idealTree │ └── rimraf@2.2.8
+314 silly idealTree ├── buffer-shims@1.0.0
+314 silly idealTree ├── buffer@4.9.1
+314 silly idealTree ├── builtin-modules@1.1.1
+314 silly idealTree ├── bunyan@1.8.4
+314 silly idealTree ├── busboy@0.2.13
+314 silly idealTree ├── bytes@2.4.0
+314 silly idealTree ├─┬ camelcase-keys@2.1.0
+314 silly idealTree │ └── camelcase@2.1.1
+314 silly idealTree ├── camelcase@1.2.1
+314 silly idealTree ├── caseless@0.11.0
+314 silly idealTree ├── center-align@0.1.3
+314 silly idealTree ├── chai-as-promised@5.3.0
+314 silly idealTree ├── chai@3.5.0
+314 silly idealTree ├── chalk@1.1.3
+314 silly idealTree ├── chokidar@1.6.1
+314 silly idealTree ├── cliui@2.1.0
+314 silly idealTree ├── cls-bluebird@1.1.3
+314 silly idealTree ├── code-point-at@1.1.0
+314 silly idealTree ├── coffee-script@1.3.3
+314 silly idealTree ├── color-convert@0.5.3
+314 silly idealTree ├── color-name@1.1.1
+314 silly idealTree ├── color-string@0.3.0
+314 silly idealTree ├── color@0.10.1
+314 silly idealTree ├── colors@1.0.3
+314 silly idealTree ├── combined-stream@1.0.5
+314 silly idealTree ├── commander@2.9.0
+314 silly idealTree ├── component-emitter@1.2.1
+314 silly idealTree ├── concat-map@0.0.1
+314 silly idealTree ├─┬ concat-stream@1.5.2
+314 silly idealTree │ └── readable-stream@2.0.6
+314 silly idealTree ├─┬ configstore@1.4.0
+314 silly idealTree │ └── object-assign@4.1.0
+314 silly idealTree ├── connect-redis@3.1.0
+314 silly idealTree ├── console-control-strings@1.1.0
+314 silly idealTree ├── content-disposition@0.5.1
+314 silly idealTree ├── content-type@1.0.2
+314 silly idealTree ├─┬ convict@1.5.0
+314 silly idealTree │ ├── depd@1.1.0
+314 silly idealTree │ ├── json5@0.5.0
+314 silly idealTree │ ├── lodash@4.16.2
+314 silly idealTree │ ├── minimist@1.2.0
+314 silly idealTree │ ├── moment@2.12.0
+314 silly idealTree │ ├── validator@4.6.1
+314 silly idealTree │ └─┬ varify@0.1.1
+314 silly idealTree │   ├─┬ redeyed@0.4.4
+314 silly idealTree │   │ └── esprima@1.0.4
+314 silly idealTree │   └── through@2.3.8
+314 silly idealTree ├── cookie-parser@1.4.3
+314 silly idealTree ├── cookie-signature@1.0.6
+314 silly idealTree ├── cookie@0.3.1
+314 silly idealTree ├── cookiejar@2.0.6
+314 silly idealTree ├── core-util-is@1.0.2
+314 silly idealTree ├── crc@3.4.1
+314 silly idealTree ├── cryptiles@2.0.5
+314 silly idealTree ├── crypto-browserify@1.0.9
+314 silly idealTree ├── csrf@3.0.3
+314 silly idealTree ├── csurf@1.9.0
+314 silly idealTree ├── csv-generate@0.0.6
+314 silly idealTree ├── csv-parse@1.1.7
+314 silly idealTree ├── csv-stringify@0.0.8
+314 silly idealTree ├── csv@0.4.6
+314 silly idealTree ├── currently-unhandled@0.4.1
+314 silly idealTree ├── cycle@1.0.3
+314 silly idealTree ├── dargs@2.1.0
+314 silly idealTree ├─┬ dashdash@1.14.0
+314 silly idealTree │ └── assert-plus@1.0.0
+314 silly idealTree ├── dateformat@1.0.2-1.2.3
+314 silly idealTree ├── debug@2.3.2
+314 silly idealTree ├── decamelize@1.2.0
+314 silly idealTree ├─┬ deep-eql@0.1.3
+314 silly idealTree │ └── type-detect@0.1.1
+314 silly idealTree ├── deep-extend@0.4.1
+314 silly idealTree ├── deep-freeze@0.0.1
+314 silly idealTree ├── default-browser-id@1.0.4
+314 silly idealTree ├── define-properties@1.1.2
+314 silly idealTree ├── definition-header@0.1.0
+314 silly idealTree ├── delayed-stream@1.0.0
+314 silly idealTree ├── delegates@1.0.0
+314 silly idealTree ├── depd@1.1.0
+314 silly idealTree ├── destroy@1.0.4
+314 silly idealTree ├─┬ detect-indent@0.2.0
+314 silly idealTree │ ├── get-stdin@0.1.0
+314 silly idealTree │ └── minimist@0.1.0
+314 silly idealTree ├── dicer@0.2.5
+314 silly idealTree ├── diff@1.4.0
+314 silly idealTree ├── double-ended-queue@2.1.0-0
+314 silly idealTree ├── dtrace-provider@0.7.1
+314 silly idealTree ├── duplexer@0.1.1
+314 silly idealTree ├─┬ duplexify@3.5.0
+314 silly idealTree │ └── readable-stream@2.2.1
+314 silly idealTree ├── ecc-jsbn@0.1.1
+314 silly idealTree ├── ee-first@1.1.1
+314 silly idealTree ├── encodeurl@1.0.1
+314 silly idealTree ├─┬ end-of-stream@1.0.0
+314 silly idealTree │ └── once@1.3.3
+314 silly idealTree ├── error-ex@1.3.0
+314 silly idealTree ├── es-abstract@1.6.1
+314 silly idealTree ├── es-to-primitive@1.1.1
+314 silly idealTree ├── es6-promise@3.3.1
+314 silly idealTree ├── escape-html@1.0.3
+314 silly idealTree ├── escape-string-regexp@1.0.5
+314 silly idealTree ├── esprima@1.0.4
+314 silly idealTree ├── etag@1.7.0
+314 silly idealTree ├── event-stream@3.3.4
+314 silly idealTree ├── eventemitter2@0.4.14
+314 silly idealTree ├── exit@0.1.2
+314 silly idealTree ├── expand-brackets@0.1.5
+314 silly idealTree ├── expand-range@1.8.2
+314 silly idealTree ├─┬ express-session@1.14.2
+314 silly idealTree │ ├── base64-url@1.3.3
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ ├── ms@0.7.1
+314 silly idealTree │ └── uid-safe@2.1.3
+314 silly idealTree ├─┬ express@4.14.0
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├── extend@3.0.0
+314 silly idealTree ├── extglob@0.3.2
+314 silly idealTree ├── extsprintf@1.0.2
+314 silly idealTree ├── eyes@0.1.8
+314 silly idealTree ├── faye-websocket@0.4.4
+314 silly idealTree ├── file-sync-cmp@0.1.1
+314 silly idealTree ├── filename-regex@2.0.0
+314 silly idealTree ├── fill-range@2.2.3
+314 silly idealTree ├─┬ finalhandler@0.5.0
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├── find-up@1.1.2
+314 silly idealTree ├── find-versions@1.2.1
+314 silly idealTree ├─┬ findup-sync@0.1.3
+314 silly idealTree │ ├── glob@3.2.11
+314 silly idealTree │ ├── lodash@2.4.2
+314 silly idealTree │ └── minimatch@0.3.0
+314 silly idealTree ├── flatten@0.0.1
+314 silly idealTree ├── for-in@0.1.6
+314 silly idealTree ├── for-own@0.1.4
+314 silly idealTree ├── foreach@2.0.5
+314 silly idealTree ├── forever-agent@0.6.1
+314 silly idealTree ├── form-data@1.0.1
+314 silly idealTree ├── formatio@1.1.1
+314 silly idealTree ├── formidable@1.0.17
+314 silly idealTree ├─┬ forms@1.2.0
+314 silly idealTree │ └── qs@6.3.0
+314 silly idealTree ├── forwarded@0.1.0
+314 silly idealTree ├── fresh@0.3.0
+314 silly idealTree ├── from@0.1.3
+314 silly idealTree ├── fs-extra@0.22.1
+314 silly idealTree ├── fs.realpath@1.0.0
+314 silly idealTree ├── fstream-ignore@1.0.5
+314 silly idealTree ├── fstream@1.0.10
+314 silly idealTree ├── function-bind@1.1.0
+314 silly idealTree ├─┬ gauge@2.6.0
+314 silly idealTree │ └── object-assign@4.1.0
+314 silly idealTree ├── gaze@0.5.2
+314 silly idealTree ├── generate-function@2.0.0
+314 silly idealTree ├── generate-object-property@1.2.0
+314 silly idealTree ├── get-stdin@4.0.1
+314 silly idealTree ├── getobject@0.1.0
+314 silly idealTree ├─┬ getpass@0.1.6
+314 silly idealTree │ └── assert-plus@1.0.0
+314 silly idealTree ├── glob-base@0.3.0
+314 silly idealTree ├── glob-parent@2.0.0
+314 silly idealTree ├── glob@6.0.4
+314 silly idealTree ├─┬ globule@0.1.0
+314 silly idealTree │ ├── glob@3.1.21
+314 silly idealTree │ ├── graceful-fs@1.2.3
+314 silly idealTree │ ├── inherits@1.0.2
+314 silly idealTree │ ├── lodash@1.0.2
+314 silly idealTree │ └── minimatch@0.2.14
+314 silly idealTree ├── got@3.3.1
+314 silly idealTree ├── graceful-fs@4.1.10
+314 silly idealTree ├── graceful-readlink@1.0.1
+314 silly idealTree ├── growl@1.9.2
+314 silly idealTree ├─┬ grunt-concurrent@2.3.1
+314 silly idealTree │ └── async@1.5.2
+314 silly idealTree ├─┬ grunt-contrib-compass@1.1.1
+314 silly idealTree │ └── async@1.5.2
+314 silly idealTree ├── grunt-contrib-copy@0.8.2
+314 silly idealTree ├── grunt-contrib-requirejs@0.4.4
+314 silly idealTree ├─┬ grunt-contrib-watch@0.6.1
+314 silly idealTree │ ├── async@0.2.10
+314 silly idealTree │ └── lodash@2.4.2
+314 silly idealTree ├─┬ grunt-legacy-log-utils@0.1.1
+314 silly idealTree │ ├── colors@0.6.2
+314 silly idealTree │ ├── lodash@2.4.2
+314 silly idealTree │ └── underscore.string@2.3.3
+314 silly idealTree ├─┬ grunt-legacy-log@0.1.3
+314 silly idealTree │ ├── colors@0.6.2
+314 silly idealTree │ ├── lodash@2.4.2
+314 silly idealTree │ └── underscore.string@2.3.3
+314 silly idealTree ├─┬ grunt-legacy-util@0.2.0
+314 silly idealTree │ ├── async@0.1.22
+314 silly idealTree │ └── lodash@0.9.2
+314 silly idealTree ├── grunt-node-inspector@0.4.2
+314 silly idealTree ├── grunt-nodemon@0.4.2
+314 silly idealTree ├─┬ grunt@0.4.5
+314 silly idealTree │ ├── async@0.1.22
+314 silly idealTree │ ├── colors@0.6.2
+314 silly idealTree │ ├── glob@3.1.21
+314 silly idealTree │ ├── graceful-fs@1.2.3
+314 silly idealTree │ ├── iconv-lite@0.2.11
+314 silly idealTree │ ├── inherits@1.0.2
+314 silly idealTree │ ├── lodash@0.9.2
+314 silly idealTree │ ├── minimatch@0.2.14
+314 silly idealTree │ └── rimraf@2.2.8
+314 silly idealTree ├── handlebars@3.0.3
+314 silly idealTree ├── har-validator@2.0.6
+314 silly idealTree ├── has-ansi@2.0.0
+314 silly idealTree ├── has-color@0.1.7
+314 silly idealTree ├── has-unicode@2.0.1
+314 silly idealTree ├── hawk@3.1.3
+314 silly idealTree ├── headless@0.1.7
+314 silly idealTree ├── highlight.js@8.9.1
+314 silly idealTree ├── hoek@2.16.3
+314 silly idealTree ├── hooker@0.2.3
+314 silly idealTree ├── hosted-git-info@2.1.5
+314 silly idealTree ├── http-errors@1.5.0
+314 silly idealTree ├── http-signature@1.1.1
+314 silly idealTree ├── iconv-lite@0.4.13
+314 silly idealTree ├── ieee754@1.1.8
+314 silly idealTree ├── ignore-by-default@1.0.1
+314 silly idealTree ├── imurmurhash@0.1.4
+314 silly idealTree ├── indent-string@2.1.0
+314 silly idealTree ├── infinity-agent@2.0.3
+314 silly idealTree ├── inflight@1.0.6
+314 silly idealTree ├── inherits@2.0.1
+314 silly idealTree ├── ini@1.3.4
+314 silly idealTree ├── intravenous@0.1.4-beta
+314 silly idealTree ├── invert-kv@1.0.0
+314 silly idealTree ├── ipaddr.js@1.1.1
+314 silly idealTree ├── is-arrayish@0.2.1
+314 silly idealTree ├── is-binary-path@1.0.1
+314 silly idealTree ├── is-bluebird@1.0.2
+314 silly idealTree ├── is-buffer@1.1.4
+314 silly idealTree ├── is-builtin-module@1.0.0
+314 silly idealTree ├── is-callable@1.1.3
+314 silly idealTree ├── is-date-object@1.0.1
+314 silly idealTree ├── is-dotfile@1.0.2
+314 silly idealTree ├── is-equal-shallow@0.1.3
+314 silly idealTree ├── is-extendable@0.1.1
+314 silly idealTree ├── is-extglob@1.0.0
+314 silly idealTree ├── is-finite@1.0.2
+314 silly idealTree ├── is-fullwidth-code-point@1.0.0
+314 silly idealTree ├── is-glob@2.0.1
+314 silly idealTree ├── is-my-json-valid@2.15.0
+314 silly idealTree ├── is-npm@1.0.0
+314 silly idealTree ├── is-number@2.1.0
+314 silly idealTree ├── is-posix-bracket@0.1.1
+314 silly idealTree ├── is-primitive@2.0.0
+314 silly idealTree ├── is-property@1.0.2
+314 silly idealTree ├── is-redirect@1.0.0
+314 silly idealTree ├── is-regex@1.0.3
+314 silly idealTree ├── is-stream@1.1.0
+314 silly idealTree ├── is-symbol@1.0.1
+314 silly idealTree ├── is-typedarray@1.0.0
+314 silly idealTree ├── is-utf8@0.2.1
+314 silly idealTree ├── is@3.2.0
+314 silly idealTree ├── isarray@1.0.0
+314 silly idealTree ├── isemail@1.2.0
+314 silly idealTree ├── isexe@1.1.2
+314 silly idealTree ├── isobject@2.1.0
+314 silly idealTree ├── isstream@0.1.2
+314 silly idealTree ├─┬ jade@0.26.3
+314 silly idealTree │ ├── commander@0.6.1
+314 silly idealTree │ └── mkdirp@0.3.0
+314 silly idealTree ├── jmespath@0.15.0
+314 silly idealTree ├── jodid25519@1.0.2
+314 silly idealTree ├── joi-assert@0.0.3
+314 silly idealTree ├── joi@4.9.0
+314 silly idealTree ├── js-yaml@2.0.5
+314 silly idealTree ├── jsbn@0.1.0
+314 silly idealTree ├── jsesc@0.5.0
+314 silly idealTree ├── json-pointer@0.2.2
+314 silly idealTree ├── json-schema@0.2.3
+314 silly idealTree ├── json-stringify-safe@5.0.1
+314 silly idealTree ├── jsonfile@2.4.0
+314 silly idealTree ├── jsonpointer@4.0.0
+314 silly idealTree ├── jsprim@1.3.1
+314 silly idealTree ├── kind-of@3.0.4
+314 silly idealTree ├── latest-version@1.0.1
+314 silly idealTree ├── lazy-cache@1.0.4
+314 silly idealTree ├── lazy.js@0.3.2
+314 silly idealTree ├── lcid@1.0.0
+314 silly idealTree ├── load-json-file@1.1.0
+314 silly idealTree ├── lodash._baseassign@3.2.0
+314 silly idealTree ├── lodash._basecopy@3.0.1
+314 silly idealTree ├── lodash._bindcallback@3.0.1
+314 silly idealTree ├── lodash._createassigner@3.1.1
+314 silly idealTree ├── lodash._getnative@3.9.1
+314 silly idealTree ├── lodash._isiterateecall@3.0.9
+314 silly idealTree ├── lodash.assign@3.2.0
+314 silly idealTree ├── lodash.defaults@3.1.2
+314 silly idealTree ├── lodash.isarguments@3.1.0
+314 silly idealTree ├── lodash.isarray@3.0.4
+314 silly idealTree ├── lodash.keys@3.1.2
+314 silly idealTree ├── lodash.restparam@3.6.1
+314 silly idealTree ├── lodash@4.16.6
+314 silly idealTree ├── lolex@1.3.2
+314 silly idealTree ├── longest@1.0.1
+314 silly idealTree ├── loud-rejection@1.6.0
+314 silly idealTree ├── lowercase-keys@1.0.0
+314 silly idealTree ├── lru-cache@2.7.3
+314 silly idealTree ├── map-obj@1.0.1
+314 silly idealTree ├── map-stream@0.1.0
+314 silly idealTree ├── marked@0.3.6
+314 silly idealTree ├── media-typer@0.3.0
+314 silly idealTree ├─┬ meow@3.7.0
+314 silly idealTree │ ├── minimist@1.2.0
+314 silly idealTree │ └── object-assign@4.1.0
+314 silly idealTree ├── merge-descriptors@1.0.1
+314 silly idealTree ├── methods@1.1.2
+314 silly idealTree ├── micromatch@2.3.11
+314 silly idealTree ├── mime-db@1.24.0
+314 silly idealTree ├── mime-types@2.1.12
+314 silly idealTree ├── mime@1.3.4
+314 silly idealTree ├── minichain@0.0.1
+314 silly idealTree ├── minimatch@3.0.3
+314 silly idealTree ├── minimist@0.0.8
+314 silly idealTree ├── ministyle@0.1.4
+314 silly idealTree ├── minitable@0.0.4
+314 silly idealTree ├─┬ miniwrite@0.1.4
+314 silly idealTree │ └── mkdirp@0.3.5
+314 silly idealTree ├── mkdirp@0.5.1
+314 silly idealTree ├── mmmagic@0.4.5
+314 silly idealTree ├─┬ mocha@2.5.3
+314 silly idealTree │ ├── commander@2.3.0
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ ├── escape-string-regexp@1.0.2
+314 silly idealTree │ ├── glob@3.2.11
+314 silly idealTree │ ├── minimatch@0.3.0
+314 silly idealTree │ ├── ms@0.7.1
+314 silly idealTree │ └── supports-color@1.2.0
+314 silly idealTree ├── moment-timezone@0.5.9
+314 silly idealTree ├── moment@2.16.0
+314 silly idealTree ├─┬ morgan@1.7.0
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├── ms@0.7.2
+314 silly idealTree ├── multer@1.2.0
+314 silly idealTree ├── mv@2.1.1
+314 silly idealTree ├── nan@2.4.0
+314 silly idealTree ├── natives@1.1.0
+314 silly idealTree ├─┬ nconf@0.7.2
+314 silly idealTree │ └── async@0.9.2
+314 silly idealTree ├── ncp@2.0.0
+314 silly idealTree ├── negotiator@0.6.1
+314 silly idealTree ├── nested-error-stacks@1.0.2
+314 silly idealTree ├── node-celery@0.2.8
+314 silly idealTree ├─┬ node-inspector@0.12.8
+314 silly idealTree │ ├── async@0.9.2
+314 silly idealTree │ ├── glob@5.0.15
+314 silly idealTree │ ├── semver@4.3.6
+314 silly idealTree │ └── which@1.2.11
+314 silly idealTree ├─┬ node-pre-gyp@0.6.31
+314 silly idealTree │ ├── form-data@2.1.2
+314 silly idealTree │ ├── glob@7.1.1
+314 silly idealTree │ ├── nopt@3.0.6
+314 silly idealTree │ ├── qs@6.3.0
+314 silly idealTree │ ├── request@2.78.0
+314 silly idealTree │ └── rimraf@2.5.4
+314 silly idealTree ├── node-uuid@1.4.7
+314 silly idealTree ├─┬ node-zendesk@1.1.12
+314 silly idealTree │ └── async@0.9.2
+314 silly idealTree ├── nodemon@1.11.0
+314 silly idealTree ├── nopt@1.0.10
+314 silly idealTree ├─┬ noptify@0.0.3
+314 silly idealTree │ └── nopt@2.0.0
+314 silly idealTree ├── normalize-package-data@2.3.5
+314 silly idealTree ├── normalize-path@2.0.1
+314 silly idealTree ├── npmlog@4.0.0
+314 silly idealTree ├── number-is-nan@1.0.1
+314 silly idealTree ├─┬ nunjucks@2.5.2
+314 silly idealTree │ ├── camelcase@2.1.1
+314 silly idealTree │ ├── cliui@3.2.0
+314 silly idealTree │ └── yargs@3.32.0
+314 silly idealTree ├── oauth-sign@0.8.2
+314 silly idealTree ├── oauth2orize@1.5.1
+314 silly idealTree ├── object-assign@3.0.0
+314 silly idealTree ├── object-keys@1.0.11
+314 silly idealTree ├── object.assign@4.0.4
+314 silly idealTree ├── object.omit@2.0.1
+314 silly idealTree ├── on-finished@2.3.0
+314 silly idealTree ├── on-headers@1.0.1
+314 silly idealTree ├── once@1.4.0
+314 silly idealTree ├── onetime@1.1.0
+314 silly idealTree ├── open@0.0.5
+314 silly idealTree ├── optimist@0.6.1
+314 silly idealTree ├── options@0.0.6
+314 silly idealTree ├── os-homedir@1.0.2
+314 silly idealTree ├── os-locale@1.4.0
+314 silly idealTree ├── os-tmpdir@1.0.2
+314 silly idealTree ├── osenv@0.1.3
+314 silly idealTree ├── package-json@1.2.0
+314 silly idealTree ├── pad-stream@1.2.0
+314 silly idealTree ├── parse-glob@3.0.4
+314 silly idealTree ├── parse-json@2.2.0
+314 silly idealTree ├── parseurl@1.3.1
+314 silly idealTree ├── parsimmon@0.5.1
+314 silly idealTree ├── passport-http-bearer@1.0.1
+314 silly idealTree ├── passport-local@1.0.0
+314 silly idealTree ├── passport-oauth2-client-password@0.1.2
+314 silly idealTree ├── passport-strategy@1.0.0
+314 silly idealTree ├── passport@0.3.2
+314 silly idealTree ├── path-exists@2.1.0
+314 silly idealTree ├── path-is-absolute@1.0.1
+314 silly idealTree ├── path-to-regexp@0.1.7
+314 silly idealTree ├── path-type@1.1.0
+314 silly idealTree ├── pause-stream@0.0.11
+314 silly idealTree ├── pause@0.0.1
+314 silly idealTree ├── pify@2.3.0
+314 silly idealTree ├── pinkie-promise@2.0.1
+314 silly idealTree ├── pinkie@2.0.4
+314 silly idealTree ├── pjs@5.1.1
+314 silly idealTree ├─┬ plist@1.2.0
+314 silly idealTree │ ├── base64-js@0.0.8
+314 silly idealTree │ ├── lodash@3.10.1
+314 silly idealTree │ └── xmlbuilder@4.0.0
+314 silly idealTree ├── prepend-http@1.0.4
+314 silly idealTree ├── preserve@0.2.0
+314 silly idealTree ├── process-nextick-args@1.0.7
+314 silly idealTree ├── progress@1.1.8
+314 silly idealTree ├── proxy-addr@1.1.2
+314 silly idealTree ├── ps-tree@1.1.0
+314 silly idealTree ├─┬ pump@1.0.1
+314 silly idealTree │ └─┬ end-of-stream@1.1.0
+314 silly idealTree │   └── once@1.3.3
+314 silly idealTree ├── pumpify@1.3.5
+314 silly idealTree ├── punycode@1.3.2
+314 silly idealTree ├── qs@6.2.0
+314 silly idealTree ├── querystring@0.2.0
+314 silly idealTree ├── random-bytes@1.0.0
+314 silly idealTree ├── randomatic@1.1.5
+314 silly idealTree ├── range-parser@1.2.0
+314 silly idealTree ├── raw-body@2.1.7
+314 silly idealTree ├─┬ rc@1.1.6
+314 silly idealTree │ └── minimist@1.2.0
+314 silly idealTree ├─┬ read-all-stream@3.1.0
+314 silly idealTree │ └── readable-stream@2.2.1
+314 silly idealTree ├── read-pkg-up@1.0.1
+314 silly idealTree ├── read-pkg@1.1.0
+314 silly idealTree ├─┬ readable-stream@1.1.14
+314 silly idealTree │ └── isarray@0.0.1
+314 silly idealTree ├─┬ readdirp@2.1.0
+314 silly idealTree │ └── readable-stream@2.2.1
+314 silly idealTree ├── redent@1.0.0
+314 silly idealTree ├── redis-commands@1.3.0
+314 silly idealTree ├── redis-parser@2.1.1
+314 silly idealTree ├── redis@2.6.3
+314 silly idealTree ├── reduce-component@1.0.1
+314 silly idealTree ├── regex-cache@0.4.3
+314 silly idealTree ├── registry-url@3.1.0
+314 silly idealTree ├── repeat-element@1.1.2
+314 silly idealTree ├── repeat-string@1.6.1
+314 silly idealTree ├── repeating@2.0.1
+314 silly idealTree ├─┬ request-promise@1.0.2
+314 silly idealTree │ ├── bluebird@2.11.0
+314 silly idealTree │ └── lodash@3.10.1
+314 silly idealTree ├── request@2.74.0
+314 silly idealTree ├── requirejs@2.1.22
+314 silly idealTree ├── right-align@0.1.3
+314 silly idealTree ├── rimraf@2.4.5
+314 silly idealTree ├── rndm@1.2.0
+314 silly idealTree ├── safe-json-stringify@1.0.3
+314 silly idealTree ├── samsam@1.1.2
+314 silly idealTree ├── sax@1.1.5
+314 silly idealTree ├── semver-diff@2.1.0
+314 silly idealTree ├── semver-regex@1.0.0
+314 silly idealTree ├── semver-truncate@1.1.2
+314 silly idealTree ├── semver@5.3.0
+314 silly idealTree ├─┬ send@0.14.1
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├─┬ serve-favicon@2.3.0
+314 silly idealTree │ └── ms@0.7.1
+314 silly idealTree ├── serve-static@1.11.1
+314 silly idealTree ├── set-blocking@2.0.0
+314 silly idealTree ├── set-immediate-shim@1.0.1
+314 silly idealTree ├── setprototypeof@1.0.1
+314 silly idealTree ├── sharp@0.11.4
+314 silly idealTree ├── shelljs@0.5.3
+314 silly idealTree ├── shimmer@1.1.0
+314 silly idealTree ├── sigmund@1.0.1
+314 silly idealTree ├── signal-exit@3.0.1
+314 silly idealTree ├── sinon@1.17.6
+314 silly idealTree ├── slide@1.1.6
+314 silly idealTree ├── sntp@1.0.9
+314 silly idealTree ├── source-map@0.1.43
+314 silly idealTree ├── spdx-correct@1.0.2
+314 silly idealTree ├── spdx-expression-parse@1.0.4
+314 silly idealTree ├── spdx-license-ids@1.2.2
+314 silly idealTree ├── split@0.3.3
+314 silly idealTree ├── split2@1.1.1
+314 silly idealTree ├── sprintf-js@1.0.3
+314 silly idealTree ├─┬ sshpk@1.10.1
+314 silly idealTree │ └── assert-plus@1.0.0
+314 silly idealTree ├── stack-trace@0.0.9
+314 silly idealTree ├── statuses@1.3.0
+314 silly idealTree ├── stream-combiner@0.0.4
+314 silly idealTree ├── stream-shift@1.0.0
+314 silly idealTree ├── stream-transform@0.1.1
+314 silly idealTree ├── streamsearch@0.1.2
+314 silly idealTree ├── string_decoder@0.10.31
+314 silly idealTree ├── string-length@1.0.1
+314 silly idealTree ├── string-width@1.0.2
+314 silly idealTree ├── string.prototype.trim@1.1.2
+314 silly idealTree ├── stringstream@0.0.5
+314 silly idealTree ├── strip-ansi@3.0.1
+314 silly idealTree ├── strip-bom@2.0.0
+314 silly idealTree ├── strip-indent@1.0.1
+314 silly idealTree ├── strip-json-comments@1.0.4
+314 silly idealTree ├── strong-data-uri@1.0.4
+314 silly idealTree ├─┬ superagent@1.8.4
+314 silly idealTree │ ├── async@1.5.2
+314 silly idealTree │ ├── form-data@1.0.0-rc3
+314 silly idealTree │ ├── isarray@0.0.1
+314 silly idealTree │ ├── qs@2.3.3
+314 silly idealTree │ └── readable-stream@1.0.27-1
+314 silly idealTree ├── supertest@1.2.0
+314 silly idealTree ├── supports-color@2.0.0
+314 silly idealTree ├─┬ tar-pack@3.3.0
+314 silly idealTree │ ├── debug@2.2.0
+314 silly idealTree │ ├── glob@7.1.1
+314 silly idealTree │ ├── ms@0.7.1
+314 silly idealTree │ ├── once@1.3.3
+314 silly idealTree │ ├── readable-stream@2.1.5
+314 silly idealTree │ └── rimraf@2.5.4
+314 silly idealTree ├── tar@2.2.1
+314 silly idealTree ├── through@2.3.8
+314 silly idealTree ├─┬ through2@2.0.1
+314 silly idealTree │ └── readable-stream@2.0.6
+314 silly idealTree ├── timed-out@2.0.0
+314 silly idealTree ├─┬ tiny-lr-fork@0.0.5
+314 silly idealTree │ ├── debug@0.7.4
+314 silly idealTree │ └── qs@0.5.6
+314 silly idealTree ├── tmp@0.0.28
+314 silly idealTree ├── to-iso-string@0.0.2
+314 silly idealTree ├── topo@1.1.0
+314 silly idealTree ├── touch@1.0.0
+314 silly idealTree ├─┬ tough-cookie@2.3.2
+314 silly idealTree │ └── punycode@1.4.1
+314 silly idealTree ├── trim-newlines@1.0.0
+314 silly idealTree ├── truncate@1.0.5
+314 silly idealTree ├─┬ tsd@0.6.5
+314 silly idealTree │ ├── ansi-regex@0.2.1
+314 silly idealTree │ ├── ansi-styles@1.1.0
+314 silly idealTree │ ├── argparse@1.0.9
+314 silly idealTree │ ├── assertion-error@1.0.0
+314 silly idealTree │ ├── bl@0.9.5
+314 silly idealTree │ ├── bluebird@1.2.4
+314 silly idealTree │ ├── colors@1.1.2
+314 silly idealTree │ ├── configstore@0.3.2
+314 silly idealTree │ ├── esprima@2.7.3
+314 silly idealTree │ ├── event-stream@3.1.7
+314 silly idealTree │ ├── extsprintf@1.0.3
+314 silly idealTree │ ├─┬ glob@4.5.3
+314 silly idealTree │ │ └── minimatch@2.0.10
+314 silly idealTree │ ├── graceful-fs@3.0.11
+314 silly idealTree │ ├── has-ansi@0.1.0
+314 silly idealTree │ ├── isarray@0.0.1
+314 silly idealTree │ ├── js-yaml@3.6.1
+314 silly idealTree │ ├── lru-cache@2.5.2
+314 silly idealTree │ ├── minimatch@1.0.0
+314 silly idealTree │ ├── minimist@1.2.0
+314 silly idealTree │ ├── object-assign@2.1.1
+314 silly idealTree │ ├── readable-stream@1.0.34
+314 silly idealTree │ ├── rimraf@2.2.8
+314 silly idealTree │ ├── semver@4.3.6
+314 silly idealTree │ ├── split@0.2.10
+314 silly idealTree │ ├── strip-ansi@0.3.0
+314 silly idealTree │ ├── supports-color@0.2.0
+314 silly idealTree │ ├── type-detect@0.1.2
+314 silly idealTree │ ├─┬ update-notifier@0.2.2
+314 silly idealTree │ │ └── chalk@0.5.1
+314 silly idealTree │ ├── verror@1.4.0
+314 silly idealTree │ └── xdg-basedir@1.0.1
+314 silly idealTree ├─┬ tslint@2.5.1
+314 silly idealTree │ ├── findup-sync@0.2.1
+314 silly idealTree │ ├── glob@4.3.5
+314 silly idealTree │ ├── minimatch@2.0.10
+314 silly idealTree │ └── underscore.string@3.1.1
+314 silly idealTree ├── tsscmp@1.0.5
+314 silly idealTree ├── tunnel-agent@0.4.3
+314 silly idealTree ├── tweetnacl@0.14.3
+314 silly idealTree ├── type-detect@1.0.0
+314 silly idealTree ├── type-is@1.6.13
+314 silly idealTree ├── typedarray@0.0.6
+314 silly idealTree ├── typedoc-default-themes@0.3.4
+314 silly idealTree ├─┬ typedoc@0.3.12
+314 silly idealTree │ └── minimatch@2.0.10
+314 silly idealTree ├── typescript@1.6.2
+314 silly idealTree ├─┬ uglify-js@2.3.6
+314 silly idealTree │ ├── async@0.2.10
+314 silly idealTree │ └── optimist@0.3.7
+314 silly idealTree ├── uid-number@0.0.6
+314 silly idealTree ├── uid-safe@2.1.1
+314 silly idealTree ├── uid@0.0.2
+314 silly idealTree ├── uid2@0.0.3
+314 silly idealTree ├── ultron@1.0.2
+314 silly idealTree ├── undefsafe@0.0.3
+314 silly idealTree ├── underscore.string@2.2.1
+314 silly idealTree ├── underscore@1.7.0
+314 silly idealTree ├─┬ universal-analytics@0.3.11
+314 silly idealTree │ └── async@0.2.10
+314 silly idealTree ├── unpipe@1.0.0
+314 silly idealTree ├── untildify@2.1.0
+314 silly idealTree ├─┬ update-notifier@0.5.0
+314 silly idealTree │ └── repeating@1.1.3
+314 silly idealTree ├── uri-templates@0.1.9
+314 silly idealTree ├── url@0.10.3
+314 silly idealTree ├── user-home@1.1.1
+314 silly idealTree ├── util-deprecate@1.0.2
+314 silly idealTree ├── util@0.10.3
+314 silly idealTree ├── utils-merge@1.0.0
+314 silly idealTree ├── uuid@2.0.3
+314 silly idealTree ├── v8-debug@0.7.7
+314 silly idealTree ├── v8-profiler@5.6.5
+314 silly idealTree ├── validate-npm-package-license@3.0.1
+314 silly idealTree ├── validator@5.7.0
+314 silly idealTree ├── vary@1.1.0
+314 silly idealTree ├── verror@1.3.6
+314 silly idealTree ├── which@1.0.9
+314 silly idealTree ├── wide-align@1.1.0
+314 silly idealTree ├─┬ win-detect-browsers@1.0.2
+314 silly idealTree │ └── yargs@1.3.3
+314 silly idealTree ├── window-size@0.1.4
+314 silly idealTree ├─┬ winston@2.3.0
+314 silly idealTree │ └── async@1.0.0
+314 silly idealTree ├── wordwrap@0.0.2
+314 silly idealTree ├── wrap-ansi@2.0.0
+314 silly idealTree ├── wrappy@1.0.2
+314 silly idealTree ├── wrench@1.5.9
+314 silly idealTree ├── write-file-atomic@1.2.0
+314 silly idealTree ├── ws@1.1.1
+314 silly idealTree ├── x-default-browser@0.3.1
+314 silly idealTree ├── xdg-basedir@2.0.0
+314 silly idealTree ├── xml2js@0.4.15
+314 silly idealTree ├─┬ xmlbuilder@2.6.2
+314 silly idealTree │ └── lodash@3.5.0
+314 silly idealTree ├── xmldom@0.1.22
+314 silly idealTree ├── xregexp@2.0.0
+314 silly idealTree ├── xtend@4.0.1
+314 silly idealTree ├── y18n@3.2.1
+314 silly idealTree └── yargs@3.15.0
+315 silly generateActionsToTake Starting
+316 silly install generateActionsToTake
+317 silly generateActionsToTake Finishing
+318 silly diffTrees action count 7
+319 silly diffTrees add async@0.9.2
+320 silly diffTrees add glob@5.0.15
+321 silly diffTrees add semver@4.3.6
+322 silly diffTrees add which@1.2.11
+323 silly diffTrees add v8-debug@0.7.7
+324 silly diffTrees add node-inspector@0.12.8
+325 silly diffTrees add grunt-node-inspector@0.4.2
+326 silly decomposeActions action count 56
+327 silly decomposeActions fetch async@0.9.2
+328 silly decomposeActions extract async@0.9.2
+329 silly decomposeActions test async@0.9.2
+330 silly decomposeActions preinstall async@0.9.2
+331 silly decomposeActions build async@0.9.2
+332 silly decomposeActions install async@0.9.2
+333 silly decomposeActions postinstall async@0.9.2
+334 silly decomposeActions finalize async@0.9.2
+335 silly decomposeActions fetch glob@5.0.15
+336 silly decomposeActions extract glob@5.0.15
+337 silly decomposeActions test glob@5.0.15
+338 silly decomposeActions preinstall glob@5.0.15
+339 silly decomposeActions build glob@5.0.15
+340 silly decomposeActions install glob@5.0.15
+341 silly decomposeActions postinstall glob@5.0.15
+342 silly decomposeActions finalize glob@5.0.15
+343 silly decomposeActions fetch semver@4.3.6
+344 silly decomposeActions extract semver@4.3.6
+345 silly decomposeActions test semver@4.3.6
+346 silly decomposeActions preinstall semver@4.3.6
+347 silly decomposeActions build semver@4.3.6
+348 silly decomposeActions install semver@4.3.6
+349 silly decomposeActions postinstall semver@4.3.6
+350 silly decomposeActions finalize semver@4.3.6
+351 silly decomposeActions fetch which@1.2.11
+352 silly decomposeActions extract which@1.2.11
+353 silly decomposeActions test which@1.2.11
+354 silly decomposeActions preinstall which@1.2.11
+355 silly decomposeActions build which@1.2.11
+356 silly decomposeActions install which@1.2.11
+357 silly decomposeActions postinstall which@1.2.11
+358 silly decomposeActions finalize which@1.2.11
+359 silly decomposeActions fetch v8-debug@0.7.7
+360 silly decomposeActions extract v8-debug@0.7.7
+361 silly decomposeActions test v8-debug@0.7.7
+362 silly decomposeActions preinstall v8-debug@0.7.7
+363 silly decomposeActions build v8-debug@0.7.7
+364 silly decomposeActions install v8-debug@0.7.7
+365 silly decomposeActions postinstall v8-debug@0.7.7
+366 silly decomposeActions finalize v8-debug@0.7.7
+367 silly decomposeActions fetch node-inspector@0.12.8
+368 silly decomposeActions extract node-inspector@0.12.8
+369 silly decomposeActions test node-inspector@0.12.8
+370 silly decomposeActions preinstall node-inspector@0.12.8
+371 silly decomposeActions build node-inspector@0.12.8
+372 silly decomposeActions install node-inspector@0.12.8
+373 silly decomposeActions postinstall node-inspector@0.12.8
+374 silly decomposeActions finalize node-inspector@0.12.8
+375 silly decomposeActions fetch grunt-node-inspector@0.4.2
+376 silly decomposeActions extract grunt-node-inspector@0.4.2
+377 silly decomposeActions test grunt-node-inspector@0.4.2
+378 silly decomposeActions preinstall grunt-node-inspector@0.4.2
+379 silly decomposeActions build grunt-node-inspector@0.4.2
+380 silly decomposeActions install grunt-node-inspector@0.4.2
+381 silly decomposeActions postinstall grunt-node-inspector@0.4.2
+382 silly decomposeActions finalize grunt-node-inspector@0.4.2
+383 silly runTopLevelLifecycles Starting
+384 silly install runPreinstallTopLevelLifecycles
+385 silly preinstall frontend@1.0.0 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/frontend-4019bcc9
+386 info lifecycle frontend@1.0.0~preinstall: frontend@1.0.0
+387 silly lifecycle frontend@1.0.0~preinstall: no script for preinstall, continuing
+388 silly executeActions Starting
+389 silly install executeActions
+390 silly doSerial global-install 0
+391 silly doParallel fetch 7
+392 verbose correctMkdir /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/_locks correctMkdir not in flight; initializing
+393 verbose lock using /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/_locks/staging-11ae6a6b45a4add1.lock for /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging
+394 silly doParallel extract 7
+395 silly extract async@0.9.2
+396 silly extract glob@5.0.15
+397 silly extract semver@4.3.6
+398 silly extract which@1.2.11
+399 silly extract v8-debug@0.7.7
+400 silly extract node-inspector@0.12.8
+401 silly extract grunt-node-inspector@0.4.2
+402 verbose unbuild node_modules/.staging/glob-92e7862e
+403 verbose unbuild node_modules/.staging/v8-debug-9fa60ea6
+404 verbose unbuild node_modules/.staging/async-131328b3
+405 verbose unbuild node_modules/.staging/grunt-node-inspector-c9e830bf
+406 verbose unbuild node_modules/.staging/semver-ae4e04dc
+407 verbose unbuild node_modules/.staging/which-3b74c8d3
+408 verbose unbuild node_modules/.staging/node-inspector-4e6bca03
+409 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+410 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e
+411 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6 is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+412 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+413 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3 is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+414 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3
+415 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+416 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf
+417 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/glob/5.0.15/package.tgz
+418 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e
+419 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e is being purged
+420 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e
+421 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+422 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc
+423 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3 is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+424 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3
+425 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/v8-debug/0.7.7/package.tgz
+426 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+427 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6 is being purged
+428 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+429 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/async/0.9.2/package.tgz
+430 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3
+431 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3 is being purged
+432 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3
+433 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03 is being purged from base /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+434 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03
+435 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/grunt-node-inspector/0.4.2/package.tgz
+436 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf
+437 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf is being purged
+438 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf
+439 silly gunzTarPerm modes [ '755', '644' ]
+440 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/semver/4.3.6/package.tgz
+441 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc
+442 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc is being purged
+443 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc
+444 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/which/1.2.11/package.tgz
+445 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3
+446 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3 is being purged
+447 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3
+448 silly gunzTarPerm modes [ '755', '644' ]
+449 silly gunzTarPerm modes [ '755', '644' ]
+450 verbose tar unpack /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/node-inspector/0.12.8/package.tgz
+451 verbose tar unpacking to /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03
+452 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03 is being purged
+453 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03
+454 silly gunzTarPerm modes [ '755', '644' ]
+455 silly gunzTarPerm modes [ '755', '644' ]
+456 silly gunzTarPerm modes [ '755', '644' ]
+457 silly gunzTarPerm modes [ '755', '644' ]
+458 silly gunzTarPerm extractEntry package.json
+459 silly gunzTarPerm extractEntry package.json
+460 silly gunzTarPerm extractEntry package.json
+461 silly gunzTarPerm extractEntry package.json
+462 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+463 silly gunzTarPerm extractEntry package.json
+464 silly gunzTarPerm extractEntry package.json
+465 silly gunzTarPerm extractEntry package.json
+466 silly gunzTarPerm extractEntry LICENSE
+467 silly gunzTarPerm extractEntry v8-debug.js
+468 silly gunzTarPerm extractEntry README.md
+469 silly gunzTarPerm extractEntry .npmignore
+470 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+471 silly gunzTarPerm extractEntry README.md
+472 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+473 silly gunzTarPerm extractEntry README.md
+474 silly gunzTarPerm extractEntry LICENSE
+475 silly gunzTarPerm extractEntry .npmignore
+476 silly gunzTarPerm extractEntry README.md
+477 silly gunzTarPerm extractEntry LICENSE
+478 silly gunzTarPerm extractEntry component.json
+479 silly gunzTarPerm extractEntry .travis.yml
+480 silly gunzTarPerm extractEntry bower.json
+481 silly gunzTarPerm extractEntry lib/async.js
+482 silly gunzTarPerm extractEntry support/sync-package-managers.js
+483 silly gunzTarPerm extractEntry README.md
+484 silly gunzTarPerm extractEntry LICENSE
+485 silly gunzTarPerm extractEntry common.js
+486 silly gunzTarPerm extractEntry glob.js
+487 silly gunzTarPerm extractEntry sync.js
+488 silly gunzTarPerm extractEntry README.md
+489 silly gunzTarPerm extractEntry LICENSE
+490 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+491 silly gunzTarPerm extractEntry LICENSE
+492 silly gunzTarPerm extractEntry semver.browser.js
+493 silly gunzTarPerm extractEntry semver.js
+494 silly gunzTarPerm extractEntry semver.min.js
+495 silly gunzTarPerm extractEntry foot.js.txt
+496 silly gunzTarPerm extractEntry semver.min.js.gz
+497 silly gunzTarPerm extractEntry test/amd.js
+498 silly gunzTarPerm extractEntry test/big-numbers.js
+499 silly gunzTarPerm extractEntry test/clean.js
+500 silly gunzTarPerm extractEntry test/gtr.js
+501 silly gunzTarPerm extractEntry test/index.js
+502 silly gunzTarPerm extractEntry test/ltr.js
+503 silly gunzTarPerm extractEntry test/major-minor-patch.js
+504 silly gunzTarPerm extractEntry test/no-module.js
+505 silly gunzTarPerm extractEntry Makefile
+506 silly gunzTarPerm extractEntry semver.browser.js.gz
+507 silly gunzTarPerm extractEntry .travis.yml
+508 silly gunzTarPerm extractEntry bin/semver
+509 silly gunzTarPerm extractEntry head.js.txt
+510 silly gunzTarPerm extractEntry InjectedScript/DebuggerScript.js
+511 silly gunzTarPerm extractEntry LICENSE
+512 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+513 silly gunzTarPerm extractEntry .travis.yml
+514 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+515 silly gunzTarPerm extractEntry which.js
+516 silly gunzTarPerm extractEntry bin/which
+517 silly gunzTarPerm extractEntry index.js
+518 silly gunzTarPerm extractEntry bin/inspector.js
+519 silly gunzTarPerm extractEntry tasks/inspector.js
+520 silly gunzTarPerm modified mode [ 'tasks/inspector.js', 436, 420 ]
+521 silly gunzTarPerm extractEntry InjectedScript/InjectedScriptHost.js
+522 silly gunzTarPerm extractEntry InjectedScript/InjectedScriptSource.js
+523 silly gunzTarPerm extractEntry CHANGELOG.md
+524 silly gunzTarPerm extractEntry bin/node-debug.js
+525 silly gunzTarPerm extractEntry bin/run-repl.js
+526 silly gunzTarPerm extractEntry tools/NODE_NEXT.js
+527 silly gunzTarPerm extractEntry tools/commit-changes.js
+528 silly gunzTarPerm extractEntry tools/exec.js
+529 silly gunzTarPerm extractEntry tools/history.js
+530 silly gunzTarPerm extractEntry ChangeLog.md
+531 silly gunzTarPerm extractEntry .gitattributes
+532 silly gunzTarPerm modified mode [ '.gitattributes', 436, 420 ]
+533 silly gunzTarPerm extractEntry .jshintrc
+534 silly gunzTarPerm extractEntry .jshintignore
+535 silly gunzTarPerm extractEntry tools/annotate-tag.js
+536 silly gunzTarPerm extractEntry tools/publish-to-npm.js
+537 silly gunzTarPerm extractEntry docs/embedding.md
+538 silly gunzTarPerm modified mode [ 'docs/embedding.md', 436, 420 ]
+539 silly gunzTarPerm extractEntry front-end/Runtime.js
+540 silly gunzTarPerm extractEntry tools/push-to-githab.js
+541 silly gunzTarPerm extractEntry tools/release.js
+542 silly gunzTarPerm extractEntry tools/update-changelog.js
+543 silly gunzTarPerm extractEntry tools/update-npm-version.js
+544 silly gunzTarPerm extractEntry tools/prepublish-to-npm.js
+545 silly gunzTarPerm extractEntry readme.md
+546 silly gunzTarPerm extractEntry src/InjectedScriptHost.cc
+547 silly gunzTarPerm extractEntry front-end/devtools.js
+548 silly gunzTarPerm extractEntry src/InjectedScriptHost.h
+549 silly gunzTarPerm extractEntry src/debug.cc
+550 silly gunzTarPerm extractEntry front-end/externs.js
+551 silly gunzTarPerm extractEntry front-end/inspector.js
+552 silly gunzTarPerm extractEntry front-end/toolbox.js
+553 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf/node_modules is being purged
+554 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf/node_modules
+555 silly gunzTarPerm extractEntry front-end/treeoutline.js
+556 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e/node_modules is being purged
+557 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e/node_modules
+558 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3/node_modules is being purged
+559 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3/node_modules
+560 silly gunzTarPerm extractEntry src/tools.h
+561 silly gunzTarPerm extractEntry binding.gyp
+562 silly gunzTarPerm extractEntry front-end/inspectorSyntaxHighlight.css
+563 silly gunzTarPerm extractEntry front-end/common/Color.js
+564 silly gunzTarPerm extractEntry front-end/common/NotificationService.js
+565 silly gunzTarPerm extractEntry front-end/common/Object.js
+566 silly gunzTarPerm extractEntry front-end/common/ParsedURL.js
+567 silly gunzTarPerm extractEntry front-end/common/Progress.js
+568 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3/node_modules is being purged
+569 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3/node_modules
+570 silly gunzTarPerm extractEntry front-end/common/ModuleExtensionInterfaces.js
+571 silly gunzTarPerm extractEntry front-end/common/Settings.js
+572 silly gunzTarPerm extractEntry front-end/common/StaticContentProvider.js
+573 silly gunzTarPerm extractEntry front-end/common/TextRange.js
+574 silly gunzTarPerm extractEntry front-end/common/TextUtils.js
+575 silly gunzTarPerm extractEntry front-end/common/Throttler.js
+576 silly gunzTarPerm extractEntry front-end/common/Lock.js
+577 silly gunzTarPerm extractEntry front-end/common/UIString.js
+578 silly gunzTarPerm extractEntry front-end/common/Geometry.js
+579 silly gunzTarPerm extractEntry front-end/common/WebInspector.js
+580 silly gunzTarPerm extractEntry front-end/common/ContentProvider.js
+581 silly gunzTarPerm extractEntry front-end/common/WorkerRuntime.js
+582 silly gunzTarPerm extractEntry front-end/common/Console.js
+583 silly gunzTarPerm extractEntry front-end/common/ResourceType.js
+584 silly gunzTarPerm extractEntry front-end/common/module.json
+585 silly gunzTarPerm extractEntry front-end/components/CookiesTable.js
+586 silly gunzTarPerm extractEntry front-end/components/Drawer.js
+587 silly gunzTarPerm extractEntry front-end/components/ExecutionContextSelector.js
+588 silly gunzTarPerm extractEntry front-end/components/HandlerRegistry.js
+589 silly gunzTarPerm extractEntry front-end/components/DockController.js
+590 silly gunzTarPerm extractEntry front-end/components/DOMBreakpointsSidebarPane.js
+591 silly gunzTarPerm extractEntry front-end/components/NativeBreakpointsSidebarPane.js
+592 silly gunzTarPerm extractEntry front-end/components/ObjectPopoverHelper.js
+593 silly gunzTarPerm extractEntry front-end/components/ObjectPropertiesSection.js
+594 silly gunzTarPerm extractEntry front-end/components/ShortcutsScreen.js
+595 silly gunzTarPerm extractEntry front-end/components/DOMPresentationUtils.js
+596 silly gunzTarPerm extractEntry front-end/components/TargetsComboBoxController.js
+597 silly gunzTarPerm extractEntry front-end/components/InspectElementModeController.js
+598 silly gunzTarPerm extractEntry front-end/components/InspectorView.js
+599 silly gunzTarPerm extractEntry front-end/components/breakpointsList.css
+600 silly gunzTarPerm extractEntry front-end/components/module.json
+601 silly gunzTarPerm extractEntry front-end/console/ConsolePanel.js
+602 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc/node_modules is being purged
+603 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc/node_modules
+604 silly gunzTarPerm extractEntry front-end/console/ConsoleView.js
+605 silly gunzTarPerm extractEntry front-end/console/ConsoleViewMessage.js
+606 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6/node_modules is being purged
+607 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6/node_modules
+608 silly gunzTarPerm extractEntry front-end/console/consoleView.css
+609 silly gunzTarPerm extractEntry front-end/console/module.json
+610 silly gunzTarPerm extractEntry front-end/devices/DevicesView.js
+611 silly gunzTarPerm extractEntry front-end/devices/devicesView.css
+612 silly gunzTarPerm extractEntry front-end/devices/module.json
+613 silly gunzTarPerm extractEntry front-end/devtools.css
+614 silly gunzTarPerm extractEntry front-end/devtools.html
+615 silly gunzTarPerm extractEntry front-end/Images/popoverArrows.png
+616 silly gunzTarPerm extractEntry front-end/Images/applicationCache.png
+617 silly gunzTarPerm extractEntry front-end/Images/breakpoint.png
+618 silly gunzTarPerm extractEntry front-end/Images/breakpointConditional.png
+619 silly gunzTarPerm extractEntry front-end/Images/breakpointConditional_2x.png
+620 silly gunzTarPerm extractEntry front-end/Images/breakpoint_2x.png
+621 silly gunzTarPerm extractEntry front-end/Images/checker.png
+622 silly gunzTarPerm extractEntry front-end/Images/chromeDisabledSelect.png
+623 silly gunzTarPerm extractEntry front-end/Images/chromeDisabledSelect_2x.png
+624 silly gunzTarPerm extractEntry front-end/Images/chromeLeft.png
+625 silly gunzTarPerm extractEntry front-end/Images/chromeMiddle.png
+626 silly gunzTarPerm extractEntry front-end/Images/chromeRight.png
+627 silly gunzTarPerm extractEntry front-end/Images/chromeSelect.png
+628 silly gunzTarPerm extractEntry front-end/Images/chromeSelect_2x.png
+629 silly gunzTarPerm extractEntry front-end/Images/cookie.png
+630 silly gunzTarPerm extractEntry front-end/Images/database.png
+631 silly gunzTarPerm extractEntry front-end/Images/databaseTable.png
+632 silly gunzTarPerm extractEntry front-end/Images/deleteIcon.png
+633 silly gunzTarPerm extractEntry front-end/Images/domain.png
+634 silly gunzTarPerm extractEntry front-end/Images/errorWave.png
+635 silly gunzTarPerm extractEntry front-end/Images/errorWave_2x.png
+636 silly gunzTarPerm extractEntry front-end/Images/fileSystem.png
+637 silly gunzTarPerm extractEntry front-end/Images/forward.png
+638 silly gunzTarPerm extractEntry front-end/Images/frame.png
+639 silly gunzTarPerm extractEntry front-end/Images/graphLabelCalloutLeft.png
+640 silly gunzTarPerm extractEntry front-end/Images/graphLabelCalloutRight.png
+641 silly gunzTarPerm extractEntry front-end/Images/indexedDB.png
+642 silly gunzTarPerm extractEntry front-end/Images/indexedDBIndex.png
+643 silly gunzTarPerm extractEntry front-end/Images/indexedDBObjectStore.png
+644 silly gunzTarPerm extractEntry front-end/Images/localStorage.png
+645 silly gunzTarPerm extractEntry front-end/Images/navigationControls.png
+646 silly gunzTarPerm extractEntry front-end/Images/navigationControls_2x.png
+647 silly gunzTarPerm extractEntry front-end/Images/paneAddButtons.png
+648 silly gunzTarPerm extractEntry front-end/Images/paneElementStateButtons.png
+649 silly gunzTarPerm extractEntry front-end/Images/paneFilterButtons.png
+650 silly gunzTarPerm extractEntry front-end/Images/paneRefreshButtons.png
+651 silly gunzTarPerm extractEntry front-end/Images/back.png
+652 silly gunzTarPerm extractEntry front-end/Images/popoverBackground.png
+653 silly gunzTarPerm extractEntry front-end/Images/profileGroupIcon.png
+654 silly gunzTarPerm extractEntry front-end/Images/profileIcon.png
+655 silly gunzTarPerm extractEntry front-end/Images/profileSmallIcon.png
+656 silly gunzTarPerm extractEntry front-end/Images/radioDot.png
+657 silly gunzTarPerm extractEntry front-end/Images/resourceCSSIcon.png
+658 silly gunzTarPerm extractEntry front-end/Images/resourceDocumentIcon.png
+659 silly gunzTarPerm extractEntry front-end/Images/resourceDocumentIconSmall.png
+660 silly gunzTarPerm extractEntry front-end/Images/resourceJSIcon.png
+661 silly gunzTarPerm extractEntry front-end/Images/resourcePlainIcon.png
+662 silly gunzTarPerm extractEntry front-end/Images/resourcePlainIconSmall.png
+663 silly gunzTarPerm extractEntry front-end/Images/resourcesTimeGraphIcon.png
+664 silly gunzTarPerm extractEntry front-end/Images/responsiveDesign.png
+665 silly gunzTarPerm extractEntry front-end/Images/responsiveDesign_2x.png
+666 silly gunzTarPerm extractEntry front-end/Images/searchNext.png
+667 silly gunzTarPerm extractEntry front-end/Images/searchPrev.png
+668 silly gunzTarPerm extractEntry front-end/Images/sessionStorage.png
+669 silly gunzTarPerm extractEntry front-end/Images/settingsListRemove.png
+670 silly gunzTarPerm extractEntry front-end/Images/settingsListRemove_2x.png
+671 silly gunzTarPerm extractEntry front-end/Images/src/breakpoint.svg
+672 silly gunzTarPerm extractEntry front-end/Images/src/breakpointConditional.svg
+673 silly gunzTarPerm extractEntry front-end/Images/src/errorWave.svg
+674 silly gunzTarPerm extractEntry front-end/Images/src/optimize_png.hashes
+675 silly gunzTarPerm extractEntry front-end/Images/src/responsiveDesign.svg
+676 silly gunzTarPerm extractEntry front-end/Images/src/settingsListRemove.svg
+677 silly gunzTarPerm extractEntry front-end/Images/src/statusbarButtonGlyphs.svg
+678 silly gunzTarPerm extractEntry front-end/Images/src/svg2png.hashes
+679 silly gunzTarPerm extractEntry front-end/Images/statusbarButtonGlyphs.png
+680 silly gunzTarPerm extractEntry front-end/Images/statusbarButtonGlyphs_2x.png
+681 silly gunzTarPerm extractEntry front-end/Images/statusbarResizerHorizontal.png
+682 silly gunzTarPerm extractEntry front-end/Images/statusbarResizerVertical.png
+683 silly gunzTarPerm extractEntry front-end/Images/thumbActiveHoriz.png
+684 silly gunzTarPerm extractEntry front-end/Images/thumbActiveVert.png
+685 silly gunzTarPerm extractEntry front-end/Images/thumbHoriz.png
+686 silly gunzTarPerm extractEntry front-end/Images/thumbHoverHoriz.png
+687 silly gunzTarPerm extractEntry front-end/Images/thumbHoverVert.png
+688 silly gunzTarPerm extractEntry front-end/Images/thumbVert.png
+689 silly gunzTarPerm extractEntry front-end/Images/toolbarItemSelected.png
+690 silly gunzTarPerm extractEntry front-end/Images/touchCursor.png
+691 silly gunzTarPerm extractEntry front-end/Images/touchCursor_2x.png
+692 silly gunzTarPerm extractEntry front-end/Images/transformControls.png
+693 silly gunzTarPerm extractEntry front-end/Images/transformControls_2x.png
+694 silly gunzTarPerm extractEntry front-end/devtools.json
+695 silly gunzTarPerm extractEntry front-end/devtools_app/DevToolsAPI.js
+696 silly gunzTarPerm extractEntry front-end/devtools_app/DevToolsApp.js
+697 silly gunzTarPerm extractEntry front-end/devtools_app/InspectorFrontendHostImpl.js
+698 silly gunzTarPerm extractEntry front-end/devtools_app/UITests.js
+699 silly gunzTarPerm extractEntry front-end/devtools_app/module.json
+700 silly gunzTarPerm extractEntry front-end/dialog.css
+701 silly gunzTarPerm extractEntry front-end/documentation/DocumentationCatalog.js
+702 silly gunzTarPerm extractEntry front-end/documentation/DocumentationView.js
+703 silly gunzTarPerm extractEntry front-end/documentation/JSArticle.js
+704 silly gunzTarPerm extractEntry front-end/documentation/WikiParser.js
+705 silly gunzTarPerm extractEntry front-end/documentation/documentationView.css
+706 silly gunzTarPerm extractEntry front-end/documentation/module.json
+707 silly gunzTarPerm extractEntry front-end/elements/AnimationsSidebarPane.js
+708 silly gunzTarPerm extractEntry front-end/elements/ElementsSidebarPane.js
+709 silly gunzTarPerm extractEntry front-end/elements/ElementsTreeOutline.js
+710 silly gunzTarPerm extractEntry front-end/elements/EventListenersSidebarPane.js
+711 silly gunzTarPerm extractEntry front-end/elements/ElementsPanel.js
+712 silly gunzTarPerm extractEntry front-end/elements/PlatformFontsSidebarPane.js
+713 silly gunzTarPerm extractEntry front-end/elements/ElementsBreadcrumbs.js
+714 silly gunzTarPerm extractEntry front-end/elements/Spectrum.js
+715 silly gunzTarPerm extractEntry front-end/elements/StylesSectionModel.js
+716 silly gunzTarPerm extractEntry front-end/elements/StylesSidebarPane.js
+717 silly gunzTarPerm extractEntry front-end/elements/MetricsSidebarPane.js
+718 silly gunzTarPerm extractEntry front-end/elements/PropertiesSidebarPane.js
+719 silly gunzTarPerm extractEntry front-end/elements/breadcrumbs.css
+720 silly gunzTarPerm extractEntry front-end/elements/elementsPanel.css
+721 silly gunzTarPerm extractEntry front-end/elements/elementsTreeOutline.css
+722 silly gunzTarPerm extractEntry front-end/elements/module.json
+723 silly gunzTarPerm extractEntry front-end/elements/spectrum.css
+724 silly gunzTarPerm extractEntry front-end/extensions/ExtensionAPI.js
+725 silly gunzTarPerm extractEntry front-end/extensions/ExtensionAuditCategory.js
+726 silly gunzTarPerm extractEntry front-end/extensions/ExtensionPanel.js
+727 silly gunzTarPerm extractEntry front-end/extensions/ExtensionRegistryStub.js
+728 silly gunzTarPerm extractEntry front-end/extensions/ExtensionServer.js
+729 silly gunzTarPerm extractEntry front-end/extensions/ExtensionView.js
+730 silly gunzTarPerm extractEntry front-end/extensions/module.json
+731 silly gunzTarPerm extractEntry front-end/UglifyJS/parse-js.js
+732 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/AllocationProfile.js
+733 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/HeapSnapshot.js
+734 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/HeapSnapshotLoader.js
+735 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/HeapSnapshotWorker.js
+736 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/HeapSnapshotWorkerDispatcher.js
+737 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/JSHeapSnapshot.js
+738 silly gunzTarPerm extractEntry front-end/heap_snapshot_worker/module.json
+739 silly gunzTarPerm extractEntry front-end/host/InspectorFrontendHost.js
+740 silly gunzTarPerm extractEntry front-end/host/Platform.js
+741 silly gunzTarPerm extractEntry front-end/host/UserMetrics.js
+742 silly gunzTarPerm extractEntry front-end/host/module.json
+743 silly gunzTarPerm extractEntry front-end/inspector.css
+744 silly gunzTarPerm extractEntry front-end/inspector.html
+745 silly gunzTarPerm extractEntry front-end/audits/AuditCategories.js
+746 silly gunzTarPerm extractEntry front-end/audits/AuditController.js
+747 silly gunzTarPerm extractEntry front-end/audits/AuditExtensionCategory.js
+748 silly gunzTarPerm extractEntry front-end/audits/AuditFormatters.js
+749 silly gunzTarPerm extractEntry front-end/audits/AuditCategory.js
+750 silly gunzTarPerm extractEntry front-end/audits/AuditResultView.js
+751 silly gunzTarPerm extractEntry front-end/audits/AuditRules.js
+752 silly gunzTarPerm extractEntry front-end/audits/AuditsPanel.js
+753 silly gunzTarPerm extractEntry front-end/audits/AuditLauncherView.js
+754 silly gunzTarPerm extractEntry front-end/audits/auditsPanel.css
+755 silly gunzTarPerm extractEntry front-end/audits/module.json
+756 silly gunzTarPerm extractEntry front-end/inspector.json
+757 silly gunzTarPerm extractEntry front-end/inspectorCommon.css
+758 silly gunzTarPerm extractEntry front-end/inspectorStyle.css
+759 silly gunzTarPerm extractEntry front-end/OWNERS
+760 silly gunzTarPerm extractEntry front-end/layers/LayerPaintProfilerView.js
+761 silly gunzTarPerm extractEntry front-end/layers/LayersPanel.js
+762 silly gunzTarPerm extractEntry front-end/layers/module.json
+763 silly gunzTarPerm extractEntry front-end/main/AdvancedApp.js
+764 silly gunzTarPerm extractEntry front-end/main/HelpScreenUntilReload.js
+765 silly gunzTarPerm extractEntry front-end/main/Main.js
+766 silly gunzTarPerm extractEntry front-end/main/OverridesView.js
+767 silly gunzTarPerm extractEntry front-end/main/RenderingOptions.js
+768 silly gunzTarPerm extractEntry front-end/main/App.js
+769 silly gunzTarPerm extractEntry front-end/main/SimpleApp.js
+770 silly gunzTarPerm extractEntry front-end/main/TestController.js
+771 silly gunzTarPerm extractEntry front-end/main/Tests.js
+772 silly gunzTarPerm extractEntry front-end/main/ScreencastApp.js
+773 silly gunzTarPerm extractEntry front-end/main/accelerometer.css
+774 silly gunzTarPerm extractEntry front-end/main/module.json
+775 silly gunzTarPerm extractEntry front-end/main/overrides.css
+776 silly gunzTarPerm extractEntry front-end/network/FilterSuggestionBuilder.js
+777 silly gunzTarPerm extractEntry front-end/network/NetworkPanel.js
+778 silly gunzTarPerm extractEntry front-end/network/NetworkTimeCalculator.js
+779 silly gunzTarPerm extractEntry front-end/network/RequestCookiesView.js
+780 silly gunzTarPerm extractEntry front-end/network/NetworkLogView.js
+781 silly gunzTarPerm extractEntry front-end/network/RequestHeadersView.js
+782 silly gunzTarPerm extractEntry front-end/network/RequestJSONView.js
+783 silly gunzTarPerm extractEntry front-end/network/HARWriter.js
+784 silly gunzTarPerm extractEntry front-end/network/RequestResponseView.js
+785 silly gunzTarPerm extractEntry front-end/network/RequestTimingView.js
+786 silly gunzTarPerm extractEntry front-end/network/NetworkItemView.js
+787 silly gunzTarPerm extractEntry front-end/network/RequestView.js
+788 silly gunzTarPerm extractEntry front-end/network/NetworkDataGridNode.js
+789 silly gunzTarPerm extractEntry front-end/network/ResourceWebSocketFrameView.js
+790 silly gunzTarPerm extractEntry front-end/network/RequestHTMLView.js
+791 silly gunzTarPerm extractEntry front-end/network/RequestPreviewView.js
+792 silly gunzTarPerm extractEntry front-end/network/module.json
+793 silly gunzTarPerm extractEntry front-end/network/networkLogView.css
+794 silly gunzTarPerm extractEntry front-end/network/networkPanel.css
+795 silly gunzTarPerm extractEntry front-end/network/requestCookiesView.css
+796 silly gunzTarPerm extractEntry front-end/network/requestHeadersView.css
+797 silly gunzTarPerm extractEntry front-end/network/webSocketFrameView.css
+798 silly gunzTarPerm extractEntry front-end/platform/DOMExtension.js
+799 silly gunzTarPerm extractEntry front-end/platform/Promise.js
+800 silly gunzTarPerm extractEntry front-end/platform/utilities.js
+801 silly gunzTarPerm extractEntry front-end/platform/module.json
+802 silly gunzTarPerm extractEntry front-end/popover.css
+803 silly gunzTarPerm extractEntry front-end/profiler/CPUProfileBottomUpDataGrid.js
+804 silly gunzTarPerm extractEntry front-end/profiler/CPUProfileView.js
+805 silly gunzTarPerm extractEntry front-end/profiler/CanvasProfileView.js
+806 silly gunzTarPerm extractEntry front-end/profiler/CanvasReplayStateView.js
+807 silly gunzTarPerm extractEntry front-end/profiler/HeapSnapshotCommon.js
+808 silly gunzTarPerm extractEntry front-end/profiler/CPUProfileTopDownDataGrid.js
+809 silly gunzTarPerm extractEntry front-end/profiler/CPUProfileDataGrid.js
+810 silly gunzTarPerm extractEntry front-end/profiler/HeapSnapshotProxy.js
+811 silly gunzTarPerm extractEntry front-end/profiler/HeapSnapshotView.js
+812 silly gunzTarPerm extractEntry front-end/profiler/ProfileLauncherView.js
+813 silly gunzTarPerm extractEntry front-end/profiler/ProfileTypeRegistry.js
+814 silly gunzTarPerm extractEntry front-end/profiler/CPUProfileFlameChart.js
+815 silly gunzTarPerm extractEntry front-end/profiler/ProfilesPanel.js
+816 silly gunzTarPerm extractEntry front-end/profiler/HeapSnapshotDataGrids.js
+817 silly gunzTarPerm extractEntry front-end/profiler/HeapSnapshotGridNodes.js
+818 silly gunzTarPerm extractEntry front-end/profiler/canvasProfiler.css
+819 silly gunzTarPerm extractEntry front-end/profiler/heapProfiler.css
+820 silly gunzTarPerm extractEntry front-end/profiler/module.json
+821 silly gunzTarPerm extractEntry front-end/profiler/profilesPanel.css
+822 silly gunzTarPerm extractEntry front-end/promises/PromisePane.js
+823 silly gunzTarPerm extractEntry front-end/promises/module.json
+824 silly gunzTarPerm extractEntry front-end/promises/promisePane.css
+825 silly gunzTarPerm extractEntry front-end/resources/ApplicationCacheItemsView.js
+826 silly gunzTarPerm extractEntry front-end/resources/DOMStorageItemsView.js
+827 silly gunzTarPerm extractEntry front-end/resources/DatabaseQueryView.js
+828 silly gunzTarPerm extractEntry front-end/resources/DatabaseTableView.js
+829 silly gunzTarPerm extractEntry front-end/resources/DirectoryContentView.js
+830 silly gunzTarPerm extractEntry front-end/resources/CookieItemsView.js
+831 silly gunzTarPerm extractEntry front-end/resources/FileSystemView.js
+832 silly gunzTarPerm extractEntry front-end/resources/IndexedDBViews.js
+833 silly gunzTarPerm extractEntry front-end/resources/ResourcesPanel.js
+834 silly gunzTarPerm extractEntry front-end/resources/FileContentView.js
+835 silly gunzTarPerm extractEntry front-end/resources/indexedDBViews.css
+836 silly gunzTarPerm extractEntry front-end/resources/module.json
+837 silly gunzTarPerm extractEntry front-end/resources/resourcesPanel.css
+838 silly gunzTarPerm extractEntry front-end/screencast/ScreencastView.js
+839 silly gunzTarPerm extractEntry front-end/screencast/module.json
+840 silly gunzTarPerm extractEntry front-end/screencast/screencastView.css
+841 silly gunzTarPerm extractEntry front-end/script_formatter_worker/CSSFormatter.js
+842 silly gunzTarPerm extractEntry front-end/script_formatter_worker/JavaScriptFormatter.js
+843 silly gunzTarPerm extractEntry front-end/script_formatter_worker/ScriptFormatterWorker.js
+844 silly gunzTarPerm extractEntry front-end/script_formatter_worker/module.json
+845 silly gunzTarPerm extractEntry front-end/sdk/AnimationModel.js
+846 silly gunzTarPerm extractEntry front-end/sdk/HAREntry.js
+847 silly gunzTarPerm extractEntry front-end/sdk/HeapProfilerModel.js
+848 silly gunzTarPerm extractEntry front-end/sdk/IndexedDBModel.js
+849 silly gunzTarPerm extractEntry front-end/sdk/FileSystemModel.js
+850 silly gunzTarPerm extractEntry front-end/sdk/LayerTreeModel.js
+851 silly gunzTarPerm extractEntry front-end/sdk/NetworkLog.js
+852 silly gunzTarPerm extractEntry front-end/sdk/NetworkManager.js
+853 silly gunzTarPerm extractEntry front-end/sdk/NetworkRequest.js
+854 silly gunzTarPerm extractEntry front-end/sdk/OverridesSupport.js
+855 silly gunzTarPerm extractEntry front-end/sdk/DebuggerModel.js
+856 silly gunzTarPerm extractEntry front-end/sdk/PaintProfiler.js
+857 silly gunzTarPerm extractEntry front-end/sdk/Database.js
+858 silly gunzTarPerm extractEntry front-end/sdk/PowerProfiler.js
+859 silly gunzTarPerm extractEntry front-end/sdk/DOMStorage.js
+860 silly gunzTarPerm extractEntry front-end/sdk/RemoteObject.js
+861 silly gunzTarPerm extractEntry front-end/sdk/DOMModel.js
+862 silly gunzTarPerm extractEntry front-end/sdk/Resource.js
+863 silly gunzTarPerm extractEntry front-end/sdk/CookieParser.js
+864 silly gunzTarPerm extractEntry front-end/sdk/ResourceTreeModel.js
+865 silly gunzTarPerm extractEntry front-end/sdk/ContentProviders.js
+866 silly gunzTarPerm extractEntry front-end/sdk/RuntimeModel.js
+867 silly gunzTarPerm extractEntry front-end/sdk/ConsoleModel.js
+868 silly gunzTarPerm extractEntry front-end/sdk/Script.js
+869 silly gunzTarPerm extractEntry front-end/sdk/CSSStyleModel.js
+870 silly gunzTarPerm extractEntry front-end/sdk/SnippetStorage.js
+871 silly gunzTarPerm extractEntry front-end/sdk/CSSParser.js
+872 silly gunzTarPerm extractEntry front-end/sdk/SourceMap.js
+873 silly gunzTarPerm extractEntry front-end/sdk/CSSMetadata.js
+874 silly gunzTarPerm extractEntry front-end/sdk/Target.js
+875 silly gunzTarPerm extractEntry front-end/sdk/CPUProfilerModel.js
+876 silly gunzTarPerm extractEntry front-end/sdk/TracingManager.js
+877 silly gunzTarPerm extractEntry front-end/sdk/CPUProfileDataModel.js
+878 silly gunzTarPerm extractEntry front-end/sdk/WorkerManager.js
+879 silly gunzTarPerm extractEntry front-end/sdk/BlackboxSupport.js
+880 silly gunzTarPerm extractEntry front-end/sdk/WorkerTargetManager.js
+881 silly gunzTarPerm extractEntry front-end/sdk/ApplicationCacheModel.js
+882 silly gunzTarPerm extractEntry front-end/sdk/InspectorBackend.js
+883 silly gunzTarPerm extractEntry front-end/sdk/module.json
+884 silly gunzTarPerm extractEntry front-end/settings/EditFileSystemDialog.js
+885 silly gunzTarPerm extractEntry front-end/settings/FrameworkBlackboxDialog.js
+886 silly gunzTarPerm extractEntry front-end/settings/SettingsScreen.js
+887 silly gunzTarPerm extractEntry front-end/settings/module.json
+888 silly gunzTarPerm extractEntry front-end/sidebarPane.css
+889 silly gunzTarPerm extractEntry front-end/source_frame/CodeMirrorTextEditor.js
+890 silly gunzTarPerm extractEntry front-end/source_frame/FontView.js
+891 silly gunzTarPerm extractEntry front-end/source_frame/GoToLineDialog.js
+892 silly gunzTarPerm extractEntry front-end/source_frame/ImageView.js
+893 silly gunzTarPerm extractEntry front-end/source_frame/ResourceSourceFrame.js
+894 silly gunzTarPerm extractEntry front-end/source_frame/CodeMirrorUtils.js
+895 silly gunzTarPerm extractEntry front-end/source_frame/SourceFrame.js
+896 silly gunzTarPerm extractEntry front-end/source_frame/cmdevtools.css
+897 silly gunzTarPerm extractEntry front-end/source_frame/fontView.css
+898 silly gunzTarPerm extractEntry front-end/source_frame/imageView.css
+899 silly gunzTarPerm extractEntry front-end/source_frame/module.json
+900 silly gunzTarPerm extractEntry front-end/source_frame/resourceSourceFrame.css
+901 silly gunzTarPerm extractEntry front-end/sources/AddSourceMapURLDialog.js
+902 silly gunzTarPerm extractEntry front-end/sources/NavigatorView.js
+903 silly gunzTarPerm extractEntry front-end/sources/Placard.js
+904 silly gunzTarPerm extractEntry front-end/sources/RevisionHistoryView.js
+905 silly gunzTarPerm extractEntry front-end/sources/ScopeChainSidebarPane.js
+906 silly gunzTarPerm extractEntry front-end/sources/JavaScriptSourceFrame.js
+907 silly gunzTarPerm extractEntry front-end/sources/ScriptFormatterEditorAction.js
+908 silly gunzTarPerm extractEntry front-end/sources/AdvancedSearchView.js
+909 silly gunzTarPerm extractEntry front-end/sources/SourcesNavigator.js
+910 silly gunzTarPerm extractEntry front-end/sources/SourcesPanel.js
+911 silly gunzTarPerm extractEntry front-end/sources/SourcesSearchScope.js
+912 silly gunzTarPerm extractEntry front-end/sources/InplaceFormatterEditorAction.js
+913 silly gunzTarPerm extractEntry front-end/sources/SourcesView.js
+914 silly gunzTarPerm extractEntry front-end/sources/FilteredItemSelectionDialog.js
+915 silly gunzTarPerm extractEntry front-end/sources/StyleSheetOutlineDialog.js
+916 silly gunzTarPerm extractEntry front-end/sources/FilePathScoreFunction.js
+917 silly gunzTarPerm extractEntry front-end/sources/TabbedEditorContainer.js
+918 silly gunzTarPerm extractEntry front-end/sources/FileBasedSearchResultsPane.js
+919 silly gunzTarPerm extractEntry front-end/sources/ThreadsSidebarPane.js
+920 silly gunzTarPerm extractEntry front-end/sources/EditingLocationHistoryManager.js
+921 silly gunzTarPerm extractEntry front-end/sources/UISourceCodeFrame.js
+922 silly gunzTarPerm extractEntry front-end/sources/CallStackSidebarPane.js
+923 silly gunzTarPerm extractEntry front-end/sources/WatchExpressionsSidebarPane.js
+924 silly gunzTarPerm extractEntry front-end/sources/CSSSourceFrame.js
+925 silly gunzTarPerm extractEntry front-end/sources/WorkspaceMappingTip.js
+926 silly gunzTarPerm extractEntry front-end/sources/BreakpointsSidebarPane.js
+927 silly gunzTarPerm extractEntry front-end/sources/jsdifflib.js
+928 silly gunzTarPerm extractEntry front-end/sources/ScriptFormatter.js
+929 silly gunzTarPerm extractEntry front-end/sources/SimpleHistoryManager.js
+930 silly gunzTarPerm extractEntry front-end/sources/filteredItemSelectionDialog.css
+931 silly gunzTarPerm extractEntry front-end/sources/module.json
+932 silly gunzTarPerm extractEntry front-end/sources/navigatorView.css
+933 silly gunzTarPerm extractEntry front-end/sources/revisionHistory.css
+934 silly gunzTarPerm extractEntry front-end/sources/sourcesPanel.css
+935 silly gunzTarPerm extractEntry front-end/sources/sourcesView.css
+936 silly gunzTarPerm extractEntry front-end/suggestBox.css
+937 silly gunzTarPerm extractEntry front-end/tabbedPane.css
+938 silly gunzTarPerm extractEntry front-end/temp_storage_shared_worker/TempStorageSharedWorker.js
+939 silly gunzTarPerm extractEntry front-end/temp_storage_shared_worker/module.json
+940 silly gunzTarPerm extractEntry front-end/timeline/CountersGraph.js
+941 silly gunzTarPerm extractEntry front-end/timeline/TimelineFrameOverview.js
+942 silly gunzTarPerm extractEntry front-end/timeline/TimelineJSProfile.js
+943 silly gunzTarPerm extractEntry front-end/timeline/TimelineLayersView.js
+944 silly gunzTarPerm extractEntry front-end/timeline/TimelineFrameModel.js
+945 silly gunzTarPerm extractEntry front-end/timeline/LayerDetailsView.js
+946 silly gunzTarPerm extractEntry front-end/timeline/TimelineOverviewPane.js
+947 silly gunzTarPerm extractEntry front-end/timeline/TimelinePaintProfilerView.js
+948 silly gunzTarPerm extractEntry front-end/timeline/TimelinePanel.js
+949 silly gunzTarPerm extractEntry front-end/timeline/TimelinePowerGraph.js
+950 silly gunzTarPerm extractEntry front-end/timeline/TimelineFlameChart.js
+951 silly gunzTarPerm extractEntry front-end/timeline/TimelinePowerOverview.js
+952 silly gunzTarPerm extractEntry front-end/timeline/TimelineEventOverview.js
+953 silly gunzTarPerm extractEntry front-end/timeline/TimelinePresentationModel.js
+954 silly gunzTarPerm extractEntry front-end/timeline/PaintProfilerView.js
+955 silly gunzTarPerm extractEntry front-end/timeline/TimelineUIUtils.js
+956 silly gunzTarPerm extractEntry front-end/timeline/MemoryCountersGraph.js
+957 silly gunzTarPerm extractEntry front-end/timeline/TimelineView.js
+958 silly gunzTarPerm extractEntry front-end/timeline/Layers3DView.js
+959 silly gunzTarPerm extractEntry front-end/timeline/TracingModel.js
+960 silly gunzTarPerm extractEntry front-end/timeline/LayerTreeOutline.js
+961 silly gunzTarPerm extractEntry front-end/timeline/TransformController.js
+962 silly gunzTarPerm extractEntry front-end/timeline/TimelineMemoryOverview.js
+963 silly gunzTarPerm extractEntry front-end/timeline/TimelineModel.js
+964 silly gunzTarPerm extractEntry front-end/timeline/module.json
+965 silly gunzTarPerm extractEntry front-end/timeline/timelinePanel.css
+966 silly gunzTarPerm extractEntry front-end/toolbox/InspectedPagePlaceholder.js
+967 silly gunzTarPerm extractEntry front-end/toolbox/MediaQueryInspector.js
+968 silly gunzTarPerm extractEntry front-end/toolbox/OverridesUI.js
+969 silly gunzTarPerm extractEntry front-end/toolbox/ResponsiveDesignView.js
+970 silly gunzTarPerm extractEntry front-end/toolbox/module.json
+971 silly gunzTarPerm extractEntry front-end/toolbox/responsiveDesignView.css
+972 silly gunzTarPerm extractEntry front-end/toolbox.css
+973 silly gunzTarPerm extractEntry front-end/toolbox.html
+974 silly gunzTarPerm extractEntry front-end/bindings/BreakpointManager.js
+975 silly gunzTarPerm extractEntry front-end/bindings/FileUtils.js
+976 silly gunzTarPerm extractEntry front-end/bindings/Linkifier.js
+977 silly gunzTarPerm extractEntry front-end/bindings/LiveLocation.js
+978 silly gunzTarPerm extractEntry front-end/bindings/DefaultScriptMapping.js
+979 silly gunzTarPerm extractEntry front-end/bindings/NetworkWorkspaceBinding.js
+980 silly gunzTarPerm extractEntry front-end/bindings/PresentationConsoleMessageHelper.js
+981 silly gunzTarPerm extractEntry front-end/bindings/ResourceScriptMapping.js
+982 silly gunzTarPerm extractEntry front-end/bindings/ResourceUtils.js
+983 silly gunzTarPerm extractEntry front-end/bindings/SASSSourceMapping.js
+984 silly gunzTarPerm extractEntry front-end/bindings/DebuggerWorkspaceBinding.js
+985 silly gunzTarPerm extractEntry front-end/bindings/ScriptSnippetModel.js
+986 silly gunzTarPerm extractEntry front-end/bindings/ContentScriptProjectDecorator.js
+987 silly gunzTarPerm extractEntry front-end/bindings/StylesSourceMapping.js
+988 silly gunzTarPerm extractEntry front-end/bindings/ContentProviderBasedProjectDelegate.js
+989 silly gunzTarPerm extractEntry front-end/bindings/TempFile.js
+990 silly gunzTarPerm extractEntry front-end/bindings/CompilerScriptMapping.js
+991 silly gunzTarPerm extractEntry front-end/bindings/WorkspaceController.js
+992 silly gunzTarPerm extractEntry front-end/bindings/CSSWorkspaceBinding.js
+993 silly gunzTarPerm extractEntry front-end/bindings/NetworkUISourceCodeProvider.js
+994 silly gunzTarPerm extractEntry front-end/bindings/module.json
+995 silly gunzTarPerm extractEntry front-end/toolbox.json
+996 silly gunzTarPerm extractEntry front-end/toolbox_bootstrap/Toolbox.js
+997 silly gunzTarPerm extractEntry front-end/toolbox_bootstrap/module.json
+998 silly gunzTarPerm extractEntry front-end/cm/LICENSE
+999 silly gunzTarPerm extractEntry front-end/cm/python.js
+1000 silly gunzTarPerm extractEntry front-end/cm/codemirror.js
+1001 silly gunzTarPerm extractEntry front-end/cm/coffeescript.js
+1002 silly gunzTarPerm extractEntry front-end/cm/comment.js
+1003 silly gunzTarPerm extractEntry front-end/cm/closebrackets.js
+1004 silly gunzTarPerm extractEntry front-end/cm/php.js
+1005 silly gunzTarPerm extractEntry front-end/cm/htmlembedded.js
+1006 silly gunzTarPerm extractEntry front-end/cm/htmlmixed.js
+1007 silly gunzTarPerm extractEntry front-end/cm/javascript.js
+1008 silly gunzTarPerm extractEntry front-end/cm/markselection.js
+1009 silly gunzTarPerm extractEntry front-end/cm/clike.js
+1010 silly gunzTarPerm extractEntry front-end/cm/matchbrackets.js
+1011 silly gunzTarPerm extractEntry front-end/cm/shell.js
+1012 silly gunzTarPerm extractEntry front-end/cm/overlay.js
+1013 silly gunzTarPerm extractEntry front-end/cm/css.js
+1014 silly gunzTarPerm extractEntry front-end/cm/xml.js
+1015 silly gunzTarPerm extractEntry front-end/cm/headlesscodemirror.js
+1016 silly gunzTarPerm extractEntry front-end/cm/LICENSE_python
+1017 silly gunzTarPerm extractEntry front-end/cm/codemirror.css
+1018 silly gunzTarPerm extractEntry front-end/cm/PRESUBMIT.py
+1019 silly gunzTarPerm extractEntry front-end/ui/ActionRegistry.js
+1020 silly gunzTarPerm extractEntry front-end/ui/ProgressIndicator.js
+1021 silly gunzTarPerm extractEntry front-end/ui/ResizerWidget.js
+1022 silly gunzTarPerm extractEntry front-end/ui/RootView.js
+1023 silly gunzTarPerm extractEntry front-end/ui/Popover.js
+1024 silly gunzTarPerm extractEntry front-end/ui/Section.js
+1025 silly gunzTarPerm extractEntry front-end/ui/SettingsUI.js
+1026 silly gunzTarPerm extractEntry front-end/ui/ShortcutRegistry.js
+1027 silly gunzTarPerm extractEntry front-end/ui/ShowMoreDataGridNode.js
+1028 silly gunzTarPerm extractEntry front-end/ui/SidebarPane.js
+1029 silly gunzTarPerm extractEntry front-end/ui/PieChart.js
+1030 silly gunzTarPerm extractEntry front-end/ui/CompletionDictionary.js
+1031 silly gunzTarPerm extractEntry front-end/ui/Panel.js
+1032 silly gunzTarPerm extractEntry front-end/ui/SoftContextMenu.js
+1033 silly gunzTarPerm extractEntry front-end/ui/OverviewGrid.js
+1034 silly gunzTarPerm extractEntry front-end/ui/SortableDataGrid.js
+1035 silly gunzTarPerm extractEntry front-end/ui/KeyboardShortcut.js
+1036 silly gunzTarPerm extractEntry front-end/ui/SplitView.js
+1037 silly gunzTarPerm extractEntry front-end/ui/InplaceEditor.js
+1038 silly gunzTarPerm extractEntry front-end/ui/StackView.js
+1039 silly gunzTarPerm extractEntry front-end/ui/HelpScreen.js
+1040 silly gunzTarPerm extractEntry front-end/ui/StatusBar.js
+1041 silly gunzTarPerm extractEntry front-end/ui/ForwardedInputEventHandler.js
+1042 silly gunzTarPerm extractEntry front-end/ui/SuggestBox.js
+1043 silly gunzTarPerm extractEntry front-end/ui/FlameChart.js
+1044 silly gunzTarPerm extractEntry front-end/ui/TabbedPane.js
+1045 silly gunzTarPerm extractEntry front-end/ui/FilterBar.js
+1046 silly gunzTarPerm extractEntry front-end/ui/TextEditor.js
+1047 silly gunzTarPerm extractEntry front-end/ui/EmptyView.js
+1048 silly gunzTarPerm extractEntry front-end/ui/TextPrompt.js
+1049 silly gunzTarPerm extractEntry front-end/ui/DropDownMenu.js
+1050 silly gunzTarPerm extractEntry front-end/ui/TimelineGrid.js
+1051 silly gunzTarPerm extractEntry front-end/ui/Dialog.js
+1052 silly gunzTarPerm extractEntry front-end/ui/UIUtils.js
+1053 silly gunzTarPerm extractEntry front-end/ui/DataGrid.js
+1054 silly gunzTarPerm extractEntry front-end/ui/View.js
+1055 silly gunzTarPerm extractEntry front-end/ui/DOMSyntaxHighlighter.js
+1056 silly gunzTarPerm extractEntry front-end/ui/ViewportControl.js
+1057 silly gunzTarPerm extractEntry front-end/ui/ContextMenu.js
+1058 silly gunzTarPerm extractEntry front-end/ui/ViewportDataGrid.js
+1059 silly gunzTarPerm extractEntry front-end/ui/Context.js
+1060 silly gunzTarPerm extractEntry front-end/ui/ZoomManager.js
+1061 silly gunzTarPerm extractEntry front-end/ui/SearchableView.js
+1062 silly gunzTarPerm extractEntry front-end/ui/treeoutline.js
+1063 silly gunzTarPerm extractEntry front-end/ui/SidebarTreeElement.js
+1064 silly gunzTarPerm extractEntry front-end/ui/dataGrid.css
+1065 silly gunzTarPerm extractEntry front-end/ui/flameChart.css
+1066 silly gunzTarPerm extractEntry front-end/ui/helpScreen.css
+1067 silly gunzTarPerm extractEntry front-end/ui/module.json
+1068 silly gunzTarPerm extractEntry front-end/ui/overviewGrid.css
+1069 silly gunzTarPerm extractEntry front-end/ui/filter.css
+1070 silly gunzTarPerm extractEntry front-end/ui/pieChart.css
+1071 silly gunzTarPerm extractEntry front-end/ui/progressIndicator.css
+1072 silly gunzTarPerm extractEntry front-end/ui/searchableView.css
+1073 silly gunzTarPerm extractEntry front-end/ui/splitView.css
+1074 silly gunzTarPerm extractEntry front-end/ui/statusBar.css
+1075 silly gunzTarPerm extractEntry front-end/ui/panelEnablerView.css
+1076 silly gunzTarPerm extractEntry front-end/workspace/FileManager.js
+1077 silly gunzTarPerm extractEntry front-end/workspace/FileSystemMapping.js
+1078 silly gunzTarPerm extractEntry front-end/workspace/FileSystemWorkspaceBinding.js
+1079 silly gunzTarPerm extractEntry front-end/workspace/IsolatedFileSystem.js
+1080 silly gunzTarPerm extractEntry front-end/workspace/IsolatedFileSystemManager.js
+1081 silly gunzTarPerm extractEntry front-end/workspace/SearchConfig.js
+1082 silly gunzTarPerm extractEntry front-end/workspace/UISourceCode.js
+1083 silly gunzTarPerm extractEntry front-end/workspace/Workspace.js
+1084 silly gunzTarPerm extractEntry front-end/workspace/module.json
+1085 silly gunzTarPerm extractEntry front-end-node/NodeInspectorOverrides.js
+1086 silly gunzTarPerm extractEntry front-end-node/module.json
+1087 silly gunzTarPerm extractEntry front-end-node/console/ConsoleExtentions.js
+1088 silly gunzTarPerm extractEntry front-end-node/console/module.json
+1089 silly gunzTarPerm extractEntry front-end-node/inspector.json
+1090 silly gunzTarPerm extractEntry front-end-node/main/MainOverrides.js
+1091 silly gunzTarPerm extractEntry front-end-node/main/module.json
+1092 silly gunzTarPerm extractEntry front-end-node/Images/favicon.png
+1093 silly gunzTarPerm modified mode [ 'front-end-node/Images/favicon.png', 436, 420 ]
+1094 silly gunzTarPerm extractEntry front-end-node/Images/src/favicon.eps
+1095 silly gunzTarPerm modified mode [ 'front-end-node/Images/src/favicon.eps', 436, 420 ]
+1096 silly gunzTarPerm extractEntry front-end-node/network/NetworkPanel.js
+1097 silly gunzTarPerm extractEntry front-end-node/network/module.json
+1098 silly gunzTarPerm extractEntry front-end-node/profiler/SaveOverrides.js
+1099 silly gunzTarPerm extractEntry front-end-node/profiler/module.json
+1100 silly gunzTarPerm extractEntry front-end-node/protocol.json
+1101 silly gunzTarPerm extractEntry front-end-node/settings/SettingsScreenOverrides.js
+1102 silly gunzTarPerm extractEntry front-end-node/settings/SettingsScreenOverrides.css
+1103 silly gunzTarPerm extractEntry front-end-node/settings/module.json
+1104 silly gunzTarPerm extractEntry front-end-node/sources/SourcesOverrides.js
+1105 silly gunzTarPerm extractEntry front-end-node/sources/module.json
+1106 silly gunzTarPerm extractEntry AUTHORS
+1107 silly gunzTarPerm modified mode [ 'AUTHORS', 436, 420 ]
+1108 silly gunzTarPerm extractEntry lib/BreakEventHandler.js
+1109 silly gunzTarPerm extractEntry lib/HeapProfilerClient.js
+1110 silly gunzTarPerm extractEntry lib/plugins.js
+1111 silly gunzTarPerm extractEntry lib/InjectorClient.js
+1112 silly gunzTarPerm extractEntry lib/HeapProfilerAgent.js
+1113 silly gunzTarPerm extractEntry lib/CallFramesProvider.js
+1114 silly gunzTarPerm extractEntry lib/PageAgent.js
+1115 silly gunzTarPerm extractEntry lib/ProfilerAgent.js
+1116 silly gunzTarPerm extractEntry lib/RuntimeAgent.js
+1117 silly gunzTarPerm extractEntry lib/ScriptFileStorage.js
+1118 silly gunzTarPerm extractEntry lib/FrontendCommandHandler.js
+1119 silly gunzTarPerm extractEntry lib/ScriptManager.js
+1120 silly gunzTarPerm extractEntry lib/FrontendClient.js
+1121 silly gunzTarPerm extractEntry lib/callback.js
+1122 silly gunzTarPerm extractEntry lib/DebuggerClient.js
+1123 silly gunzTarPerm extractEntry lib/config.js
+1124 silly gunzTarPerm extractEntry lib/DebuggerAgent.js
+1125 silly gunzTarPerm extractEntry lib/convert.js
+1126 silly gunzTarPerm extractEntry lib/ConsoleClient.js
+1127 silly gunzTarPerm extractEntry lib/debug-server.js
+1128 silly gunzTarPerm extractEntry lib/ConsoleAgent.js
+1129 silly gunzTarPerm extractEntry lib/debugger.js
+1130 silly gunzTarPerm extractEntry lib/InjectorServer.js
+1131 silly gunzTarPerm extractEntry lib/session.js
+1132 silly gunzTarPerm extractEntry lib/NetworkAgent.js
+1133 silly gunzTarPerm extractEntry lib/Injections/ConsoleAgent.js
+1134 silly gunzTarPerm extractEntry lib/Injections/HeapProfilerAgent.js
+1135 silly gunzTarPerm extractEntry lib/Injections/NetworkAgent.js
+1136 silly gunzTarPerm extractEntry lib/Injections/ProfilerAgent.js
+1137 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1138 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+1139 silly gunzTarPerm extractEntry tools/git-changelog.sh
+1140 silly gunzTarPerm modified mode [ 'tools/git-changelog.sh', 509, 493 ]
+1141 silly gunzTarPerm extractEntry tools/protocol.json
+1142 silly gunzTarPerm extractEntry tools/release.sh
+1143 silly gunzTarPerm extractEntry tools/update-front-end.sh
+1144 silly gunzTarPerm modified mode [ 'tools/update-front-end.sh', 509, 493 ]
+1145 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03/node_modules is being purged
+1146 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03/node_modules
+1147 silly doParallel preinstall 7
+1148 silly preinstall async@0.9.2 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3
+1149 info lifecycle async@0.9.2~preinstall: async@0.9.2
+1150 silly preinstall glob@5.0.15 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e
+1151 info lifecycle glob@5.0.15~preinstall: glob@5.0.15
+1152 silly preinstall semver@4.3.6 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc
+1153 info lifecycle semver@4.3.6~preinstall: semver@4.3.6
+1154 silly preinstall which@1.2.11 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3
+1155 info lifecycle which@1.2.11~preinstall: which@1.2.11
+1156 silly preinstall v8-debug@0.7.7 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+1157 info lifecycle v8-debug@0.7.7~preinstall: v8-debug@0.7.7
+1158 silly preinstall node-inspector@0.12.8 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/node-inspector-4e6bca03
+1159 info lifecycle node-inspector@0.12.8~preinstall: node-inspector@0.12.8
+1160 silly preinstall grunt-node-inspector@0.4.2 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/grunt-node-inspector-c9e830bf
+1161 info lifecycle grunt-node-inspector@0.4.2~preinstall: grunt-node-inspector@0.4.2
+1162 silly lifecycle async@0.9.2~preinstall: no script for preinstall, continuing
+1163 silly lifecycle glob@5.0.15~preinstall: no script for preinstall, continuing
+1164 silly lifecycle semver@4.3.6~preinstall: no script for preinstall, continuing
+1165 silly lifecycle which@1.2.11~preinstall: no script for preinstall, continuing
+1166 verbose lifecycle v8-debug@0.7.7~preinstall: unsafe-perm in lifecycle true
+1167 verbose lifecycle v8-debug@0.7.7~preinstall: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6/node_modules/.bin:/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.bin:/home/likewise-open/FRAMGIA/le.cong.phuc/.pyenv/shims:/home/likewise-open/FRAMGIA/le.cong.phuc/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+1168 verbose lifecycle v8-debug@0.7.7~preinstall: CWD: /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+1169 silly lifecycle v8-debug@0.7.7~preinstall: Args: [ '-c', 'node -e \'process.exit(0)\'' ]
+1170 silly lifecycle node-inspector@0.12.8~preinstall: no script for preinstall, continuing
+1171 silly lifecycle grunt-node-inspector@0.4.2~preinstall: no script for preinstall, continuing
+1172 silly lifecycle v8-debug@0.7.7~preinstall: Returned: code: 0  signal: null
+1173 silly doReverseSerial remove 0
+1174 silly doSerial move 0
+1175 silly doSerial finalize 7
+1176 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/async
+1177 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/glob
+1178 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/semver
+1179 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/which
+1180 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/v8-debug
+1181 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector
+1182 silly finalize /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/grunt-node-inspector
+1183 silly doSerial build 7
+1184 silly build async@0.9.2
+1185 info linkStuff async@0.9.2
+1186 silly linkStuff async@0.9.2 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules as its parent node_modules
+1187 verbose linkBins async@0.9.2
+1188 verbose linkMans async@0.9.2
+1189 silly build glob@5.0.15
+1190 info linkStuff glob@5.0.15
+1191 silly linkStuff glob@5.0.15 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules as its parent node_modules
+1192 verbose linkBins glob@5.0.15
+1193 verbose linkMans glob@5.0.15
+1194 silly build semver@4.3.6
+1195 info linkStuff semver@4.3.6
+1196 silly linkStuff semver@4.3.6 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules as its parent node_modules
+1197 verbose linkBins semver@4.3.6
+1198 verbose link bins [ { semver: './bin/semver' },
+1198 verbose link bins   '/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin',
+1198 verbose link bins   false ]
+1199 verbose linkMans semver@4.3.6
+1200 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin/semver is being purged
+1201 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin/semver
+1202 silly build which@1.2.11
+1203 info linkStuff which@1.2.11
+1204 silly linkStuff which@1.2.11 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules as its parent node_modules
+1205 verbose linkBins which@1.2.11
+1206 verbose link bins [ { which: './bin/which' },
+1206 verbose link bins   '/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin',
+1206 verbose link bins   false ]
+1207 verbose linkMans which@1.2.11
+1208 silly gentlyRm /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin/which is being purged
+1209 verbose gentlyRm don't care about contents; nuking /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/node-inspector/node_modules/.bin/which
+1210 silly build v8-debug@0.7.7
+1211 info linkStuff v8-debug@0.7.7
+1212 silly linkStuff v8-debug@0.7.7 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules as its parent node_modules
+1213 verbose linkBins v8-debug@0.7.7
+1214 verbose linkMans v8-debug@0.7.7
+1215 silly build node-inspector@0.12.8
+1216 info linkStuff node-inspector@0.12.8
+1217 silly linkStuff node-inspector@0.12.8 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules as its parent node_modules
+1218 warn prefer global node-inspector@0.12.8 should be installed with -g
+1219 verbose linkBins node-inspector@0.12.8
+1220 verbose link bins [ { 'node-inspector': './bin/inspector.js',
+1220 verbose link bins     'node-debug': './bin/node-debug.js' },
+1220 verbose link bins   '/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.bin',
+1220 verbose link bins   false ]
+1221 verbose linkMans node-inspector@0.12.8
+1222 silly build grunt-node-inspector@0.4.2
+1223 info linkStuff grunt-node-inspector@0.4.2
+1224 silly linkStuff grunt-node-inspector@0.4.2 has /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules as its parent node_modules
+1225 verbose linkBins grunt-node-inspector@0.4.2
+1226 verbose linkMans grunt-node-inspector@0.4.2
+1227 silly doSerial global-link 0
+1228 silly doParallel update-linked 0
+1229 silly doSerial install 7
+1230 silly install async@0.9.2 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/async-131328b3
+1231 info lifecycle async@0.9.2~install: async@0.9.2
+1232 silly lifecycle async@0.9.2~install: no script for install, continuing
+1233 silly install glob@5.0.15 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/glob-92e7862e
+1234 info lifecycle glob@5.0.15~install: glob@5.0.15
+1235 silly lifecycle glob@5.0.15~install: no script for install, continuing
+1236 silly install semver@4.3.6 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/semver-ae4e04dc
+1237 info lifecycle semver@4.3.6~install: semver@4.3.6
+1238 silly lifecycle semver@4.3.6~install: no script for install, continuing
+1239 silly install which@1.2.11 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/which-3b74c8d3
+1240 info lifecycle which@1.2.11~install: which@1.2.11
+1241 silly lifecycle which@1.2.11~install: no script for install, continuing
+1242 silly install v8-debug@0.7.7 /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging/v8-debug-9fa60ea6
+1243 info lifecycle v8-debug@0.7.7~install: v8-debug@0.7.7
+1244 verbose lifecycle v8-debug@0.7.7~install: unsafe-perm in lifecycle true
+1245 verbose lifecycle v8-debug@0.7.7~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/v8-debug/node_modules/.bin:/home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.bin:/home/likewise-open/FRAMGIA/le.cong.phuc/.pyenv/shims:/home/likewise-open/FRAMGIA/le.cong.phuc/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+1246 verbose lifecycle v8-debug@0.7.7~install: CWD: /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/v8-debug
+1247 silly lifecycle v8-debug@0.7.7~install: Args: [ '-c', 'node-pre-gyp install --fallback-to-build' ]
+1248 silly lifecycle v8-debug@0.7.7~install: Returned: code: 1  signal: null
+1249 info lifecycle v8-debug@0.7.7~install: Failed to exec install script
+1250 verbose unlock done using /home/likewise-open/FRAMGIA/le.cong.phuc/.npm/_locks/staging-11ae6a6b45a4add1.lock for /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend/node_modules/.staging
+1251 silly rollbackFailedOptional Starting
+1252 silly rollbackFailedOptional Finishing
+1253 silly runTopLevelLifecycles Finishing
+1254 silly install printInstalled
+1255 warn optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules/chokidar/node_modules/fsevents):
+1256 warn notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.0.15: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+1257 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid OS:    darwin
+1257 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Valid Arch:  any
+1257 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual OS:   linux
+1257 verbose notsup SKIPPING OPTIONAL DEPENDENCY: Actual Arch: x64
+1258 verbose stack Error: v8-debug@0.7.7 install: `node-pre-gyp install --fallback-to-build`
+1258 verbose stack Exit status 1
+1258 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+1258 verbose stack     at emitTwo (events.js:106:13)
+1258 verbose stack     at EventEmitter.emit (events.js:191:7)
+1258 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+1258 verbose stack     at emitTwo (events.js:106:13)
+1258 verbose stack     at ChildProcess.emit (events.js:191:7)
+1258 verbose stack     at maybeClose (internal/child_process.js:877:16)
+1258 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+1259 verbose pkgid v8-debug@0.7.7
+1260 verbose cwd /home/likewise-open/FRAMGIA/le.cong.phuc/PycharmProjects/izischool/frontend
+1261 error Linux 3.16.0-30-generic
+1262 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+1263 error node v7.0.0
+1264 error npm  v3.10.8
+1265 error code ELIFECYCLE
+1266 error v8-debug@0.7.7 install: `node-pre-gyp install --fallback-to-build`
+1266 error Exit status 1
+1267 error Failed at the v8-debug@0.7.7 install script 'node-pre-gyp install --fallback-to-build'.
+1267 error Make sure you have the latest version of node.js and npm installed.
+1267 error If you do, this is most likely a problem with the v8-debug package,
+1267 error not with npm itself.
+1267 error Tell the author that this fails on your system:
+1267 error     node-pre-gyp install --fallback-to-build
+1267 error You can get information on how to open an issue for this project with:
+1267 error     npm bugs v8-debug
+1267 error Or if that isn't available, you can get their info via:
+1267 error     npm owner ls v8-debug
+1267 error There is likely additional logging output above.
+1268 verbose exit [ 1, true ]

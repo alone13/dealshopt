@@ -1,0 +1,493 @@
+{% extends "shared/layout.jinja2" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/public.core.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/star-rating.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/css(1)"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/angular-material.min.css"/>
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/public.resources.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/public.core.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/star-rating.js"></script>
+    <div class="row" style="width: 1426px;margin-left: -119px;">
+        <div class="info-detail-restaurant">
+        <script type="text/javascript">
+            fbq('track', 'ViewContent', {
+                content_ids: fb_content_ids,
+                content_type: 'product',
+                content_name: fb_content_name
+            });
+        </script>
+        <div id="detail-page" class="container-detail-restaurant ng-scope" ng-controller="DetailController as detailCtrl">
+            <div class="info-detail-restaurant">
+                <div class="widget-detail-restaurant container-content clearfix">
+                    <div class="widget-hot-restaurant no-shadow" style="margin-bottom: 30px;float: left;background: #fff;padding:0">
+                        <div class="box-hot-restaurant clearfix" style="width:1190px;" itemscope="" itemtype="http://schema.org/Product">
+                            <div class="img-hot-restaurant pull-left" style="width:480px;margin-right: 15px;">
+                                <img src="{{ STATIC_URL }}default/image/chitiet/foody-mobile-gongcha-jpg-805-636162011618326369.jpg" alt="" style="width: 480px;height: 300px;}" itemprop="image">
+                            </div>
+                            <div class="info-basic-hot-restaurant pull-left" style="width:550px;clear:none;">
+                                <div class="breadcrum-microsite">
+                                    <span itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                                        <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                            <meta itemprop="position" content="1">
+                                            <a itemprop="item" href="https://www.deliverynow.vn/">
+                                                <span itemprop="name">Trang chủ</span> »
+                                            </a>
+                                        </span>
+                                        <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                            <meta itemprop="position" content="2">
+                                            <a itemprop="item" href="https://www.deliverynow.vn/ha-noi">
+                                                <span itemprop="name">Hà Nội</span> »
+                                            </a>
+                                        </span>
+                                        <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                    <meta itemprop="position" content="3">
+                                    <a itemprop="item" href="http://www.deliverynow.vn/ha-noi/tra-sua-gong-cha">
+                                        <span itemprop="name">Trà Sữa Gong Cha - 貢茶 - Lý Thường Kiệt</span>
+                                    </a>
+                                </span>
+                                    </span>
+                                </div>
+                                <h2 class="kind-restaurant" style="margin-top:20px; margin-bottom:10px;">
+                                    Café/Dessert - Singapore
+                                </h2>
+                                <h1 style="font-size:22px;white-space: pre-line;line-height: normal;" class="name-hot-restaurant" itemprop="name">Trà Sữa Gong Cha - 貢茶 - Lý Thường Kiệt</h1>
+                                <p itemprop="description">56 Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội</p>
+                                <div class="info-delivery-restaurant clearfix">
+                                    <div class="column-info-deli pull-left" style="width: 108px">
+                                        <p class="mar0">
+                                            <span class="uppercase light-grey">Thanh toán</span>
+                                        </p>
+                                        <div class="logo-bank">
+                                                <img src=" {{ STATIC_URL }}default/image/chitiet/logoBank-JCB.png" alt="JCB">
+                                                <img src="{{ STATIC_URL }}default/image/chitiet/logoBank-visa.png" alt="Visa">
+                                            <img src="{{ STATIC_URL }}default/image/chitiet/logoBank-cash.png" alt="Cash">
+                                        </div>
+                                    </div>
+
+                                    <!--  -->
+                                    <div class="column-info-deli pull-left" style="width: 125px;">
+                                        <p class="mar0">
+                                            <span class="uppercase light-grey">phí vận chuyển</span>
+                                        </p>
+                                                <span class="font15">5,000 đ/km</span>
+                                    </div>
+                                        <div class="column-info-deli pull-left" style="width: 120px">
+                                            <p class="mar0">
+                                                <span class="uppercase light-grey">Services</span>
+                                            </p>
+                                            <span style="color: #cf2127; font-weight: bold; font-size: 14px;">10% phục vụ</span>
+                                            <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#service-fee-modal" class="modal-trigger">[?]</a>
+                                        </div>
+                                    <div class="column-info-deli pull-left" style="width: 113px">
+                                        <p class="mar0">
+                                            <span class="uppercase light-grey">Giao hàng</span>
+                                        </p>
+                                        <span class="font15"><span style="color: #354B8A;font-weight: bold;">deal shop</span><span style="color: #D52F33;font-weight: bold;">Now</span></span>
+                                    </div>
+                                        <div class="column-info-deli pull-left" style="width: 72px">
+                                            <p class="mar0">
+                                                <span class="uppercase light-grey">Chuẩn bị</span>
+                                            </p>
+                                            <span class="font15">25 phút</span>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <p class="note-detail-restaurant">
+                        Không áp dụng code FOODYHAPPY
+                    </p>
+            </div>
+                <div id="service-fee-modal" class="modal">
+                    <div class="modal-content">
+                        <p class="note-detail-restaurant">
+                            <span style="color: #cf2127"> (*) </span>Địa điểm này chưa phải là đối tác chính thức của deliveryNow.vn, tuy nhiên deliveryNow.vn vẫn sẽ giúp quý khách đặt món và giao đến tận nơi.<br>
+                    Phí dịch vụ <span class="font15 bold" style="color:#636363;">[10%] trên tổng hóa đơn</span>
+                        </p>
+                    </div>
+                </div>
+                <div id="service-delivery-milestone-fee-modal" class="modal">
+                    <div class="modal-content">
+                        <p class="note-detail-restaurant">
+                            Phí vận chuyển cho quán này là 5,000 đ/km
+                        </p>
+                    </div>
+                </div>
+            <script>
+
+                $(function () {
+                    document.getElementById('fb').setAttribute('data-href', window.location.href);
+                })
+            </script>
+            </div>
+            </div>
+              <div class="clearfix"></div>
+        <div class="rowmain">
+          <div class="container-content">
+                <div class="clearfix">
+                </div>
+        <div class="all-info-restaurant pull-left">
+            <ul class="tabs" style="width: 100%;">
+                <li class="tab">
+                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#menu" class="active"><h2 style="font-size:13px; margin-top:20px">thực đơn</h2></a>
+                </li>
+                <li class="tab">
+                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#introduce"><h2 style="font-size: 13px; margin-top: 20px">giới thiệu</h2></a>
+                </li>
+                <li class="tab">
+                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#discount"><h2 style="font-size: 13px; margin-top: 20px">khuyến mãi</h2></a>
+                </li>
+
+            <div class="indicator" style="right: 560px; left: 0px;"></div><div class="indicator" style="right: 560px; left: 0px;"></div></ul>
+
+
+            <div id="menu" ng-controller="MenuController as mn" class="ng-scope">
+                <div class="container-menu-restaurant tab-detail clearfix">
+                    <div class="kind-menu-restaurant pull-left" style="">
+                        <ul class="section table-of-contents" style="margin: 0; padding: 0; overflow-y: auto; max-height: 590px;">
+                                <li>
+                                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#item_32973" class=""><h2 style="font-size:13px; padding:0px; margin:0px">Trà Sữa</h2></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#item_32974" class=""><h2 style="font-size:13px; padding:0px; margin:0px">Trà Nguyên Chất</h2></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#item_33747"><h2 style="font-size:13px; padding:0px; margin:0px">Thức Uống Sáng Tạo</h2></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#item_33751"><h2 style="font-size:13px; padding:0px; margin:0px">Thức Uống Đá Xay</h2></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#item_33754"><h2 style="font-size:13px; padding:0px; margin:0px">Cà Phê</h2></a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="detail-menu-kind pull-left">
+                            <div id="item_32973" class="scrollspy">
+                                <p class="title-kind-food">
+
+                                    <span>Trà Sữa</span>
+                                </p>
+                                <div class="box-menu-detail clearfix">
+                            <div class="img-food-detail pull-left">
+                                <a href="#cb_1" class="inline cboxElement">
+                                    <img src="https://media.foody.vn/res/g26/252881/s600x600/20169616053-green-mt.jpg" alt="" width="60" height="60">
+                                </a>
+                            </div>
+                            <div class="name-food-detail pull-left">
+                                        <a class="title-name-food" href="javascript:void(0);" ng-click="detailCtrl.addToCartFromMenu('354422', '0', '40000,0000','40000,0000', 1, $event)">
+                                            <h3 style="font-size: 16px; margin: 0px; padding: 0 130px 0 0; line-height: 1.3em; font-weight: bold">
+                                                Trà sữa trà xanh
+                                            </h3>
+                                        </a>
+                                <span class="desc"></span>
+                                <div class="rating-food">
+
+                                </div>
+                                <p class="font11 light-grey" style="margin: 0;">
+                                    Đã được đặt <span class="bold" style="color:#464646;">2434</span> lần trong tháng
+                                </p>
+                            </div>
+                            <div class="more-info" style="float: right;">
+                                    <div class="adding-food-cart" style="float: right;" >
+                                                <span class="btn-adding ng-scope" data-toggle="modal" data-target="#myModal" ng-if="detailCtrl.busy.Type != 2" ng-click="detailCtrl.addToCartFromMenu('395073', '0', '53000,0000','53000,0000', 1, $event)">+</span>
+                                                <!-- Modal -->
+                                    </div>
+
+                                    <div class="product-price" style="margin-right: 36px;">
+
+                                            <a href="javascript:void(0);" ng-click="detailCtrl.addToCartFromMenuWithRange('395073', '0', '53000,0000','53000,0000', 1, $event)">
+                                                <p class="current-price">
+                                                    <span class="txt-blue font16 bold">53,000</span>
+                                                    <span class="unit">đ</span>
+                                                </p>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+        </div>
+        <div class="container-bill pull-right" style="">
+            <div class="row-bill clearfix">
+                <a href="javascript:void(0);" ng-click="detailCtrl.showListUser();" class="cart-stats">
+                    <span id="cart-qty" class="bold font12 ng-binding">0</span>
+                    <span class="font12">phần</span>
+                    <span style="margin-right:2px;">-</span>
+                    <span class="bold font12 ng-binding">0</span>
+                    <span class="font12">người</span>
+                </a>
+                <a href="javascript:void(0)" class="btn-reset" ng-click="detailCtrl.clearCart();">Reset</a>
+
+                <a href="javascript:void(0);" ng-show="detailCtrl.isHost" ng-click="detailCtrl.showPopupGroupShareLink()" class="btn-order-group">Nhóm cùng đặt</a>
+                <div style="background: #fff;display:none;float:left;" id="share-link-order">
+                    <div class="row">
+                        <div class="col-shareurl">
+                            <div style="font-size: 11px; color: #888; float: left;">Copy link và gửi cho nhóm</div>
+                            <input type="text" id="shareOrderLink" readonly="" onclick="copyToClipboardMsg(this, this)">
+                        </div>
+                        <div class="main-qr-code right">
+                            <img id="qr-image" src="data:image/jpg;base64,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" title="QR Code" alt="Image QR Code">
+                            <div id="qr-svg-image"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding: 6px 0 0 0;float: left;width: 100%;text-align: center;" ng-show="!detailCtrl.isHost" class="ng-hide">
+                    <div style="font-size:11px;color:#888;float: left;">Order được tạo bởi <i style="color:#0988f5;" class="ng-binding"></i></div>
+                </div>
+            </div>
+            <div style="max-height:300px;overflow-y:auto;">
+                <!-- ngRepeat: item in detailCtrl.cart -->
+            </div>
+            <div class="center-align ng-hide" ng-show="!detailCtrl.isHost">
+                <i class="font11 ng-binding">Và 0 món khác đang được đặt.</i>
+            </div>
+            <div class="row-bill-grey clearfix">
+                <span>Cộng</span>
+                <span class="bold pull-right ng-binding">0<span class="unit">đ</span></span>
+            </div>
+            <div class="row-bill-grey clearfix">
+                <span>Phí vận chuyển (Est.)</span>
+
+                <span class="pull-right">
+                    <span ng-show="!detailCtrl.hasMilestoneFee" class="ng-binding">5,000<span class="unit">đ</span>/km</span>
+                    <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha#service-delivery-milestone-fee-modal" class="modal-trigger ng-hide" ng-show="detailCtrl.hasMilestoneFee">[?]</a>
+                </span>
+            </div>
+            <div class="row-bill-grey clearfix" ng-show="detailCtrl.servicePercent &gt; 0 || detailCtrl.showFixedService">
+                <span>Phục vụ: <span class="bold ng-binding" ng-show="!detailCtrl.showFixedService">10%</span></span>
+                <span class="pull-right ng-binding">0<span class="unit">đ</span></span>
+            </div>
+            <div class="row-bill-grey clearfix ng-hide" ng-show="detailCtrl.vatPercent &gt; 0">
+                <span>VAT: <span class="bold ng-binding">0%</span></span>
+                <span class="pull-right ng-binding">0<span class="unit">đ</span></span>
+            </div>
+            <div class="row-bill-grey clearfix ng-hide" ng-show="detailCtrl.getDiscountPrice() &gt; 0">
+                <span class="pull-left">Mã khuyến mãi</span>
+                <span class="txt-red ng-binding" ng-show="detailCtrl.isHost" style="margin-left:10px;">  </span>
+                <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha" ng-click="detailCtrl.applyPromotionCode();" class="btn-tiny ng-hide" style="width:80px;" ng-show="!detailCtrl.promoIsValid &amp;&amp; detailCtrl.isHost &amp;&amp; detailCtrl.promoCode.length &gt; 0">Áp dụng</a>
+                <a href="https://www.deliverynow.vn/ha-noi/tra-sua-gong-cha?utm_source=deal&amp;utm_medium=cpc&amp;utm_campaign=tra+sua+gong+cha" ng-click="detailCtrl.clearPromotionCode();"><i class="fa fa-times ng-hide" style="color:red;" ng-hide="!detailCtrl.promoIsValid"></i></a>
+                <span class="pull-right ng-binding ng-hide" ng-show="detailCtrl.getDiscountPrice() &gt; 0">-0<span class="unit">đ</span></span>
+            </div>
+            <div class="row-bill-grey clearfix" ng-hide="detailCtrl.getDiscountPrice() &gt; 0">
+                <span class="bill pull-left" style="width: 100%;">Nhập mã khuyến mãi ở bước hoàn tất </span>
+            </div>
+            <div class="row-bill-grey clearfix">
+                <span>Tạm tính</span>
+                <span class="pull-right font16 txt-blue bold ng-binding" style="color: #085ffb;">0<span class="unit">đ</span></span>
+            </div>
+            <a href="javascript:void(0)" class="btn-book-first ng-hide" ng-class="{idone:detailCtrl.isDone}" ng-disabled="detailCtrl.isDone" ng-show="!detailCtrl.isHost" ng-click="detailCtrl.updateCartIsDone();">
+                <i class="fa fa-check-circle"></i>
+                Tôi đã xong
+            </a>
+            <a href="javascript:void(0)" class="btn-book-first" ng-show="detailCtrl.isHost &amp;&amp; detailCtrl.busy.Type != 2" ng-click="detailCtrl.checkout();">
+                <i class="fa fa-check-circle"></i>
+                Đặt trước
+            </a>
+        </div>
+        <div id="fee-modal" class="modal">
+            <div class="modal-content">
+                <p class="ng-binding">Khoảng cách đến địa chỉ của bạn ước tính khoảng  ~ 0 đ. Phí này có thể được điều chỉnh cho phù hợp sau khi bạn hoàn tất đơn hàng. </p>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/Delivery/GenerateQrCode?url=https%3A%2F%2Fwww.deliverynow.vn%2Fha-noi%2Ftra-sua-gong-cha%3Futm_source%3Ddeal%26utm_medium%3Dcpc%26utm_campaign%3Dtra%2Bsua%2Bgong%2Bcha'
+                }).success(function(data) {
+                    if (data != undefined || data != '') {
+                        console.log(data);
+                        $('#qr-image').attr('src', data);
+                    }
+                });
+            });
+        </script>
+                    </div>
+            </div>
+            <!--detail bill-->
+            <div class="modal fade" role="dialog" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" style="display: none;">
+            <div id="topping-item-modal" class="modal font15">
+                <div class="topping-item-modal-content">
+                    <div class="topping-item-modal-summary">
+                        <div class="topping-item-modal-dish-img">
+                            <img alt="" title="">
+                        </div>
+                        <div class="topping-item-modal-summary-right">
+                            <h3 class="topping-item-modal-summary-name font20 ng-binding"></h3>
+                            <p class="txt-grey ng-binding"></p>
+                            <div class="font15">
+
+                                <div class="topping-item-modal-summary-price">
+                                    Giá: <span class="price ng-binding"> đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearboth"></div>
+                    </div>
+                    <div class="topping-item-modal-list">
+                        <!-- ngRepeat: attr in detailCtrl.actionDish.Attributes -->
+                    </div>
+                </div>
+                <div class="topping-item-modal-footer font20">
+                    <div>
+                        <span class="btn-minus" ng-click="detailCtrl.changeQty(-1)" style="width:25px; height:25px;">-</span>
+                            <input type="text" value="1" ng-model="detailCtrl.qtyActionDish" class="light-input ng-pristine ng-untouched ng-valid ng-not-empty" style="width: 25px; height: 25px; text-align: center; margin: 0 10px; background: #fff; color: #333;" readonly="readonly">
+                        <span class="btn-adding" ng-click="detailCtrl.changeQty(1)" style="width: 25px; height: 25px; margin-left: 0px; margin-right: 20px">+</span>
+                        <a style="padding-right:20px" href="javascript:void(0);" class="btn-submit-inline txt-center font16" ng-click="detailCtrl.insertShoppingCartItemInCludeAttribute()">
+                            <span>Đồng ý</span>
+                            <span style="" class="ng-binding">+0đ</span>
+                        </a>
+                    </div>
+                   <div class="clearboth"></div>
+                    </div>
+            </div>
+        </div>
+                <div class="modal-footer" style="padding:5px 20px;">
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var $resDetail = $('.info-detail-restaurant');
+            var google_tag_params = {
+                dynx_itemid: $resDetail != undefined ?  $resDetail.data('id') : '',//id của quán
+                dynx_itemid2: 'REPLACE_WITH_VALUE',//để nguyên không đổi
+                dynx_pagetype: $resDetail != undefined ? $resDetail.data('category1') : '',//category đầu tiên của quán
+                dynx_totalvalue: 'REPLACE_WITH_VALUE',//để nguyên không đổi
+            };
+
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[/
+            var google_conversion_id = 997550031;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+            //]]>/
+        </script>
+
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <div class="row" id="login-area">
+                    <form id="login-form" class="col s12 ng-pristine ng-valid">
+                        <div class="row">
+
+                            <p class="title-login font14">Đăng nhập bằng email</p>
+                            <div class="input-field">
+                                <input id="email" type="text" class="validate browser-default" placeholder="Email hoặc Username">
+                            </div>
+                            <div class="input-field">
+                                <input id="password" type="password" class="validate browser-default" placeholder="Mật khẩu">
+                            </div>
+                            <div class="s12">
+                                <a href="https://www.deliverynow.vn/quen-mat-khau" style="display:block;">Quên mật khẩu?</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="s12">
+                                <a id="login-btn" class="waves-effect waves-light red btn right" style="display:block;width:100%;">Đăng nhập</a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="separator-or">
+                                    <span>hoặc</span>
+                                </div>
+                                <ul class="social-login">
+                                    <li class="fb"><a provider="1" href="javascript:void(0);" title="Facebook ID"></a></li>
+                                    <li class="gl"><a provider="2" href="javascript:void(0);" title="Google ID"></a></li>
+                                    <li class="yh"><a provider="3" href="javascript:void(0);" title="Yahoo ID"></a></li>
+                                    <li class="tw"><a provider="5" href="javascript:void(0);" title="Twitter ID"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+
+                                <p>Bạn chưa có tài khoản? Nhấn <a href="javascript:void(0);" onclick="goToSignUp()">vào đây</a> để đăng ký và bắt đầu trải nghiệm dịch vụ.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row" id="signup-area" style="display:none;">
+                    <form id="reg-form" class="col s12 ng-pristine ng-valid">
+                        <div class="row">
+                            <p class="title-login font14">Đăng ký tài khoản</p>
+                            <div class="input-field">
+                                <input id="reg-firstname" type="text" class="validate browser-default" placeholder="Tên" style="width:48%;">
+                                <input id="reg-lastname" type="text" class="validate browser-default" placeholder="Họ" style="width:48%;float:right;">
+                            </div>
+                            <div class="input-field">
+                                <input id="reg-email" type="email" class="validate browser-default" placeholder="Email" autocomplete="off">
+                            </div>
+                            <div class="input-field">
+                                <input id="reg-password" type="password" class="validate browser-default" placeholder="Mật khẩu" autocomplete="off">
+                            </div>
+                            <div class="s12">
+                                <p>
+                                    <input type="checkbox" id="reg-agree" checked="">
+                                    <label for="reg-agree">Tôi đồng ý với quy định của DeliveryNow</label>
+                                </p>
+                                <p id="reg-error-msg" style="color:red"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="s12">
+                                <a id="reg-btn" class="waves-effect waves-light red btn right" style="display:block;width:100%;">Đăng ký</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+
+                                <p>Bạn đã có tài khoản? Nhấn <a href="javascript:void(0);" onclick="backToLogin()">vào đây</a> để đăng nhập.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+            <div id="loading" style="display:none;">
+                <div id="loading-center">
+                    <div id="loading-center-absolute">
+                        <div class="object" id="object_one"></div>
+                        <div class="object" id="object_two"></div>
+                        <div class="object" id="object_three"></div>
+                        <div class="object" id="object_four"></div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                (function (i, s, o, g, r, a, m) {
+                    i['EmaticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//api.ematicsolutions.com/v1/ematic.min.js', 'ematics');
+
+                var ematicApikey = "3d7a588aa6f111e6be9a0242ac110002-sg4";
+                var opt = {
+                    email: "",
+                    country_iso: "VN",
+                    currency_iso: "VND",
+                    language_iso: "VN"
+                };
+
+                //initialize
+                ematics("create", ematicApikey, opt);
+            </script>
+        <div style="clear: both;"></div>
+        <br><br>
+        <div class="row">
+
+        </div>
+        <div style="clear: both;"></div>
+        <br><br>
+    </div>
+{% endblock %}

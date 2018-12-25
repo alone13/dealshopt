@@ -1,0 +1,9 @@
+*.js
+*.js.map
+!Gruntfile.js
+
+node_modules
+!node_modules/intravenous/**/*.*
+
+bower_components
+static/vendor

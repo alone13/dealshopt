@@ -1,0 +1,154 @@
+{% extends "shared/layoutadmin.jinja2" %}
+{% block body %}
+<script src="/Scripts/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" href="{{ STATIC_URL }}admin/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}admin/bower_components/datatables-responsive/css/dataTables.responsive.css">
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Quản Lý Sản Phẩm
+            <button type="button" class="btn btn-outline btn-info" data-toggle="modal" data-target="#myModal" id="btnsua">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </button>
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<form action="/DanhMuc/DanhMuc_Default" method="post">
+<div id="myModal" class="modal fade" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Nghiệp Vụ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="disabledSelect">IDDanhMuc: </label>
+                                                <input class="form-control" id="txtiddm" type="text" placeholder="IDDanhMuc" disabled="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Danh Mục Cha: </label>
+                                                <select id="cbdanhmuc" class="form-control">
+                                                <option value="1">Khuyến Mại Lớn</option><option value="2">Cho Bé Ăn</option><option value="3">Cho Bé Mặc</option><option value="4">Cho Bé Ngủ</option><option value="5">Cho Bé Đi Chơi</option><option value="6">Vệ Sinh Cho Bé</option><option value="7">Bé Khỏe &amp; An Toàn</option><option value="8">Đồ Chơi Trẻ Em</option><option value="9">Gợi Ý Quà Tặng</option><option value="10">Đồ Dùng Cho Mẹ</option><option value="11">Sách, đĩa CD</option><option value="12">Đồ Gia Dụng</option><option value="13">Sữa cho bé</option><option value="14">Bột, cháo dinh dưỡng</option><option value="15">Váng sữa, sữa chua và phô mai</option><option value="16">Dầu ăn, nước mắm</option><option value="17">Thực phẩm bổ sung</option><option value="18">Bình sữa trẻ em</option><option value="19">Máy tiệt trùng bình sữa</option><option value="20">Máy hâm sữa</option><option value="21">Ghế rung, ghế ăn bột</option><option value="22">Dụng cụ cho bé tập ăn</option><option value="23">Đồ sơ sinh </option><option value="24">Thời trang trẻ em</option><option value="25">Tất, bao chân tay</option><option value="26">Quần áo sơ sinh</option><option value="27">Quần áo bé trai</option><option value="28">Quần áo bé gái</option><option value="29">Giày, dép</option><option value="30">Balo, túi, cặp</option><option value="31">Khăn, mũ</option><option value="32">Phụ kiện thời trang</option><option value="33">Giường cũi trẻ em</option><option value="34">Nôi trẻ em</option><option value="35">Giường tầng</option><option value="36">Xe tập đi</option><option value="37">Xe đẩy em bé</option><option value="38">Xe đạp trẻ em</option><option value="39">Xe máy điện trẻ em</option><option value="40">Bỉm và Tã giấy</option><option value="41">Vệ sinh tai mũi họng</option><option value="42">Dung dịch giặt xả</option><option value="43">Đồ cho bé tắm</option><option value="44">Mỹ phẩm cho bé</option><option value="45">Cân sức khỏe</option><option value="46">Nhiệt kế</option><option value="47">Túi chườm</option><option value="48">Dụng cụ cho bé uống thuốc</option><option value="49">Đồ chơi cho trẻ sơ sinh</option><option value="50">Đồ chơi gỗ</option><option value="51">Đồ chơi LEGO</option><option value="52">Đồ chơi giáo dục</option><option value="53">Đồ chơi nhà tắm</option><option value="54">Quà tặng đầy tháng</option><option value="55">Quà sinh nhật cho bé</option><option value="56">Sữa và dinh dưỡng</option><option value="57">Máy hút sữa</option><option value="58">Mỹ phẩm cho mẹ</option><option value="59">Tai nghe bà bầu</option><option value="60">Gối cho bà bầu</option><option value="61">Sách nuôi dạy con cái</option><option value="62">Tủ sách của bé</option><option value="63">Đồ dùng học tập</option><option value="64">Truyện ngắn và tiểu thuyết</option><option value="65">Tủ sách doanh nhân</option><option value="66">Tủ nhựa, tủ đựng đồ</option><option value="67">Đồ gia dụng</option><option value="68">Máy xay đa năng</option><option value="69">Máy sưởi, quạy sưởi, đèn sưởi nhà tắm</option><option value="70">Sữa Meiji</option><option value="71">Sữa NAN</option><option value="1036">Tin Tuc</option><option value="2036">Home Tin Tức</option><option value="2037">Giới Thiệu</option><option value="2038">Tư Vấn Mua Sắn</option><option value="2039">Cộng Đồng</option><option value="2040">Tin Tức</option><option value="2041">Eva Tám</option><option value="2042">Khuyến Mại</option><option value="2043">Blog</option><option value="2044">Tuyển Dụng</option><option value="3036">Phong Cách Sống</option><option value="3037">Làm Đẹp</option><option value="3038">Cưới Hỏi</option><option value="3039">Mẹ Và Bé</option><option value="3040">Tin Nhanh</option><option value="3041">Tin Trong Nước</option><option value="3042">Tin Quốc Tế</option><option value="3043">Pháp Luật</option><option value="3044">Giáo Dục</option><option value="3045">Y Tế</option><option value="3046">Mẹ Chồng - Nàng Dâu</option><option value="3047">Hôn Nhân Gia Đình</option><option value="3048">Chém Gió</option><option value="3049">Thư Giãn</option></select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tên Danh Mục: </label>
+                                                <input class="form-control" id="txttendm" placeholder="Tên Danh Mục" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Icon1: </label>
+                                                <input type="text" name="Images" id="Images" class="form-control">
+                                                <br>
+                                                <input type="button" class="btn btn-info" id="Browser" value="Icon1">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Icon2: </label>
+                                                <input type="text" name="Images2" id="Images2" class="form-control">
+                                                <br>
+                                                <input type="button" class="btn btn-info" id="Browser2" value="Icon2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Màu Sắc: </label>
+                                                <input class="form-control" id="txtmausac" placeholder="màu sắc" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>URL: </label>
+                                                <input class="form-control" id="txturl" placeholder="Link" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button"  class="btn btn-primary">Lưu Lại</button>
+                                            <button type="button"  class="btn btn-danger">Hủy Bỏ</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Danh Sách
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <div id="dataTables-example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="dataTables-example_length"><label>Show <select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="dataTables-example_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" role="grid" aria-describedby="dataTables-example_info">
+                        <thead>
+                            <tr role="row"><th style="text-align: center; width: 89px;" class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="IDDanhMuc: activate to sort column descending">IDDanhMuc</th><th style="text-align: center; width: 110px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Danh Mục Cha: activate to sort column ascending">Danh Mục Cha</th><th style="text-align: center; width: 234px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Tên Danh Muc: activate to sort column ascending">Tên Danh Muc</th><th style="text-align: center; width: 56px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Icon1: activate to sort column ascending">Icon1</th><th style="text-align: center; width: 56px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Icon2: activate to sort column ascending">Icon2</th><th class="hidden sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Màu Sắc: activate to sort column ascending" style="width: 0px;">Màu Sắc</th><th style="text-align: center; width: 113px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="URL: activate to sort column ascending">URL</th><th style="text-align: center; width: 88px;" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Chức Năng: activate to sort column ascending">Chức Năng</th></tr>
+                        </thead>
+                        <tbody>
+                        {% for item in sanphams %}
+                                  <tr class="gradeX odd" id="DanhMuc-1" role="row">
+                                    <td id="Id-1" style="text-align:center;" class="sorting_1">1</td>
+                                    <td id="DMC-1" style="text-align:center;">{{ item.tensanpham }}</td>
+                                    <td id="TDM-1" style="text-align:center;"></td>
+                                    <td id="icon1-1" style="text-align:center;">
+                                    <img src="/Images/Menu/khuyen-mai-1.png" id="Icon1-1" style="width:75px; height:70px;"></td>
+                                    <td id="icon2-1" style="text-align:center;">
+                                    <img src="/Images/Menu/khuyen-mai-2-1.png" id="Icon2-1" style="width:75px; height:70px;"></td>
+                                    <td id="MS-1 " class=" hidden">255, 79, 79</td>
+                                    <td class="center" id="URL-1" style="text-align:center;">/Product/Product</td>
+                                    <td style="text-align:center;">
+                                        <button type="button"  class="btn btn-outline btn-info" data-toggle="modal" data-target="#myModal" id="btnsua">
+                                            <i class="glyphicon glyphicon-edit"></i>
+                                        </button>
+                                        <button type="button"  class="btn btn-outline btn-info" id="btnxoa">
+                                            <i class="glyphicon glyphicon-remove-sign"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                        {% endfor %}
+                              </tbody>
+                    </table></div></div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">Showing 1 to 10 of 95 entries</div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate"><ul class="pagination"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#">Previous</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_ellipsis"><a href="#">…</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">10</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">Next</a></li></ul></div></div></div></div>
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<script language="javascript" type="text/javascript">
+    $(function () {
+        $("#Browser").click(function () {
+            var ckfinder = new CKFinder();
+            ckfinder.selectActionFunction = function (fileUrl) {
+                $("#Images").val(fileUrl);
+            };
+            ckfinder.popup();
+        });
+    });
+    $(function () {
+        $("#Browser2").click(function () {
+            var ckfinder = new CKFinder();
+            ckfinder.selectActionFunction = function (fileUrl) {
+                $("#Images2").val(fileUrl);
+            };
+            ckfinder.popup();
+        });
+    });
+</script><!--phần hiển thị body cho từng trang con-->
+        </div>
+{% endblock %}

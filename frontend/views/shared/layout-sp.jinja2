@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ meta.meta_description | default('izischool') }}" />
+    <meta name="keywords" content="{{ meta.meta_keywords | default('izischool') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta property="og:title" content="{{ meta.meta_ogTitle | default('izischool') }}" />
+    {% if meta.meta_ogDescription %}
+        <meta property="og:description" content="{{ meta.meta_ogDescription }}" />
+    {% endif %}
+
+    {% if meta.meta_robots %}
+        <meta name="robots" content="{{ meta.meta_robots }}" />
+    {% endif %}
+
+    {% if meta.link_canonical %}
+        <link rel="canonical" href="{{ meta.link_canonical }}" />
+    {% endif %}
+</head>
+<body>
+    <h1>Xin chao</h1>
+</body>
+</html>

@@ -1,0 +1,281 @@
+{% extends "shared/layoutadmin.jinja2" %}
+<link rel="stylesheet" href="{{ STATIC_URL }}admin/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}admin/bower_components/datatables-responsive/css/dataTables.responsive.css">
+{% block body %}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Quản Lý Tin Tức
+            <button type="button" class="btn btn-blue btn-info" data-toggle="modal" data-target="#myModal" id="btnsua">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </button>
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div id="myModal" class="modal fade" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-lg">
+          <form method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Nghiệp Vụ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="disabledSelect">IDTinTuc: </label>
+                                                <input class="form-control" type="text" placeholder="IDTinTuc" disabled="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>DanhMuc_Id: </label>
+                                                <select id="cbdanhmuc" name="{{ form.fields.danhmuc_id.name }}" class="form-control">
+                                                  {% for item in danhmucs %}
+                                                      <option value="{{item.tendanhmuc}}"> {{ item.tendanhmuc }}</option>
+                                                  {% endfor %}
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                              <label>Tiêu Đề</label>
+                                              <textarea class="form-control" name="{{ form.fields.tieude.name }}" rows="3" placeholder="Enter ..."></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">Hình Ảnh:</label>
+                                                <input type="file" name="{{ form.fields.hinhanh.name }}" id="exampleInputFile">
+                                                <p class="help-block">Example block-level help text here.</p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Mô Tả:</label>
+                                                <div class="box-body pad">
+                                                <form>
+                                                <ul class="wysihtml5-toolbar"><li class="dropdown">
+                                                <a class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+
+                                                <span class="glyphicon glyphicon-font"></span>
+
+                                                <span class="current-font">Normal text</span>
+                                                <b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="p" tabindex="-1" href="javascript:;" unselectable="on" class="wysihtml5-command-active">Normal text</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" tabindex="-1" href="javascript:;" unselectable="on">Heading 1</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" tabindex="-1" href="javascript:;" unselectable="on">Heading 2</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h3" tabindex="-1" href="javascript:;" unselectable="on">Heading 3</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h4" tabindex="-1" href="javascript:;" unselectable="on">Heading 4</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h5" tabindex="-1" href="javascript:;" unselectable="on">Heading 5</a></li>
+                                                <li><a data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h6" tabindex="-1" href="javascript:;" unselectable="on">Heading 6</a></li>
+                                                </ul>
+                                                </li>
+                                                <li>
+                                                <div class="btn-group">
+                                                <a class="btn  btn-default" data-wysihtml5-command="bold" title="CTRL+B" tabindex="-1" href="javascript:;" unselectable="on">Bold</a>
+                                                <a class="btn  btn-default" data-wysihtml5-command="italic" title="CTRL+I" tabindex="-1" href="javascript:;" unselectable="on">Italic</a>
+                                                <a class="btn  btn-default" data-wysihtml5-command="underline" title="CTRL+U" tabindex="-1" href="javascript:;" unselectable="on">Underline</a>
+
+                                                <a class="btn  btn-default" data-wysihtml5-command="small" title="CTRL+S" tabindex="-1" href="javascript:;" unselectable="on">Small</a>
+
+                                                </div>
+                                                </li>
+                                                <li>
+                                                <a class="btn  btn-default" data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="blockquote" data-wysihtml5-display-format-name="false" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-quote"></span>
+
+                                                </a>
+                                                </li>
+                                                <li>
+                                                <div class="btn-group">
+                                                <a class="btn  btn-default" data-wysihtml5-command="insertUnorderedList" title="Unordered list" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-list"></span>
+
+                                                </a>
+                                                <a class="btn  btn-default" data-wysihtml5-command="insertOrderedList" title="Ordered list" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-th-list"></span>
+
+                                                </a>
+                                                <a class="btn  btn-default" data-wysihtml5-command="Outdent" title="Outdent" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-indent-right"></span>
+
+                                                </a>
+                                                <a class="btn  btn-default" data-wysihtml5-command="Indent" title="Indent" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-indent-left"></span>
+
+                                                </a>
+                                                </div>
+                                                </li>
+                                                <li>
+                                                <div class="bootstrap-wysihtml5-insert-link-modal modal fade" data-wysihtml5-dialog="createLink">
+                                                <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                <a class="close" data-dismiss="modal">×</a>
+                                                <h3>Insert link</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                <div class="form-group">
+                                                <input value="http://" class="bootstrap-wysihtml5-insert-link-url form-control" data-wysihtml5-dialog-field="href">
+                                                </div>
+                                                <div class="checkbox">
+                                                <label>
+                                                <input type="checkbox" class="bootstrap-wysihtml5-insert-link-target" checked="">Open link in new window
+                                                </label>
+                                                </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="#">Cancel</a>
+                                                <a href="#" class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save">Insert link</a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <a class="btn  btn-default" data-wysihtml5-command="createLink" title="Insert link" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-share"></span>
+
+                                                </a>
+                                                </li>
+                                                <li>
+                                                <div class="bootstrap-wysihtml5-insert-image-modal modal fade" data-wysihtml5-dialog="insertImage">
+                                                <div class="modal-dialog ">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                <a class="close" data-dismiss="modal">×</a>
+                                                <h3>Insert image</h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                <div class="form-group">
+                                                <input value="http://" class="bootstrap-wysihtml5-insert-image-url form-control" data-wysihtml5-dialog-field="src">
+                                                </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <a class="btn btn-default" data-dismiss="modal" data-wysihtml5-dialog-action="cancel" href="#">Cancel</a>
+                                                <a class="btn btn-primary" data-dismiss="modal" data-wysihtml5-dialog-action="save" href="#">Insert image</a>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <a class="btn  btn-default" data-wysihtml5-command="insertImage" title="Insert image" tabindex="-1" href="javascript:;" unselectable="on">
+
+                                                <span class="glyphicon glyphicon-picture"></span>
+
+                                                </a>
+                                                </li>
+                                                </ul><textarea class="textarea" name="{{ form.fields.mota.name }}" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid rgb(221, 221, 221); padding: 10px; display: none;" placeholder="Place some text here"></textarea>
+                                                <input type="hidden" name="_wysihtml5_mode" value="1"><iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0" height="0" marginwidth="0" marginheight="0" style="display: inline-block; background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(221, 221, 221); border-style: solid; border-width: 1px; clear: none; float: none; margin: 0px; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; padding: 10px; position: static; top: auto; left: auto; right: auto; bottom: auto; z-index: auto; vertical-align: baseline; text-align: start; box-sizing: border-box; box-shadow: none; border-radius: 0px; width: 100%; height: 200px;"></iframe>
+                                                </form>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Nội Dung: </label>
+                                            <div class="box-body pad">
+            <form>
+                  <textarea id="editor1" name="{{ form.fields.noidung.name }}" rows="10" cols="80" style="visibility: hidden; display: none;">This is my textarea to be replaced with CKEditor.
+                  </textarea><div id="cke_editor1" class="cke_1 cke cke_reset cke_chrome cke_editor_editor1 cke_ltr cke_browser_webkit" dir="ltr" lang="vi" role="application" aria-labelledby="cke_editor1_arialbl"><span id="cke_editor1_arialbl" class="cke_voice_label">Bộ soạn thảo văn bản có định dạng, editor1</span><div class="cke_inner cke_reset" role="presentation"><span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; user-select: none;"><span id="cke_8" class="cke_voice_label">Thanh công cụ</span><span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_8" onmousedown="return false;"><span id="cke_11" class="cke_toolbar" aria-labelledby="cke_11_label" role="toolbar"><span id="cke_11_label" class="cke_voice_label">Clipboard/Undo</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_12" class="cke_button cke_button__cut cke_button_disabled " href="javascript:void('Cắt')" title="Cắt" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_12_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(2,event);" onfocus="return CKEDITOR.tools.callFunction(3,event);" onclick="CKEDITOR.tools.callFunction(4,this);return false;"><span class="cke_button_icon cke_button__cut_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -264px;background-size:auto;">&nbsp;</span><span id="cke_12_label" class="cke_button_label cke_button__cut_label" aria-hidden="false">Cắt</span></a><a id="cke_13" class="cke_button cke_button__copy cke_button_disabled " href="javascript:void('Sao chép')" title="Sao chép" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(5,event);" onfocus="return CKEDITOR.tools.callFunction(6,event);" onclick="CKEDITOR.tools.callFunction(7,this);return false;"><span class="cke_button_icon cke_button__copy_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -216px;background-size:auto;">&nbsp;</span><span id="cke_13_label" class="cke_button_label cke_button__copy_label" aria-hidden="false">Sao chép</span></a><a id="cke_14" class="cke_button cke_button__paste cke_button_off" href="javascript:void('Dán')" title="Dán" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_14_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(8,event);" onfocus="return CKEDITOR.tools.callFunction(9,event);" onclick="CKEDITOR.tools.callFunction(10,this);return false;"><span class="cke_button_icon cke_button__paste_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -312px;background-size:auto;">&nbsp;</span><span id="cke_14_label" class="cke_button_label cke_button__paste_label" aria-hidden="false">Dán</span></a><a id="cke_15" class="cke_button cke_button__pastetext cke_button_off" href="javascript:void('Dán theo định dạng văn bản thuần')" title="Dán theo định dạng văn bản thuần" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_15_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(11,event);" onfocus="return CKEDITOR.tools.callFunction(12,event);" onclick="CKEDITOR.tools.callFunction(13,this);return false;"><span class="cke_button_icon cke_button__pastetext_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -720px;background-size:auto;">&nbsp;</span><span id="cke_15_label" class="cke_button_label cke_button__pastetext_label" aria-hidden="false">Dán theo định dạng văn bản thuần</span></a><a id="cke_16" class="cke_button cke_button__pastefromword cke_button_off" href="javascript:void('Dán với định dạng Word')" title="Dán với định dạng Word" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_16_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(14,event);" onfocus="return CKEDITOR.tools.callFunction(15,event);" onclick="CKEDITOR.tools.callFunction(16,this);return false;"><span class="cke_button_icon cke_button__pastefromword_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -768px;background-size:auto;">&nbsp;</span><span id="cke_16_label" class="cke_button_label cke_button__pastefromword_label" aria-hidden="false">Dán với định dạng Word</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_17" class="cke_button cke_button__undo cke_button_disabled " href="javascript:void('Khôi phục thao tác')" title="Khôi phục thao tác" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_17_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(17,event);" onfocus="return CKEDITOR.tools.callFunction(18,event);" onclick="CKEDITOR.tools.callFunction(19,this);return false;"><span class="cke_button_icon cke_button__undo_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -1008px;background-size:auto;">&nbsp;</span><span id="cke_17_label" class="cke_button_label cke_button__undo_label" aria-hidden="false">Khôi phục thao tác</span></a><a id="cke_18" class="cke_button cke_button__redo cke_button_disabled " href="javascript:void('Làm lại thao tác')" title="Làm lại thao tác" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_18_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(20,event);" onfocus="return CKEDITOR.tools.callFunction(21,event);" onclick="CKEDITOR.tools.callFunction(22,this);return false;"><span class="cke_button_icon cke_button__redo_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -960px;background-size:auto;">&nbsp;</span><span id="cke_18_label" class="cke_button_label cke_button__redo_label" aria-hidden="false">Làm lại thao tác</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_19" class="cke_toolbar" aria-labelledby="cke_19_label" role="toolbar"><span id="cke_19_label" class="cke_voice_label">Chỉnh sửa</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_20" class="cke_button cke_button__scayt cke_button_off " href="javascript:void('Kiểm tra chính tả')" title="Kiểm tra chính tả" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_20_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(23,event);" onfocus="return CKEDITOR.tools.callFunction(24,event);" onclick="CKEDITOR.tools.callFunction(25,this);return false;"><span class="cke_button_icon cke_button__scayt_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -888px;background-size:auto;">&nbsp;</span><span id="cke_20_label" class="cke_button_label cke_button__scayt_label" aria-hidden="false">Kiểm tra chính tả ngay khi gõ chữ (SCAYT)</span><span class="cke_button_arrow"></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_21" class="cke_toolbar" aria-labelledby="cke_21_label" role="toolbar"><span id="cke_21_label" class="cke_voice_label">Liên kết</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_22" class="cke_button cke_button__link cke_button_off" href="javascript:void('Chèn/Sửa liên kết')" title="Chèn/Sửa liên kết" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_22_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(26,event);" onfocus="return CKEDITOR.tools.callFunction(27,event);" onclick="CKEDITOR.tools.callFunction(28,this);return false;"><span class="cke_button_icon cke_button__link_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -528px;background-size:auto;">&nbsp;</span><span id="cke_22_label" class="cke_button_label cke_button__link_label" aria-hidden="false">Chèn/Sửa liên kết</span></a><a id="cke_23" class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void('Xoá liên kết')" title="Xoá liên kết" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_23_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(29,event);" onfocus="return CKEDITOR.tools.callFunction(30,event);" onclick="CKEDITOR.tools.callFunction(31,this);return false;"><span class="cke_button_icon cke_button__unlink_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -552px;background-size:auto;">&nbsp;</span><span id="cke_23_label" class="cke_button_label cke_button__unlink_label" aria-hidden="false">Xoá liên kết</span></a><a id="cke_24" class="cke_button cke_button__anchor cke_button_off" href="javascript:void('Chèn/Sửa điểm neo')" title="Chèn/Sửa điểm neo" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_24_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(32,event);" onfocus="return CKEDITOR.tools.callFunction(33,event);" onclick="CKEDITOR.tools.callFunction(34,this);return false;"><span class="cke_button_icon cke_button__anchor_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -504px;background-size:auto;">&nbsp;</span><span id="cke_24_label" class="cke_button_label cke_button__anchor_label" aria-hidden="false">Chèn/Sửa điểm neo</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_25" class="cke_toolbar" aria-labelledby="cke_25_label" role="toolbar"><span id="cke_25_label" class="cke_voice_label">Chèn</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_26" class="cke_button cke_button__image cke_button_off" href="javascript:void('Hình ảnh')" title="Hình ảnh" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_26_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(35,event);" onfocus="return CKEDITOR.tools.callFunction(36,event);" onclick="CKEDITOR.tools.callFunction(37,this);return false;"><span class="cke_button_icon cke_button__image_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -360px;background-size:auto;">&nbsp;</span><span id="cke_26_label" class="cke_button_label cke_button__image_label" aria-hidden="false">Hình ảnh</span></a><a id="cke_27" class="cke_button cke_button__table cke_button_off" href="javascript:void('Bảng')" title="Bảng" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_27_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(38,event);" onfocus="return CKEDITOR.tools.callFunction(39,event);" onclick="CKEDITOR.tools.callFunction(40,this);return false;"><span class="cke_button_icon cke_button__table_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -912px;background-size:auto;">&nbsp;</span><span id="cke_27_label" class="cke_button_label cke_button__table_label" aria-hidden="false">Bảng</span></a><a id="cke_28" class="cke_button cke_button__horizontalrule cke_button_off" href="javascript:void('Chèn đường phân cách ngang')" title="Chèn đường phân cách ngang" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_28_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(41,event);" onfocus="return CKEDITOR.tools.callFunction(42,event);" onclick="CKEDITOR.tools.callFunction(43,this);return false;"><span class="cke_button_icon cke_button__horizontalrule_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -336px;background-size:auto;">&nbsp;</span><span id="cke_28_label" class="cke_button_label cke_button__horizontalrule_label" aria-hidden="false">Chèn đường phân cách ngang</span></a><a id="cke_29" class="cke_button cke_button__specialchar cke_button_off" href="javascript:void('Chèn ký tự đặc biệt')" title="Chèn ký tự đặc biệt" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_29_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(44,event);" onfocus="return CKEDITOR.tools.callFunction(45,event);" onclick="CKEDITOR.tools.callFunction(46,this);return false;"><span class="cke_button_icon cke_button__specialchar_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -864px;background-size:auto;">&nbsp;</span><span id="cke_29_label" class="cke_button_label cke_button__specialchar_label" aria-hidden="false">Chèn ký tự đặc biệt</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_30" class="cke_toolbar" aria-labelledby="cke_30_label" role="toolbar"><span id="cke_30_label" class="cke_voice_label">Công cụ</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_31" class="cke_button cke_button__maximize cke_button_off" href="javascript:void('Phóng to tối đa')" title="Phóng to tối đa" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_31_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(47,event);" onfocus="return CKEDITOR.tools.callFunction(48,event);" onclick="CKEDITOR.tools.callFunction(49,this);return false;"><span class="cke_button_icon cke_button__maximize_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -672px;background-size:auto;">&nbsp;</span><span id="cke_31_label" class="cke_button_label cke_button__maximize_label" aria-hidden="false">Phóng to tối đa</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_32" class="cke_toolbar" aria-labelledby="cke_32_label" role="toolbar"><span id="cke_32_label" class="cke_voice_label">Tài liệu</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_33" class="cke_button cke_button__source cke_button_off" href="javascript:void('Mã HTML')" title="Mã HTML" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_33_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(50,event);" onfocus="return CKEDITOR.tools.callFunction(51,event);" onclick="CKEDITOR.tools.callFunction(52,this);return false;"><span class="cke_button_icon cke_button__source_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -840px;background-size:auto;">&nbsp;</span><span id="cke_33_label" class="cke_button_label cke_button__source_label" aria-hidden="false">Mã HTML</span></a></span><span class="cke_toolbar_end"></span></span><span class="cke_toolbar_break"></span><span id="cke_34" class="cke_toolbar" aria-labelledby="cke_34_label" role="toolbar"><span id="cke_34_label" class="cke_voice_label">Kiểu cơ bản</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_35" class="cke_button cke_button__bold cke_button_off" href="javascript:void('Đậm')" title="Đậm" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_35_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(53,event);" onfocus="return CKEDITOR.tools.callFunction(54,event);" onclick="CKEDITOR.tools.callFunction(55,this);return false;"><span class="cke_button_icon cke_button__bold_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -24px;background-size:auto;">&nbsp;</span><span id="cke_35_label" class="cke_button_label cke_button__bold_label" aria-hidden="false">Đậm</span></a><a id="cke_36" class="cke_button cke_button__italic cke_button_off" href="javascript:void('Nghiêng')" title="Nghiêng" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_36_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(56,event);" onfocus="return CKEDITOR.tools.callFunction(57,event);" onclick="CKEDITOR.tools.callFunction(58,this);return false;"><span class="cke_button_icon cke_button__italic_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -48px;background-size:auto;">&nbsp;</span><span id="cke_36_label" class="cke_button_label cke_button__italic_label" aria-hidden="false">Nghiêng</span></a><a id="cke_37" class="cke_button cke_button__strike cke_button_off" href="javascript:void('Gạch xuyên ngang')" title="Gạch xuyên ngang" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_37_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(59,event);" onfocus="return CKEDITOR.tools.callFunction(60,event);" onclick="CKEDITOR.tools.callFunction(61,this);return false;"><span class="cke_button_icon cke_button__strike_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -72px;background-size:auto;">&nbsp;</span><span id="cke_37_label" class="cke_button_label cke_button__strike_label" aria-hidden="false">Gạch xuyên ngang</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_38" class="cke_button cke_button__removeformat cke_button_off" href="javascript:void('Xoá định dạng')" title="Xoá định dạng" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_38_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(62,event);" onfocus="return CKEDITOR.tools.callFunction(63,event);" onclick="CKEDITOR.tools.callFunction(64,this);return false;"><span class="cke_button_icon cke_button__removeformat_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -792px;background-size:auto;">&nbsp;</span><span id="cke_38_label" class="cke_button_label cke_button__removeformat_label" aria-hidden="false">Xoá định dạng</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_39" class="cke_toolbar" aria-labelledby="cke_39_label" role="toolbar"><span id="cke_39_label" class="cke_voice_label">Đoạn</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_40" class="cke_button cke_button__numberedlist cke_button_off" href="javascript:void('Chèn/Xoá Danh sách có thứ tự')" title="Chèn/Xoá Danh sách có thứ tự" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_40_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(65,event);" onfocus="return CKEDITOR.tools.callFunction(66,event);" onclick="CKEDITOR.tools.callFunction(67,this);return false;"><span class="cke_button_icon cke_button__numberedlist_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -648px;background-size:auto;">&nbsp;</span><span id="cke_40_label" class="cke_button_label cke_button__numberedlist_label" aria-hidden="false">Chèn/Xoá Danh sách có thứ tự</span></a><a id="cke_41" class="cke_button cke_button__bulletedlist cke_button_off" href="javascript:void('Chèn/Xoá Danh sách không thứ tự')" title="Chèn/Xoá Danh sách không thứ tự" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_41_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(68,event);" onfocus="return CKEDITOR.tools.callFunction(69,event);" onclick="CKEDITOR.tools.callFunction(70,this);return false;"><span class="cke_button_icon cke_button__bulletedlist_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -600px;background-size:auto;">&nbsp;</span><span id="cke_41_label" class="cke_button_label cke_button__bulletedlist_label" aria-hidden="false">Chèn/Xoá Danh sách không thứ tự</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_42" class="cke_button cke_button__outdent cke_button_disabled " href="javascript:void('Dịch ra ngoài')" title="Dịch ra ngoài" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_42_label" aria-haspopup="false" aria-disabled="true" onkeydown="return CKEDITOR.tools.callFunction(71,event);" onfocus="return CKEDITOR.tools.callFunction(72,event);" onclick="CKEDITOR.tools.callFunction(73,this);return false;"><span class="cke_button_icon cke_button__outdent_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -456px;background-size:auto;">&nbsp;</span><span id="cke_42_label" class="cke_button_label cke_button__outdent_label" aria-hidden="false">Dịch ra ngoài</span></a><a id="cke_43" class="cke_button cke_button__indent cke_button_disabled" href="javascript:void('Dịch vào trong')" title="Dịch vào trong" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_43_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(74,event);" onfocus="return CKEDITOR.tools.callFunction(75,event);" onclick="CKEDITOR.tools.callFunction(76,this);return false;" aria-disabled="true"><span class="cke_button_icon cke_button__indent_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -408px;background-size:auto;">&nbsp;</span><span id="cke_43_label" class="cke_button_label cke_button__indent_label" aria-hidden="false">Dịch vào trong</span></a><span class="cke_toolbar_separator" role="separator"></span><a id="cke_44" class="cke_button cke_button__blockquote cke_button_off" href="javascript:void('Khối trích dẫn')" title="Khối trích dẫn" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_44_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(77,event);" onfocus="return CKEDITOR.tools.callFunction(78,event);" onclick="CKEDITOR.tools.callFunction(79,this);return false;"><span class="cke_button_icon cke_button__blockquote_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 -168px;background-size:auto;">&nbsp;</span><span id="cke_44_label" class="cke_button_label cke_button__blockquote_label" aria-hidden="false">Khối trích dẫn</span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_45" class="cke_toolbar" aria-labelledby="cke_45_label" role="toolbar"><span id="cke_45_label" class="cke_voice_label">Kiểu</span><span class="cke_toolbar_start"></span><span id="cke_9" class="cke_combo cke_combo__styles cke_combo_off" role="presentation"><span id="cke_9_label" class="cke_combo_label">Kiểu</span><a class="cke_combo_button" title="Phong cách định dạng" tabindex="-1" href="javascript:void('Phong cách định dạng')" hidefocus="true" role="button" aria-labelledby="cke_9_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(81,event,this);" onfocus="return CKEDITOR.tools.callFunction(82,event);" onclick="CKEDITOR.tools.callFunction(80,this);return false;"><span id="cke_9_text" class="cke_combo_text cke_combo_inlinelabel">Kiểu</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span id="cke_10" class="cke_combo cke_combo__format cke_combo_off" role="presentation"><span id="cke_10_label" class="cke_combo_label">Định dạng</span><a class="cke_combo_button" title="Định dạng" tabindex="-1" href="javascript:void('Định dạng')" hidefocus="true" role="button" aria-labelledby="cke_10_label" aria-haspopup="true" onkeydown="return CKEDITOR.tools.callFunction(84,event,this);" onfocus="return CKEDITOR.tools.callFunction(85,event);" onclick="CKEDITOR.tools.callFunction(83,this);return false;"><span id="cke_10_text" class="cke_combo_text">Bình thường (P)</span><span class="cke_combo_open"><span class="cke_combo_arrow"></span></span></a></span><span class="cke_toolbar_end"></span></span><span id="cke_46" class="cke_toolbar" aria-labelledby="cke_46_label" role="toolbar"><span id="cke_46_label" class="cke_voice_label">about</span><span class="cke_toolbar_start"></span><span class="cke_toolgroup" role="presentation"><a id="cke_47" class="cke_button cke_button__about cke_button_off" href="javascript:void('Thông tin về CKEditor')" title="Thông tin về CKEditor" tabindex="-1" hidefocus="true" role="button" aria-labelledby="cke_47_label" aria-haspopup="false" onkeydown="return CKEDITOR.tools.callFunction(86,event);" onfocus="return CKEDITOR.tools.callFunction(87,event);" onclick="CKEDITOR.tools.callFunction(88,this);return false;"><span class="cke_button_icon cke_button__about_icon" style="background-image:url('https://cdn.ckeditor.com/4.5.7/standard/plugins/icons.png?t=G14E');background-position:0 0px;background-size:auto;">&nbsp;</span><span id="cke_47_label" class="cke_button_label cke_button__about_label" aria-hidden="false">Thông tin về CKEditor</span></a></span><span class="cke_toolbar_end"></span></span></span></span><div id="cke_1_contents" class="cke_contents cke_reset" role="presentation" style="height: 200px;"><span id="cke_52" class="cke_voice_label">Nhấn ALT + 0 để được giúp đỡ</span><iframe src="" frameborder="0" class="cke_wysiwyg_frame cke_reset" title="Bộ soạn thảo văn bản có định dạng, editor1" aria-describedby="cke_52" tabindex="0" allowtransparency="true" style="width: 100%; height: 100%;"></iframe></div><span id="cke_1_bottom" class="cke_bottom cke_reset_all" role="presentation" style="user-select: none;"><span id="cke_1_resizer" class="cke_resizer cke_resizer_vertical cke_resizer_ltr" title="Kéo rê để thay đổi kích cỡ" onmousedown="CKEDITOR.tools.callFunction(0, event)">◢</span><span id="cke_1_path_label" class="cke_voice_label">Nhãn thành phần</span><span id="cke_1_path" class="cke_path" role="group" aria-labelledby="cke_1_path_label"><a id="cke_elementspath_7_1" href="javascript:void('body')" tabindex="-1" class="cke_path_item" title="body thành phần" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(90,1, event );" onclick="CKEDITOR.tools.callFunction(89,1); return false;" role="button" aria-label="body thành phần">body</a><a id="cke_elementspath_7_0" href="javascript:void('p')" tabindex="-1" class="cke_path_item" title="p thành phần" hidefocus="true" onkeydown="return CKEDITOR.tools.callFunction(90,0, event );" onclick="CKEDITOR.tools.callFunction(89,0); return false;" role="button" aria-label="p thành phần">p</a><span class="cke_path_empty">&nbsp;</span></span></span></div></div>
+            </form>
+          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Ngày Đăng:</label>
+                                            <div class="input-group date">
+                                              <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                              </div>
+                                              <input type="text" name="{{ form.fields.ngaydang.name }}" class="form-control pull-right" id="datepicker">
+                                            </div>
+                                            <!-- /.input group -->
+                                        </div>
+                                            <div class="form-group">
+                                                <label>Trạng Thái: </label>
+                                                  <select name="{{ form.fields.trangthai.name }}"  class="form-control">
+                                                    <option>true</option>
+                                                    <option>false</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="submit"  class="btn btn-primary">Lưu Lại</button>
+                                            <button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-danger">Hủy Bỏ</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Danh Sách
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="dataTable_wrapper">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <thead>
+                        <tr role="row">
+                        <th style="text-align: center; width: 89px;">IDTinTuc</th>
+                        <th style="text-align: center; width: 110px;">DanhMuc_Id</th>
+                        <th style="text-align: center; width: 204px;">Tiêu Đề</th>
+                        <th style="text-align: center; width: 56px;">Hình Ảnh</th>
+                        <th style="text-align: center; width: 56px;">Mô Tả</th>
+                        <th style="text-align: center; width: 56px;">Ngày Đăng</th>
+                        <th style="text-align: center; width: 76px;">Trang Thái</th>
+                        <th style="text-align: center; width: 88px;">Chức Năng</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        {% for item in tintucs %}
+                                  <tr class="gradeX odd" id="TinTuc-1" role="row">
+                                    <td id="Id-1" style="text-align:center;" class="sorting_1">{{ item.id }}</td>
+                                    <td id="DM-1" style="text-align:center;">{{ item.danhmuc_id }}</td>
+                                    <td id="TD-1" style="text-align:center;">{{ item.tieude }}</td>
+                                    <td id="icon1-1" style="text-align:center;">
+                                      <img src="{{ item.hinhanh }}" id="Icon1-1" style="width:75px; height:70px;" />
+                                    </td>
+                                    <td id="MT-1" style="text-align:center;">{{ item.mota }}</td>
+                                    <td id="MT-1" style="text-align:center;">{{ item.ngaydang }}</td>
+                                    <td id="MT-1" style="text-align:center;">{{ item.trangthai }}</td>
+                                    <td style="text-align:center;">
+                                        <a href="/quanlytintuc/{{ item.id }}/">
+                                        <button type="button"  class="btn btn-blue btn-info" id="btnsua">
+                                            <i class="glyphicon glyphicon-edit"></i>
+                                        </button>
+                                        </a>
+                                        <button type="button"  class="btn btn-blue btn-info" id="btnxoa">
+                                            <i class="glyphicon glyphicon-remove-sign"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+<!--phần hiển thị body cho từng trang con-->
+        </div>
+{% endblock %}

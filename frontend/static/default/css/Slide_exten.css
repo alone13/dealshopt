@@ -1,0 +1,39 @@
+.hp07w4 {
+    width: 1921px;
+}
+
+#content .hp07w2 .right-slide-bar {
+    width: 422px;
+    height: 387px
+}
+
+.hp07w1 {
+    position: relative;
+    margin: 0 auto;
+    height: 387px
+}
+
+.hp07w2 {
+    z-index: 4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 479px;
+    padding: 0
+}
+
+.hp07dnav i, .hp07dnav {
+    float: right;
+    /**! z-index: 4;*/
+    position: absolute;
+    font-size: 40px;
+    font-size: 4rem;
+    top: 0;
+    left: 111px;
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin-top: 0;
+    margin: 0
+}

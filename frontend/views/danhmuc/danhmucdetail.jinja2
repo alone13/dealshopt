@@ -1,0 +1,85 @@
+{% extends "shared/layoutadmin.jinja2" %}
+{% block body %}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+      Quản Lý Danh Mục
+    </h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-block btn-primary btn-sm" data-toggle="modal" data-target="#edit">Edit</button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="form-group">
+                        <label> Danh Mục Cha</label> : {{ danhmuc.danhmuccha }}
+                    </div>
+                    <div class="form-group">
+                        <label>Tên Danh Mục</label> : {{ danhmuc.tendanhmuc }}
+                    </div>
+                    <div class="form-group">
+                        <label>Link</label> : {{ danhmuc.link }}
+                    </div>
+                    <div class="form-group">
+                        <label>Trạng Thái</label> : {{ danhmuc.trangthai }}
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="edit">
+    <div class="modal-dialog">
+          <form method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">Edit</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box-body">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Danh Mục Cha: </label>
+                            <input class="form-control" name="{{ form.fields.tendanhmuc.name }}" value="{{ danhmuc.danhmuccha }}"  placeholder="Danh Mục Cha" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Tên Danh Mục: </label>
+                            <input class="form-control" name="{{ form.fields.tendanhmuc.name }}" value="{{ danhmuc.tendanhmuc }}" placeholder="Tên Danh Mục" required="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Link: </label>
+                            <input class="form-control" name="{{ form.fields.link.name }}"  value="{{ danhmuc.link }}" placeholder="Link" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Trạng Thái: </label>
+                            <input class="form-control" name="{{ form.fields.trangthai.name }}"  value="{{ danhmuc.trangthai }}" placeholder="Trạng Thái" required="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit"  class="btn btn-primary">Lưu Lại</button>
+                  <button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-danger">Hủy Bỏ</button>
+                </div>
+            </div>
+          </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+{% endblock %}

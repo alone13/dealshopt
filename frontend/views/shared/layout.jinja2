@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hệ Thống DealShop</title>
+    <meta http-equiv="content-language" content="vi">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="msvalidate.01" content="9F288B3B53D32225CE6A70FA2DB2BF6D">
+
+    <link rel="SHORTCUT ICON" href="https://www.deliverynow.vn/favicon.ico">
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/css.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}default/css/shop-homepage.css"/>
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}default/js/customer.js"></script>
+
+</head>
+<body>
+<div href="javascript:;" class="button_scroll2top" onclick="page_scroll2top()"><i
+        class="glyphicon glyphicon-arrow-up"></i></div>
+<div class="row main">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbaner" style="height: 35px;" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Khám Phá</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Đặt Giao Hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Đặt Tours</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="navbar-fixed" style="position: fixed;">
+<nav class="white" role="navigation" style="box-shadow:none;border-bottom: #eee 1px solid;">
+<div class="container-header clearfix">
+    <div class="logo pull-left" style="margin-left:10px;">
+        <a href="/" title="deliveryNow.vn">
+            <img src="{{ STATIC_URL }}default/image/home/logo.png" alt="deliveryNow.vn" width="75">
+        </a>
+    </div>
+<div class="country pull-left">
+<!-- Dropdown Trigger -->
+<div class="bs-example">
+  <ul class="nav nav-pills" role="tablist">
+      <li role="presentation" class="dropdown">
+        <a href="#" class="dropdown-toggle" id="drop4" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Hà Nội
+          <span class="caret">
+        </span> </a>
+        <ul class="dropdown-menu" id="menu1" aria-labelledby="drop4">
+          <li><a href="#">TP.HCM</a></li>
+          <li><a href="#">Hà Nội</a></li>
+          <li><a href="#">Đà Nẵng </a></li>
+          <li><a href="#">Cần Thơ</a></li>
+          <li><a href="#">Huế</a></li>
+          <li><a href="#">Hải Phòng</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- Dropdown Structure -->
+</div>
+    <div class="top-cate">
+        <a href="https://www.deliverynow.vn/ha-noi/danh-sach-dia-diem-giao-tan-noi?utm_source=DeliverynowWeb&utm_medium=topbar_link_click&utm_campaign=DeliverynowRef">Tất cả</a>
+        <a href="/ha-noi/danh-sach-dia-diem-phuc-vu-mon-chay-giao-tan-noi?utm_source=DeliverynowWeb&amp;utm_medium=topbar_link_click&amp;utm_campaign=DeliverynowRef">Món chay</a>
+        <a href="/ha-noi/danh-sach-dia-diem-phuc-vu-trai-cay-sach-giao-tan-noi?utm_source=DeliverynowWeb&amp;utm_medium=topbar_link_click&amp;utm_campaign=DeliverynowRef">Trái cây sạch</a>
+        <a href="/ha-noi/danh-sach-dia-diem-phuc-vu-ruou-vang-giao-tan-noi?utm_source=DeliverynowWeb&amp;utm_medium=topbar_link_click&amp;utm_campaign=DeliverynowRef">Rượu vang</a>
+    </div>
+    <div id="login-status" class="user-deli pull-right">
+<a class="btn-login" href="https://id.foody.vn/Account/Login?ReturnUrl=https://www.deliverynow.vn:443/ha-noi">Đăng nhập</a>
+    </div>
+    <div class="right-app">
+    </div>
+    </div>
+</div>
+
+</nav>
+</div>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="margin: auto;">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-footer">
+                        <div class="footer-content">
+                            <div class="border-footer-loop"></div>
+                            <div class="-footer">
+                                <div class="top-footer">
+                                    <table width="100%">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <style>
+                                                    .p-footer {
+                                                        width: 100%;
+                                                        float: left;
+                                                    }
+                                                </style>
+                                                <b style="margin-bottom: 10px;margin-top:11px;">Tiện ích</b>
+                                                <p><a href="#">Khuyến mãi lớn</a><i class="icon-hot"></i></p>
+                                                <p class="p-footer"><a href="#">Đăng thanh lý</a></p>
+                                                <p><a href="#" style="margin-left:-2px;">Tin tức</a></p>
+                                                <p><a href="#" style="margin-left:-3px; margin-top:6px;">Video</a></p>
+                                                <p><a href="#" style="margin-left:0px; margin-top:6px;">Liên hệ</a></p>
+                                                <p class="mth-left">
+                                    <span class="fl-left">
+                                        <a href="https://www.foody.vn/ha-noi" target="_blank" style="margin-right: 2px; margin-top:10px;">
+                                            <strong> Foody.vn</strong>
+                                        </a><i style="font-size: 12px;">(Đối tác liên kết)</i>
+                                    </span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <b style="margin-bottom: 10px; margin-top:7px;">Trợ giúp</b>
+                                                <p><a href="#">Thanh toán qua ngân hàng</a></p>
+                                                <p><a href="#" style="margin-top:7px;">Cước phí vận chuyển</a></p>
+                                                <p><a href="#" style="margin-top:7px;">Bảo hành &amp; Đổi hàng</a></p>
+                                                <p><a href="#" style="margin-top:7px;">Hướng dẫn mua hàng</a></p>
+                                                <p><a href="#" style="margin-top:7px;">Kinh doanh cùng Deal Shop</a>
+                                                </p>
+                                                <p><a href="#" style="margin-top:7px;">Quy định sử dụng Voucher</a></p>
+                                            </td>
+                                            <td>
+                                                <b style="margin-bottom: 10px; margin-top:-37px;">Hỗ trợ khách hàng</b>
+                                                <p class="mth-color mr-b2 ">
+                                                    <span style="display: block;">Tổng đài bán hàng (8:00 - 21:30)</span>
+                                                    <b class="mth-td">1900 6483</b>
+                                                    <span class="mth-color mgt">hoặc</span>
+                                                    <b class="mth-td" style="margin-right: 0">
+                                                        <span>0968 630 338</span>
+                                                    </b>
+                                                </p>
+                                                <p class="mth-color mth-left mr-b2 ">
+                                                    <span style="display: block;margin-top:10px">Bảo hành &amp; Khiếu nại (8:00 - 21:30)</span>
+                                                    <span>0969 215 138</span>
+                                                </p>
+                                            </td>
+                                            <td class="pos-rel">
+                                                <div class="fb-like" data-href="https://www.facebook.com/shoptrethovn"
+                                                     data-layout="standard" data-action="like" data-show-faces="true"
+                                                     data-share="true"></div>
+                                                <script>
+                                                    function RegisterPromotionSuccess(data) {
+                                                        if (data == 1) {
+                                                            $('.inside-reg-prom #Email').addClass('input-validation-error');
+                                                            ShowBox(true, '.mess-register-error');
+                                                            $('#EmailRegister').val('');
+                                                        }
+                                                        if (data == 2) {
+                                                            ShowBox(true, '.mess-register-success');
+                                                        }
+                                                    }
+
+                                                </script>
+
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bottom-footer">
+                                    <div class="footer-info">
+                                        <div style="width: calc(100% - 250px);float: left; margin-top:20px;">
+                                            <span><b>© 2016 dealshop.com.vn!</b> GPĐKKD số 0104406702 do sở KHĐT TP.Hà Nội cấp ngày 28/01/2010</span>
+                                            <span>Giấy phép MXH số 06/GXN-TTĐT do Cục QL Phát thanh, Truyền hình và TTĐT cấp ngày 16/01/2013.</span>
+                                            <span>VPGD: Tầng 2, số 68 Trần Hữu Dực, Mỹ Đình 1, Quận Nam Từ Liêm, Hà Nội.</span>
+                                        </div>
+                                        <div style="width: 150px;margin-top:32px;float: right;">
+                                            <p class="mth-left">
+                                                <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=587"
+                                                   target="_blank" title="Đã đăng ký với bộ công thương">
+                                                    <img src="{{ STATIC_URL }}default/image/home/Da-dang-ky-BCT-v2.png" alt="img"
+                                                         width="150" height="56"/>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

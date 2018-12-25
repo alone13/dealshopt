@@ -1,0 +1,88 @@
+{% extends "shared/layoutadmin.jinja2" %}
+{% block body %}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+      Quản Lý Khách Hàng
+    </h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-block btn-primary btn-sm" data-toggle="modal" data-target="#edit">Edit</button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="form-group">
+                        <label> Tên Khách Hàng</label> : {{ khachhang.tenkhachhang }}
+                    </div>
+                    <div class="form-group">
+                        <label> Địa Chỉ</label> : {{ khachhang.diachi }}
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label> : {{ khachhang.email }}
+                    </div>
+                    <div class="form-group">
+                        <label>SĐT</label> : {{ khachhang.sdt }}
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="edit">
+    <div class="modal-dialog">
+          <form method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">Edit</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box-body">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Tên Khách Hàng: </label>
+                            <input class="form-control" name="{{ form.fields.tenkhachhang.name }}" value="{{ khachhang.tenkhachhang }}"  placeholder="Tên Khách Hàng" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>: </label>Địa Chỉ
+                            <input class="form-control" name="{{ form.fields.tendanhmuc.name }}" value="{{ khachhang.diachi }}" placeholde="Địa Chỉ" required="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>Email: </label>
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                              <input type="email" name="{{ form.fields.email.name }}" value="{{ khachhang.email }}" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>SDT: </label>
+                            <input class="form-control" name="{{ form.fields.sdt.name }}"  value="{{ khachhang.sdt }}" placeholder="SDT" required="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit"  class="btn btn-primary">Lưu Lại</button>
+                  <button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-danger">Hủy Bỏ</button>
+                </div>
+            </div>
+          </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "shared/layoutadmin.jinja2" %}
+{% block body %}
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">
+            Quản Lý Thể Loại - Sản Phẩm
+            <button type="button" class="btn btn-blue btn-info" data-toggle="modal" data-target="#myModal" id="btnsua">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </button>
+        </h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div id="myModal" class="modal fade" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-lg">
+          <form method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Nghiệp Vụ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="disabledSelect">IDTheLoai: </label>
+                                                <input class="form-control" id="txtidtl" type="text" placeholder="IDTheLoaiSanPham" disabled="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tên: </label>
+                                                <input class="form-control" name="{{ form.fields.ten.name }}" placeholder="Tên Thể Loại" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label>Link: </label>
+                                            <input class="form-control" name="{{ form.fields.link.name }}" placeholder="Link Thể Loại" required="">
+                                        </div>
+                                            <div class="form-group">
+                                                <label>Trạng Thái: </label>
+                                                  <select name="{{ form.fields.trangthai.name }}" class="form-control">
+                                                    <option>True</option>
+                                                    <option>False</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="submit"  class="btn btn-primary">Lưu Lại</button>
+                                            <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-danger">Hủy Bỏ</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.row (nested) -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-12 -->
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>
+    </div>
+<div class="box">
+           <div class="box-header">
+             <h3 class="box-title">Danh Sách</h3>
+           </div>
+           <!-- /.box-header -->
+           <div class="box-body">
+             <table id="example1" class="table table-bordered table-striped">
+               <thead>
+               <tr>
+               <th style="text-align:center;">ID</th>
+               <th style="text-align:center;">Tên</th>
+               <th style="text-align:center;">Link</th>
+               <th style="text-align:center;">Trạng Thái</th>
+               <th style="text-align:center;">Chức Năng</th>
+               </tr>
+               </thead>
+               <tbody>
+               {% for item in theLoaisanphams %}
+                         <tr class="gradeX odd" id="TheLoai-{{ item.id }}" role="row">
+                           <td id="Id-{{ item.id }}" style="text-align:center;" class="sorting_1">{{ item.id }}</td>
+                          <td id="Ten-{{ item.id }}" style="text-align:center;">{{ item.ten }}</td>
+                          <td id="Link-{{ item.id }}" style="text-align:center;">{{ item.link }}</td>
+                           <td id="TT-{{ item.id }}" style="text-align:center;">{{ item.trangthai }}</td>
+                           <td style="text-align:center;">
+                            <a href="/quanlytheloaisanpham/{{ item.id }}/">
+                               <button type="button"  class="btn btn-blue btn-info" id="btnsua">
+                                   <i class="glyphicon glyphicon-edit"></i>
+                               </button>
+                            </a>
+                               <button type="button"  class="btn btn-blue btn-info" id="btnxoa">
+                                   <i class="glyphicon glyphicon-remove-sign"></i>
+                               </button>
+                           </td>
+                       </tr>
+               {% endfor %}
+               </tbody>
+             </table>
+           </div>
+           <!-- /.box-body -->
+         </div>
+</div>
+</div>
+<!--phần hiển thị body cho từng trang con-->
+        </div>
+{% endblock %}

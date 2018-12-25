@@ -1,0 +1,75 @@
+{% extends "shared/layoutadmin.jinja2" %}
+{% block body %}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+      Quản Lý Tài Khoản
+    </h1>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-block btn-primary btn-sm" data-toggle="modal" data-target="#edit">Edit</button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="form-group">
+                        <label> Tên Đăng Nhập</label> : {{ taikhoan.tendangnhap }}
+                    </div>
+                    <div class="form-group">
+                        <label> Mật Khẩu</label> : {{ taikhoan.matkhau }}
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label> : {{ taikhoan.role_id }}
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="edit">
+    <div class="modal-dialog">
+          <form method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title">Edit</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Tên Đăng Nhập:</label>
+                            <input class="form-control" type="text" name="{{ form.fields.tendangnhap.name }}" value="{{ taikhoan.tendangnhap }}" placeholder="Tên Đăng Nhập" />
+                        </div>
+                        <div class="form-group">
+                            <label>Link:</label>
+                            <input class="form-control" type="text" name="{{ form.fields.matkhau.name }}" value="{{ taikhoan.matkhau }}" placeholder="Mật Khẩu" />
+                        </div>
+                        <div class="form-group">
+                            <label>Role:</label>
+                            <input class="form-control" type="text" name="{{ form.fields.role_id.name }}" value="{{ role.ten }}" placeholder="Role"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit"  class="btn btn-primary">Lưu Lại</button>
+                  <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-danger">Hủy Bỏ</button>
+                </div>
+            </div>
+          </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+{% endblock %}
